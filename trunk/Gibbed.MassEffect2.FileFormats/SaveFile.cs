@@ -22,7 +22,7 @@ namespace Gibbed.MassEffect2.FileFormats
         public uint LastPlayedYear; // +08C
         public Save.Vector3 MapPosition; // +0A8
         public uint Unknown0B4;
-        public uint Unknown0B8;
+        public int Unknown0B8;
         public uint Unknown0BC;
         public uint Unknown344;
         public uint Unknown0C4;

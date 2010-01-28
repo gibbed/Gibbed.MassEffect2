@@ -19,7 +19,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
         public string Unknown038;
         public string Unknown044;
         public string Unknown050;
-        public Unknown00BAF8E0 Unknown05C;
+        public Appearance Appearance; // +05C
         public List<Power> Powers; // +11C 00BAF330
         public List<Unknown00BB0B60> Unknown128; // 00BAF3E0 maybe ammo
         public WeaponLoadout Loadout; // +134 00BAF4F8
@@ -49,7 +49,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
             stream.Serialize(ref this.Unknown038);
             stream.Serialize(ref this.Unknown044);
             stream.Serialize(ref this.Unknown050);
-            stream.Serialize<Unknown00BAF8E0>(ref this.Unknown05C);
+            stream.Serialize<Appearance>(ref this.Appearance);
             stream.Serialize<Power>(ref this.Powers);
             stream.Serialize<Unknown00BB0B60>(ref this.Unknown128);
 

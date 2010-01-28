@@ -1,35 +1,49 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BAF9F0
+    // 00BAF8E0
     public class Appearance : IUnrealSerializable
     {
-        public string Hair; // +00
-        public List<string> Unknown0C; // 00BAFA70 ?
-        public List<NamedFloat> Unknown18; // 00BAFB14 facial values?
-        public List<NamedVector3> Unknown24; // 00BAFC01 facial positions?
-        public List<Vector3> Unknown30; // 00BAFE30 ?
-        public List<Vector3> Unknown3C; // 00BB0053 ?
-        public List<Vector3> Unknown48; // 00BB0280 ?
-        public List<Vector3> Unknown54; // 00BB04A3 ?
-        public List<NamedFloat> Scalars; // +60 00BB05E0
-        public List<NamedColor> Colors; // +6C 00BB06E0
-        public List<NamedString> Textures; // +78 00BB0852
+        public byte ArmorType; // +00
+        public uint CasualOutfit; // +04
+        public uint Unknown08;
+        public uint Unknown0C;
+        public uint Unknown10;
+        public uint Unknown14;
+        public uint Unknown18;
+        public uint Unknown1C;
+        public uint Unknown20;
+        public uint Unknown24;
+        public uint Unknown28;
+        public uint Unknown2C;
+        public uint Unknown30;
+        public uint Unknown34;
+        public bool HasIdentity; // +38
+        public Identity Identity; // +3C  Head / Face appearance
 
         public void Serialize(IUnrealStream stream)
         {
-            stream.Serialize(ref this.Hair);
+            stream.Serialize(ref this.ArmorType);
+            stream.Serialize(ref this.CasualOutfit);
+            stream.Serialize(ref this.Unknown08);
             stream.Serialize(ref this.Unknown0C);
-            stream.Serialize<NamedFloat>(ref this.Unknown18);
-            stream.Serialize<NamedVector3>(ref this.Unknown24);
-            stream.Serialize<Vector3>(ref this.Unknown30);
-            stream.Serialize<Vector3>(ref this.Unknown3C);
-            stream.Serialize<Vector3>(ref this.Unknown48);
-            stream.Serialize<Vector3>(ref this.Unknown54);
-            stream.Serialize<NamedFloat>(ref this.Scalars);
-            stream.Serialize<NamedColor>(ref this.Colors);
-            stream.Serialize<NamedString>(ref this.Textures);
+            stream.Serialize(ref this.Unknown10);
+            stream.Serialize(ref this.Unknown14);
+            stream.Serialize(ref this.Unknown18);
+            stream.Serialize(ref this.Unknown1C);
+            stream.Serialize(ref this.Unknown20);
+            stream.Serialize(ref this.Unknown24);
+            stream.Serialize(ref this.Unknown28);
+            stream.Serialize(ref this.Unknown2C);
+            stream.Serialize(ref this.Unknown30);
+            stream.Serialize(ref this.Unknown34);
+            stream.Serialize(ref this.HasIdentity);
+            
+            if (this.HasIdentity == true)
+            {
+                stream.Serialize<Identity>(ref this.Identity);
+            }
         }
     }
 }
