@@ -64,7 +64,7 @@
     <Compile Include="Save\Unknown00BAEDD0.cs" />
     <Compile Include="Save\Unknown00BAEED0.cs" />
     <Compile Include="Save\Unknown00BAEF40.cs" />
-    <Compile Include="Save\Unknown00BAEFF0.cs" />
+    <Compile Include="Save\Henchman.cs" />
     <Compile Include="Save\Unknown00BB0B60.cs" />
     <Compile Include="Save\Unknown00BB0C10.cs" />
     <Compile Include="Save\Vector3.cs" />
@@ -75,7 +75,7 @@
     <Compile Include="Save\Unknown00BAADB0.cs" />
     <Compile Include="Save\Unknown00BAB140.cs" />
     <Compile Include="Save\Unknown00BAF170.cs" />
-    <Compile Include="Save\Unknown00BAF1D0.cs" />
+    <Compile Include="Save\Player.cs" />
     <Compile Include="Save\Unknown00BAF8E0.cs" />
     <Compile Include="Save\Unknown00BAF9F0.cs" />
     <Compile Include="Save\Unknown00BB0C50.cs" />

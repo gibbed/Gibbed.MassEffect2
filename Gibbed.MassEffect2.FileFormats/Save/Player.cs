@@ -5,7 +5,8 @@ using Gibbed.Helpers;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Unknown00BAF1D0 : IUnrealSerializable
+    // 00BAF1D0
+    public class Player : IUnrealSerializable
     {
         public bool Unknown000;
         public string Unknown004;
