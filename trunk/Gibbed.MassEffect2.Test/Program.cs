@@ -11,11 +11,11 @@ namespace Gibbed.MassEffect2.Test
     {
         static void Main(string[] args)
         {
-            var input = File.Open("Save_0058.pcsav", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            var input = File.Open("Save_0023.pcsav", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
             var save = SaveFile.Load(input);
             input.Close();
 
-            var output = File.Open("Save_0058_new.test", FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+            var output = File.Open("Save_new.test", FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
             save.Save(output);
             output.Close();
         }
