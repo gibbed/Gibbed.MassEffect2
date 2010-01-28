@@ -14,7 +14,7 @@ namespace Gibbed.MassEffect2.FileFormats
         public float SecondsPlayed; // +07C  time played in seconds
         public int Disc; // +090
         public string BaseLevelName; // +094
-        public byte Difficulty; // +0A0
+        public Save.DifficultyOptions Difficulty; // +0A0
         public int EndGameState; // +0A4
         public Save.SaveTimeStamp TimeStamp; // +080
         public Save.Vector SaveLocation; // +0A8
@@ -38,7 +38,7 @@ namespace Gibbed.MassEffect2.FileFormats
             stream.Serialize(ref this.SecondsPlayed);
             stream.Serialize(ref this.Disc);
             stream.Serialize(ref this.BaseLevelName);
-            stream.Serialize(ref this.Difficulty);
+            stream.SerializeEnum(ref this.Difficulty);
             stream.Serialize(ref this.EndGameState);
             stream.Serialize(ref this.TimeStamp);
             stream.Serialize(ref this.SaveLocation);

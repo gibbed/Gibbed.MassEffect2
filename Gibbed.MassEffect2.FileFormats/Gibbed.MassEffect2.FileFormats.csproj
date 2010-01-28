@@ -50,6 +50,7 @@
     <Compile Include="SaveFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IUnrealStream.cs" />
+    <Compile Include="Save\DifficultyOptions.cs" />
     <Compile Include="Save\MorphFeature.cs" />
     <Compile Include="Save\NotorietyType.cs" />
     <Compile Include="Save\OriginType.cs" />
