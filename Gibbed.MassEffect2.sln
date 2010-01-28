@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.MassEffect2.FileFormats", "Gibbed.MassEffect2.FileFormats\Gibbed.MassEffect2.FileFormats.csproj", "{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Helpers", "Gibbed.Helpers\Gibbed.Helpers.csproj", "{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.MassEffect2.Test", "Gibbed.MassEffect2.Test\Gibbed.MassEffect2.Test.csproj", "{65786061-1EC6-4947-A90A-95D47EAC90AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65786061-1EC6-4947-A90A-95D47EAC90AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65786061-1EC6-4947-A90A-95D47EAC90AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65786061-1EC6-4947-A90A-95D47EAC90AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65786061-1EC6-4947-A90A-95D47EAC90AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
