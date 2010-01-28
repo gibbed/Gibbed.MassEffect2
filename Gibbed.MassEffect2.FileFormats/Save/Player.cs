@@ -30,8 +30,8 @@ namespace Gibbed.MassEffect2.FileFormats.Save
         public uint ResourceIridium; // +194
         public uint ResourcePalladium; // +198
         public uint ResourcePlatinum; // +19C
-        public uint Unknown1A0;
-        public float Unknown1A4;
+        public uint ShipProbes; // +1A0
+        public float ShipFuel; // +1A4
         public string IdentityCode; // +1A8
         public uint Unknown014;
 
@@ -69,8 +69,8 @@ namespace Gibbed.MassEffect2.FileFormats.Save
             stream.Serialize(ref this.ResourceIridium);
             stream.Serialize(ref this.ResourcePalladium);
             stream.Serialize(ref this.ResourcePlatinum);
-            stream.Serialize(ref this.Unknown1A0);
-            stream.Serialize(ref this.Unknown1A4);
+            stream.Serialize(ref this.ShipProbes);
+            stream.Serialize(ref this.ShipFuel);
 
             if (stream.Version >= 25)
             {

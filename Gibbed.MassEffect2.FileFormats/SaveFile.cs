@@ -16,7 +16,7 @@ namespace Gibbed.MassEffect2.FileFormats
         public string Location; // +094
         public byte Unknown0A0;
         public uint Unknown0A4;
-        public uint Unknown080;
+        public uint LastPlayedSeconds; // +080
         public uint LastPlayedDay; // +084
         public uint LastPlayedMonth; // +088
         public uint LastPlayedYear; // +08C
@@ -48,7 +48,7 @@ namespace Gibbed.MassEffect2.FileFormats
             stream.Serialize(ref this.Location);
             stream.Serialize(ref this.Unknown0A0);
             stream.Serialize(ref this.Unknown0A4);
-            stream.Serialize(ref this.Unknown080);
+            stream.Serialize(ref this.LastPlayedSeconds);
             stream.Serialize(ref this.LastPlayedDay);
             stream.Serialize(ref this.LastPlayedMonth);
             stream.Serialize(ref this.LastPlayedYear);
