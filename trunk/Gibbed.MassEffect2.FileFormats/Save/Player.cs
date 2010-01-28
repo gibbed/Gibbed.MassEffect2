@@ -7,7 +7,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
     // 00BAF1D0
     public class Player : IUnrealSerializable
     {
-        public bool Unknown000;
+        public bool IsFemale; // +000
         public string Unknown004;
         public uint Level; // +018
         public float Unknown01C;
@@ -37,7 +37,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
 
         public void Serialize(IUnrealStream stream)
         {
-            stream.Serialize(ref this.Unknown000);
+            stream.Serialize(ref this.IsFemale);
             stream.Serialize(ref this.Unknown004);
             stream.Serialize(ref this.Level);
             stream.Serialize(ref this.Unknown01C);
