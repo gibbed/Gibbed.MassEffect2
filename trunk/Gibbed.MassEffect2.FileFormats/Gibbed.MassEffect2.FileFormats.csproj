@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gibbed.MassEffect2.FileFormats</RootNamespace>
+    <AssemblyName>Gibbed.MassEffect2.FileFormats</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CRC32.cs" />
+    <Compile Include="IUnrealSerializable.cs" />
+    <Compile Include="SaveFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IUnrealStream.cs" />
+    <Compile Include="Save\NamedFloat.cs" />
+    <Compile Include="Save\NamedString.cs" />
+    <Compile Include="Save\NamedVector3.cs" />
+    <Compile Include="Save\NamedColor.cs" />
+    <Compile Include="Save\DownloadableContent.cs" />
+    <Compile Include="Save\Unknown00BAE040.cs" />
+    <Compile Include="Save\Unknown00BAE380.cs" />
+    <Compile Include="Save\Unknown00BAE400.cs" />
+    <Compile Include="Save\Unknown00BAE4C0.cs" />
+    <Compile Include="Save\Unknown00BAE517.cs" />
+    <Compile Include="Save\Unknown00BAE5B0.cs" />
+    <Compile Include="Save\Unknown00BAEDD0.cs" />
+    <Compile Include="Save\Unknown00BAEED0.cs" />
+    <Compile Include="Save\Unknown00BAEF40.cs" />
+    <Compile Include="Save\Unknown00BAEFF0.cs" />
+    <Compile Include="Save\Unknown00BB0B60.cs" />
+    <Compile Include="Save\Unknown00BB0C10.cs" />
+    <Compile Include="Save\Vector3.cs" />
+    <Compile Include="Save\Color.cs" />
+    <Compile Include="StreamHelpers.cs" />
+    <Compile Include="Save\Unknown005BAF20.cs" />
+    <Compile Include="Save\Unknown005BAF80.cs" />
+    <Compile Include="Save\Unknown00BAADB0.cs" />
+    <Compile Include="Save\Unknown00BAB140.cs" />
+    <Compile Include="Save\Unknown00BAF170.cs" />
+    <Compile Include="Save\Unknown00BAF1D0.cs" />
+    <Compile Include="Save\Unknown00BAF8E0.cs" />
+    <Compile Include="Save\Unknown00BAF9F0.cs" />
+    <Compile Include="Save\Unknown00BB0C50.cs" />
+    <Compile Include="Save\Unknown00BB0CC0.cs" />
+    <Compile Include="UnrealStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gibbed.Helpers\Gibbed.Helpers.csproj">
+      <Project>{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}</Project>
+      <Name>Gibbed.Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

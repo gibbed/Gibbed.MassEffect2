@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Gibbed.MassEffect2.FileFormats
+{
+    public interface IUnrealStream
+    {
+        uint Version { get; }
+
+        // Basic
+        void Serialize(ref bool value);
+        void Serialize(ref byte value);
+        void Serialize(ref int value);
+        void Serialize(ref uint value);
+        void Serialize(ref float value);
+        void Serialize(ref string value);
+
+        // Lists
+        void Serialize(ref List<int> values);
+        void Serialize(ref List<uint> values);
+        void Serialize(ref List<float> values);
+        void Serialize(ref List<string> values);
+
+        // Serializables
+        void Serialize<TFormat>(ref TFormat value)
+            where TFormat : IUnrealSerializable, new();
+        
+        // Serializable List
+        void Serialize<TFormat>(ref List<TFormat> values)
+            where TFormat : IUnrealSerializable, new();
+
+        // void Serialize(ref IUnrealSerializable value);
+    }
+}
