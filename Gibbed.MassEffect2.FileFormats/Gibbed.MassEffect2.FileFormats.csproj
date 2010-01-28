@@ -77,8 +77,8 @@
     <Compile Include="Save\Unknown00BAB140.cs" />
     <Compile Include="Save\Power.cs" />
     <Compile Include="Save\Player.cs" />
-    <Compile Include="Save\Unknown00BAF8E0.cs" />
     <Compile Include="Save\Appearance.cs" />
+    <Compile Include="Save\Identity.cs" />
     <Compile Include="Save\Unknown00BB0C50.cs" />
     <Compile Include="Save\Unknown00BB0CC0.cs" />
     <Compile Include="UnrealStream.cs" />
