@@ -90,6 +90,18 @@ namespace Gibbed.MassEffect2.FileFormats
             }
         }
 
+        public void Serialize(ref Guid value)
+        {
+            if (this.Loading == true)
+            {
+                value = this.Stream.ReadValueGuid();
+            }
+            else
+            {
+                this.Stream.WriteValueGuid(value);
+            }
+        }
+
         public void Serialize(ref List<int> values)
         {
             if (this.Loading == true)
@@ -105,6 +117,10 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 for (uint i = 0; i < count; i++)
                 {
+                    if (this.Stream.Position == 0xCF9B)
+                    {
+                    }
+
                     list.Add(this.Stream.ReadValueS32());
                 }
 

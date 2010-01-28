@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Gibbed.MassEffect2.FileFormats
 {
@@ -13,6 +14,7 @@ namespace Gibbed.MassEffect2.FileFormats
         void Serialize(ref uint value);
         void Serialize(ref float value);
         void Serialize(ref string value);
+        void Serialize(ref Guid value);
 
         // Lists
         void Serialize(ref List<int> values);
