@@ -2,7 +2,7 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Vector3 : IUnrealSerializable
+    public class Vector : IUnrealSerializable
     {
         public float X;
         public float Y;

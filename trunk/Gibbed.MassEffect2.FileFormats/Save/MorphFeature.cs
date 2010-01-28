@@ -2,22 +2,22 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class NamedVector3 : IUnrealSerializable
+    public class MorphFeature : IUnrealSerializable
     {
-        public string Name;
-        public Vector3 Value;
+        public string Feature;
+        public float Offset;
 
         public void Serialize(IUnrealStream stream)
         {
-            stream.Serialize(ref this.Name);
-            stream.Serialize<Vector3>(ref this.Value);
+            stream.Serialize(ref this.Feature);
+            stream.Serialize(ref this.Offset);
         }
 
         public override string ToString()
         {
             return String.Format("{0} = {1}",
-                this.Name,
-                this.Value);
+                this.Feature,
+                this.Offset);
         }
     }
 }

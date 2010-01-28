@@ -17,10 +17,12 @@ namespace Gibbed.MassEffect2.FileFormats
         void Serialize(ref Guid value);
 
         // Lists
+        void Serialize(ref List<bool> values);
         void Serialize(ref List<int> values);
         void Serialize(ref List<uint> values);
         void Serialize(ref List<float> values);
         void Serialize(ref List<string> values);
+        void Serialize(ref List<Guid> values);
 
         // Serializables
         void Serialize<TFormat>(ref TFormat value)
@@ -31,5 +33,8 @@ namespace Gibbed.MassEffect2.FileFormats
             where TFormat : IUnrealSerializable, new();
 
         // void Serialize(ref IUnrealSerializable value);
+
+        // Enum
+        void SerializeEnum<TEnum>(ref TEnum value);
     }
 }

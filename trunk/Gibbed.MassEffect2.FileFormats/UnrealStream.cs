@@ -102,6 +102,53 @@ namespace Gibbed.MassEffect2.FileFormats
             }
         }
 
+        public void SerializeEnum<TEnum>(ref TEnum value)
+        {
+            if (this.Loading == true)
+            {
+                value = this.Stream.ReadValueEnum<TEnum>();
+            }
+            else
+            {
+                this.Stream.WriteValueEnum<TEnum>(value);
+            }
+        }
+
+        public void Serialize(ref List<bool> values)
+        {
+            if (this.Loading == true)
+            {
+                uint count = this.Stream.ReadValueU32();
+
+                if (count >= 0x7FFFFF)
+                {
+                    throw new Exception("sanity check");
+                }
+
+                List<bool> list = new List<bool>();
+
+                for (uint i = 0; i < count; i++)
+                {
+                    list.Add(this.Stream.ReadValueB32());
+                }
+
+                values = list;
+            }
+            else
+            {
+                if (values == null)
+                {
+                    throw new ArgumentNullException("values");
+                }
+
+                this.Stream.WriteValueS32(values.Count);
+                foreach (bool value in values)
+                {
+                    this.Stream.WriteValueB32(value);
+                }
+            }
+        }
+
         public void Serialize(ref List<int> values)
         {
             if (this.Loading == true)
@@ -117,10 +164,6 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 for (uint i = 0; i < count; i++)
                 {
-                    if (this.Stream.Position == 0xCF9B)
-                    {
-                    }
-
                     list.Add(this.Stream.ReadValueS32());
                 }
 
@@ -242,6 +285,41 @@ namespace Gibbed.MassEffect2.FileFormats
                 foreach (string value in values)
                 {
                     this.Stream.WriteStringUnreal(value);
+                }
+            }
+        }
+
+        public void Serialize(ref List<Guid> values)
+        {
+            if (this.Loading == true)
+            {
+                uint count = this.Stream.ReadValueU32();
+
+                if (count >= 0x7FFFFF)
+                {
+                    throw new Exception("sanity check");
+                }
+
+                List<Guid> list = new List<Guid>();
+
+                for (uint i = 0; i < count; i++)
+                {
+                    list.Add(this.Stream.ReadValueGuid());
+                }
+
+                values = list;
+            }
+            else
+            {
+                if (values == null)
+                {
+                    throw new ArgumentNullException("values");
+                }
+
+                this.Stream.WriteValueS32(values.Count);
+                foreach (Guid value in values)
+                {
+                    this.Stream.WriteValueGuid(value);
                 }
             }
         }
