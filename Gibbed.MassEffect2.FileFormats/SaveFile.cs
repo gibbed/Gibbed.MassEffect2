@@ -13,16 +13,14 @@ namespace Gibbed.MassEffect2.FileFormats
         public string Unknown054;
         public float TimePlayed; // +07C  time played in seconds
         public uint Unknown090;
-        public string Location; // +094
+        public string MapName; // +094
         public byte Unknown0A0;
         public uint Unknown0A4;
         public uint LastPlayedSeconds; // +080
         public uint LastPlayedDay; // +084
         public uint LastPlayedMonth; // +088
         public uint LastPlayedYear; // +08C
-        public float Unknown0A8;
-        public float Unknown0AC;
-        public float Unknown0B0;
+        public Save.Vector3 MapPosition; // +0A8
         public uint Unknown0B4;
         public uint Unknown0B8;
         public uint Unknown0BC;
@@ -45,16 +43,14 @@ namespace Gibbed.MassEffect2.FileFormats
             stream.Serialize(ref this.Unknown054);
             stream.Serialize(ref this.TimePlayed);
             stream.Serialize(ref this.Unknown090);
-            stream.Serialize(ref this.Location);
+            stream.Serialize(ref this.MapName);
             stream.Serialize(ref this.Unknown0A0);
             stream.Serialize(ref this.Unknown0A4);
             stream.Serialize(ref this.LastPlayedSeconds);
             stream.Serialize(ref this.LastPlayedDay);
             stream.Serialize(ref this.LastPlayedMonth);
             stream.Serialize(ref this.LastPlayedYear);
-            stream.Serialize(ref this.Unknown0A8);
-            stream.Serialize(ref this.Unknown0AC);
-            stream.Serialize(ref this.Unknown0B0);
+            stream.Serialize(ref this.MapPosition);
             stream.Serialize(ref this.Unknown0B4);
             stream.Serialize(ref this.Unknown0B8);
             stream.Serialize(ref this.Unknown0BC);
