@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class WeaponLoadout : IUnrealSerializable
+    public class Loadout : IUnrealSerializable
     {
         public string Unknown0;
         public string Unknown1;

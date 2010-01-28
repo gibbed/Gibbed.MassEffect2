@@ -2,7 +2,7 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class NamedFloat : IUnrealSerializable
+    public class ScalarParameter : IUnrealSerializable
     {
         public string Name;
         public float Value;

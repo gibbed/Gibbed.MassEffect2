@@ -2,13 +2,14 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Unknown00BAEED0 : IUnrealSerializable
+    // 00BAE380
+    public class GalaxyMap : IUnrealSerializable
     {
-        public List<Unknown00BAEF40> Unknown0;
+        public List<Planet> Planets;
 
         public void Serialize(IUnrealStream stream)
         {
-            stream.Serialize<Unknown00BAEF40>(ref this.Unknown0);
+            stream.Serialize(ref this.Planets);
         }
     }
 }

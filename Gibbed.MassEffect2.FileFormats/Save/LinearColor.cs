@@ -2,7 +2,7 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Color : IUnrealSerializable
+    public class LinearColor : IUnrealSerializable
     {
         public float R;
         public float G;

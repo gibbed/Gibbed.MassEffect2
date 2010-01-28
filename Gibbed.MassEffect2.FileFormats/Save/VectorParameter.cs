@@ -2,15 +2,15 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class NamedColor : IUnrealSerializable
+    public class VectorParameter : IUnrealSerializable
     {
         public string Name;
-        public Color Value;
+        public LinearColor Value;
 
         public void Serialize(IUnrealStream stream)
         {
             stream.Serialize(ref this.Name);
-            stream.Serialize<Color>(ref this.Value);
+            stream.Serialize<LinearColor>(ref this.Value);
         }
 
         public override string ToString()

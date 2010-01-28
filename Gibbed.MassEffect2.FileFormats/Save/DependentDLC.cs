@@ -3,21 +3,21 @@
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
     // 00BAB3B0
-    public class DownloadableContent : IUnrealSerializable
+    public class DependentDLC : IUnrealSerializable
     {
-        public uint Id;
+        public int ModuleID;
         public string Name;
 
         public void Serialize(IUnrealStream stream)
         {
-            stream.Serialize(ref this.Id);
+            stream.Serialize(ref this.ModuleID);
             stream.Serialize(ref this.Name);
         }
 
         public override string ToString()
         {
             return String.Format("{1} ({0})",
-                this.Id,
+                this.ModuleID,
                 this.Name);
         }
     }

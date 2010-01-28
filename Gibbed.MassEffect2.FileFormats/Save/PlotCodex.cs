@@ -2,13 +2,14 @@
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Unknown00BAE380 : IUnrealSerializable
+    // 00BAEED0
+    public class PlotCodex : IUnrealSerializable
     {
-        public List<Unknown00BAE400> Unknown0;
+        public List<PlotCodexPage> Pages;
 
         public void Serialize(IUnrealStream stream)
         {
-            stream.Serialize<Unknown00BAE400>(ref this.Unknown0);
+            stream.Serialize<PlotCodexPage>(ref this.Pages);
         }
     }
 }

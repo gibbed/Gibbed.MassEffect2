@@ -10,62 +10,51 @@ namespace Gibbed.MassEffect2.FileFormats
         public uint Version; // ME2 1.0 (release) has saves of version 29 (0x1D)
         public uint Checksum; // CRC32 of save data (from start) to before CRC32 value
 
-        public string Unknown054;
-        public float TimePlayed; // +07C  time played in seconds
-        public uint Unknown090;
-        public string MapName; // +094
-        public byte Unknown0A0;
-        public uint Unknown0A4;
-        public uint LastPlayedSeconds; // +080
-        public uint LastPlayedDay; // +084
-        public uint LastPlayedMonth; // +088
-        public uint LastPlayedYear; // +08C
-        public Save.Vector3 MapPosition; // +0A8
-        public uint Unknown0B4;
-        public int Unknown0B8;
-        public uint Unknown0BC;
-        public uint Unknown344;
-        public uint Unknown0C4;
-        public List<Save.Unknown00BB0CC0> Unknown0C0;
-        public List<Save.Unknown00BAADB0> Unknown0CC;
-        public List<Save.Unknown00BB0C50> Unknown0D8;
-        public List<Save.Unknown00BAB140> Unknown0E4;
-        public Save.Unknown005BAF20 Unknown0F0;
-        public Save.Player Player; // +0FC
-        public List<Save.Henchman> Henchmen; // +2B0
-        public Save.Unknown00BAE5B0 Unknown2C8;
-        public Save.Unknown00BAE040 Unknown320;
-        public Save.Unknown00BAE380 Unknown2BC;
-        public List<Save.DownloadableContent> DlcRequiredToLoad; // +03C
+        public string DebugName; // +054
+        public float SecondsPlayed; // +07C  time played in seconds
+        public int Disc; // +090
+        public string BaseLevelName; // +094
+        public byte Difficulty; // +0A0
+        public int EndGameState; // +0A4
+        public Save.SaveTimeStamp TimeStamp; // +080
+        public Save.Vector SaveLocation; // +0A8
+        public Save.Rotator SaveRotation; // +0B4
+        public int CurrentLoadingTip; // +344
+        public List<Save.Level> LevelRecords; // +0C0
+        public List<Save.StreamingState> StreamingRecords; // +0CC
+        public List<Save.KismetBool> KismetRecords; // +0D8
+        public List<Save.Door> DoorRecords; // +0E4
+        public List<Guid> PawnRecords; // +0F0
+        public Save.Player PlayerRecord; // +0FC
+        public List<Save.Henchman> HenchmanRecords; // +2B0
+        public Save.PlotTable PlotRecord; // +2C8
+        public Save.ME1PlotTable ME1PlotRecord; // +320
+        public Save.GalaxyMap GalaxyMapRecord; // +2BC
+        public List<Save.DependentDLC> DependentDLC; // +03C
 
         protected void Serialize(IUnrealStream stream)
         {
-            stream.Serialize(ref this.Unknown054);
-            stream.Serialize(ref this.TimePlayed);
-            stream.Serialize(ref this.Unknown090);
-            stream.Serialize(ref this.MapName);
-            stream.Serialize(ref this.Unknown0A0);
-            stream.Serialize(ref this.Unknown0A4);
-            stream.Serialize(ref this.LastPlayedSeconds);
-            stream.Serialize(ref this.LastPlayedDay);
-            stream.Serialize(ref this.LastPlayedMonth);
-            stream.Serialize(ref this.LastPlayedYear);
-            stream.Serialize(ref this.MapPosition);
-            stream.Serialize(ref this.Unknown0B4);
-            stream.Serialize(ref this.Unknown0B8);
-            stream.Serialize(ref this.Unknown0BC);
-            stream.Serialize(ref this.Unknown344);
-            stream.Serialize<Save.Unknown00BB0CC0>(ref this.Unknown0C0);
-            stream.Serialize<Save.Unknown00BAADB0>(ref this.Unknown0CC);
-            stream.Serialize<Save.Unknown00BB0C50>(ref this.Unknown0D8);
-            stream.Serialize<Save.Unknown00BAB140>(ref this.Unknown0E4);
-            stream.Serialize<Save.Unknown005BAF20>(ref this.Unknown0F0);
-            stream.Serialize<Save.Player>(ref this.Player);
-            stream.Serialize<Save.Henchman>(ref this.Henchmen);
-            stream.Serialize<Save.Unknown00BAE5B0>(ref this.Unknown2C8);
-            stream.Serialize<Save.Unknown00BAE040>(ref this.Unknown320);
-            stream.Serialize<Save.Unknown00BAE380>(ref this.Unknown2BC);
-            stream.Serialize<Save.DownloadableContent>(ref this.DlcRequiredToLoad);
+            stream.Serialize(ref this.DebugName);
+            stream.Serialize(ref this.SecondsPlayed);
+            stream.Serialize(ref this.Disc);
+            stream.Serialize(ref this.BaseLevelName);
+            stream.Serialize(ref this.Difficulty);
+            stream.Serialize(ref this.EndGameState);
+            stream.Serialize(ref this.TimeStamp);
+            stream.Serialize(ref this.SaveLocation);
+            stream.Serialize(ref this.SaveRotation);
+            stream.Serialize(ref this.CurrentLoadingTip);
+            stream.Serialize(ref this.LevelRecords);
+            stream.Serialize(ref this.StreamingRecords);
+            stream.Serialize(ref this.KismetRecords);
+            stream.Serialize(ref this.DoorRecords);
+            stream.Serialize(ref this.PawnRecords);
+            stream.Serialize(ref this.PlayerRecord);
+            stream.Serialize(ref this.HenchmanRecords);
+            stream.Serialize(ref this.PlotRecord);
+            stream.Serialize(ref this.ME1PlotRecord);
+            stream.Serialize(ref this.GalaxyMapRecord);
+            stream.Serialize(ref this.DependentDLC);
         }
 
         public static SaveFile Load(Stream input)
