@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using Gibbed.Helpers;
-using System.Linq;
-using System.Text;
 
 namespace Gibbed.MassEffect2.FileFormats
 {
@@ -35,8 +33,8 @@ namespace Gibbed.MassEffect2.FileFormats
         public List<Save.Unknown00BB0C50> Unknown0D8;
         public List<Save.Unknown00BAB140> Unknown0E4;
         public Save.Unknown005BAF20 Unknown0F0;
-        public Save.Player Player; // player character
-        public List<Save.Henchman> Henchmen; // followers
+        public Save.Player Player;
+        public List<Save.Henchman> Henchmen;
         public Save.Unknown00BAE5B0 Unknown2C8;
         public Save.Unknown00BAE040 Unknown320;
         public Save.Unknown00BAE380 Unknown2BC;

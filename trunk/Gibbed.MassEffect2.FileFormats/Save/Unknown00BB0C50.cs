@@ -1,16 +1,14 @@
 ﻿using System;
-using System.IO;
-using Gibbed.Helpers;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
     public class Unknown00BB0C50 : IUnrealSerializable
     {
-        public UInt32 Unknown0;
-        public UInt32 Unknown1;
-        public UInt32 Unknown2;
-        public UInt32 Unknown3;
-        public UInt32 Unknown4;
+        public uint Unknown0;
+        public uint Unknown1;
+        public uint Unknown2;
+        public uint Unknown3;
+        public uint Unknown4;
 
         public void Serialize(IUnrealStream stream)
         {

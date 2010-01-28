@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Gibbed.Helpers;
 using System.IO;
+using Gibbed.Helpers;
 
 namespace Gibbed.MassEffect2.FileFormats
 {
@@ -96,7 +94,7 @@ namespace Gibbed.MassEffect2.FileFormats
         {
             if (this.Loading == true)
             {
-                UInt32 count = this.Stream.ReadValueU32();
+                uint count = this.Stream.ReadValueU32();
 
                 if (count >= 0x7FFFFF)
                 {
@@ -105,7 +103,7 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 List<int> list = new List<int>();
 
-                for (UInt32 i = 0; i < count; i++)
+                for (uint i = 0; i < count; i++)
                 {
                     list.Add(this.Stream.ReadValueS32());
                 }
@@ -131,7 +129,7 @@ namespace Gibbed.MassEffect2.FileFormats
         {
             if (this.Loading == true)
             {
-                UInt32 count = this.Stream.ReadValueU32();
+                uint count = this.Stream.ReadValueU32();
 
                 if (count >= 0x7FFFFF)
                 {
@@ -140,7 +138,7 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 List<uint> list = new List<uint>();
 
-                for (UInt32 i = 0; i < count; i++)
+                for (uint i = 0; i < count; i++)
                 {
                     list.Add(this.Stream.ReadValueU32());
                 }
@@ -166,7 +164,7 @@ namespace Gibbed.MassEffect2.FileFormats
         {
             if (this.Loading == true)
             {
-                UInt32 count = this.Stream.ReadValueU32();
+                uint count = this.Stream.ReadValueU32();
 
                 if (count >= 0x7FFFFF)
                 {
@@ -175,7 +173,7 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 List<float> list = new List<float>();
 
-                for (UInt32 i = 0; i < count; i++)
+                for (uint i = 0; i < count; i++)
                 {
                     list.Add(this.Stream.ReadValueF32());
                 }
@@ -201,7 +199,7 @@ namespace Gibbed.MassEffect2.FileFormats
         {
             if (this.Loading == true)
             {
-                UInt32 count = this.Stream.ReadValueU32();
+                uint count = this.Stream.ReadValueU32();
 
                 if (count >= 0x7FFFFF)
                 {
@@ -210,7 +208,7 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 List<string> list = new List<string>();
 
-                for (UInt32 i = 0; i < count; i++)
+                for (uint i = 0; i < count; i++)
                 {
                     list.Add(this.Stream.ReadStringUnreal());
                 }
@@ -253,7 +251,7 @@ namespace Gibbed.MassEffect2.FileFormats
         {
             if (this.Loading == true)
             {
-                UInt32 count = this.Stream.ReadValueU32();
+                uint count = this.Stream.ReadValueU32();
 
                 if (count >= 0x7FFFFF)
                 {
@@ -262,7 +260,7 @@ namespace Gibbed.MassEffect2.FileFormats
 
                 List<TFormat> list = new List<TFormat>();
 
-                for (UInt32 i = 0; i < count; i++)
+                for (uint i = 0; i < count; i++)
                 {
                     TFormat value = new TFormat();
                     value.Serialize(this);

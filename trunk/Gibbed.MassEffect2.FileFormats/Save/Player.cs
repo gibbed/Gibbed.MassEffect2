@@ -1,7 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
-using Gibbed.Helpers;
+using System.IO;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
