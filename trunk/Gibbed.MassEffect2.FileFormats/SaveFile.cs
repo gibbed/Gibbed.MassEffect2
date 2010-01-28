@@ -35,8 +35,8 @@ namespace Gibbed.MassEffect2.FileFormats
         public List<Save.Unknown00BB0C50> Unknown0D8;
         public List<Save.Unknown00BAB140> Unknown0E4;
         public Save.Unknown005BAF20 Unknown0F0;
-        public Save.Unknown00BAF1D0 Unknown0FC; // player character
-        public List<Save.Unknown00BAEFF0> Unknown2B0; // followers
+        public Save.Player Player; // player character
+        public List<Save.Henchman> Henchmen; // followers
         public Save.Unknown00BAE5B0 Unknown2C8;
         public Save.Unknown00BAE040 Unknown320;
         public Save.Unknown00BAE380 Unknown2BC;
@@ -66,8 +66,8 @@ namespace Gibbed.MassEffect2.FileFormats
             stream.Serialize<Save.Unknown00BB0C50>(ref this.Unknown0D8);
             stream.Serialize<Save.Unknown00BAB140>(ref this.Unknown0E4);
             stream.Serialize<Save.Unknown005BAF20>(ref this.Unknown0F0);
-            stream.Serialize<Save.Unknown00BAF1D0>(ref this.Unknown0FC);
-            stream.Serialize<Save.Unknown00BAEFF0>(ref this.Unknown2B0);
+            stream.Serialize<Save.Player>(ref this.Player);
+            stream.Serialize<Save.Henchman>(ref this.Henchmen);
             stream.Serialize<Save.Unknown00BAE5B0>(ref this.Unknown2C8);
             stream.Serialize<Save.Unknown00BAE040>(ref this.Unknown320);
             stream.Serialize<Save.Unknown00BAE380>(ref this.Unknown2BC);

@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Unknown00BAEFF0 : IUnrealSerializable
+    // 00BAEFF0
+    public class Henchman : IUnrealSerializable
     {
         public string Unknown00;
         public List<Unknown00BAF170> Unknown0C;
