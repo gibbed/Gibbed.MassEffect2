@@ -18,8 +18,8 @@ namespace Gibbed.MassEffect2.FileFormats.Save
         public uint Unknown2C;
         public uint Unknown30;
         public uint Unknown34;
-        public bool Unknown38;
-        public Appearance Unknown3C;
+        public bool HasAppearance;
+        public Appearance Appearance;
 
         public void Serialize(IUnrealStream stream)
         {
@@ -37,11 +37,11 @@ namespace Gibbed.MassEffect2.FileFormats.Save
             stream.Serialize(ref this.Unknown2C);
             stream.Serialize(ref this.Unknown30);
             stream.Serialize(ref this.Unknown34);
-            stream.Serialize(ref this.Unknown38);
+            stream.Serialize(ref this.HasAppearance);
             
-            if (this.Unknown38 == true)
+            if (this.HasAppearance == true)
             {
-                stream.Serialize<Appearance>(ref this.Unknown3C);
+                stream.Serialize<Appearance>(ref this.Appearance);
             }
         }
     }
