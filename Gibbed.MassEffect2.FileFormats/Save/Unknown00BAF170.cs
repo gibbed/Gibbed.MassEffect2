@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-namespace Gibbed.MassEffect2.FileFormats.Save
+﻿namespace Gibbed.MassEffect2.FileFormats.Save
 {
     public class Unknown00BAF170 : IUnrealSerializable
     {

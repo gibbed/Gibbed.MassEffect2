@@ -1,27 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using Gibbed.Helpers;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
     public class Unknown00BAF8E0 : IUnrealSerializable
     {
         public byte Unknown00;
-        public UInt32 Unknown04;
-        public UInt32 Unknown08;
-        public UInt32 Unknown0C;
-        public UInt32 Unknown10;
-        public UInt32 Unknown14;
-        public UInt32 Unknown18;
-        public UInt32 Unknown1C;
-        public UInt32 Unknown20;
-        public UInt32 Unknown24;
-        public UInt32 Unknown28;
-        public UInt32 Unknown2C;
-        public UInt32 Unknown30;
-        public UInt32 Unknown34;
+        public uint Unknown04;
+        public uint Unknown08;
+        public uint Unknown0C;
+        public uint Unknown10;
+        public uint Unknown14;
+        public uint Unknown18;
+        public uint Unknown1C;
+        public uint Unknown20;
+        public uint Unknown24;
+        public uint Unknown28;
+        public uint Unknown2C;
+        public uint Unknown30;
+        public uint Unknown34;
         public bool Unknown38;
         public Unknown00BAF9F0 Unknown3C;
 
