@@ -4,8 +4,11 @@ namespace Gibbed.MassEffect2.FileFormats.Save
 {
     public class Unknown00BAE5B0 : IUnrealSerializable
     {
-        public List<uint> Unknown00;
-        public List<uint> Unknown0C;
+        /* not floats but they don't feel like ints either */
+        public List<int> Unknown00;
+        /* game related flags probably index 313 in this list appears to be
+         * if Jacob's alternate appearance is toggled on or not */
+        public List<int> Unknown0C;
         public List<uint> Unknown18;
         public uint Unknown24;
         public List<Unknown00BAEDD0> Unknown28;

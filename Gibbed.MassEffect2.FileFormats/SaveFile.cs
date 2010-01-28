@@ -11,18 +11,18 @@ namespace Gibbed.MassEffect2.FileFormats
         public uint Checksum; // CRC32 of save data (from start) to before CRC32 value
 
         public string Unknown054;
-        public uint Unknown07C;
+        public float TimePlayed; // +07C  time played in seconds
         public uint Unknown090;
-        public string Unknown094;
+        public string Location; // +094
         public byte Unknown0A0;
         public uint Unknown0A4;
         public uint Unknown080;
-        public uint Unknown084;
-        public uint Unknown088;
-        public uint Unknown08C;
-        public uint Unknown0A8;
-        public uint Unknown0AC;
-        public uint Unknown0B0;
+        public uint LastPlayedDay; // +084
+        public uint LastPlayedMonth; // +088
+        public uint LastPlayedYear; // +08C
+        public float Unknown0A8;
+        public float Unknown0AC;
+        public float Unknown0B0;
         public uint Unknown0B4;
         public uint Unknown0B8;
         public uint Unknown0BC;
@@ -33,25 +33,25 @@ namespace Gibbed.MassEffect2.FileFormats
         public List<Save.Unknown00BB0C50> Unknown0D8;
         public List<Save.Unknown00BAB140> Unknown0E4;
         public Save.Unknown005BAF20 Unknown0F0;
-        public Save.Player Player;
-        public List<Save.Henchman> Henchmen;
+        public Save.Player Player; // +0FC
+        public List<Save.Henchman> Henchmen; // +2B0
         public Save.Unknown00BAE5B0 Unknown2C8;
         public Save.Unknown00BAE040 Unknown320;
         public Save.Unknown00BAE380 Unknown2BC;
-        public List<Save.DownloadableContent> Unknown03C;
+        public List<Save.DownloadableContent> DlcRequiredToLoad; // +03C
 
         protected void Serialize(IUnrealStream stream)
         {
             stream.Serialize(ref this.Unknown054);
-            stream.Serialize(ref this.Unknown07C);
+            stream.Serialize(ref this.TimePlayed);
             stream.Serialize(ref this.Unknown090);
-            stream.Serialize(ref this.Unknown094);
+            stream.Serialize(ref this.Location);
             stream.Serialize(ref this.Unknown0A0);
             stream.Serialize(ref this.Unknown0A4);
             stream.Serialize(ref this.Unknown080);
-            stream.Serialize(ref this.Unknown084);
-            stream.Serialize(ref this.Unknown088);
-            stream.Serialize(ref this.Unknown08C);
+            stream.Serialize(ref this.LastPlayedDay);
+            stream.Serialize(ref this.LastPlayedMonth);
+            stream.Serialize(ref this.LastPlayedYear);
             stream.Serialize(ref this.Unknown0A8);
             stream.Serialize(ref this.Unknown0AC);
             stream.Serialize(ref this.Unknown0B0);
@@ -69,7 +69,7 @@ namespace Gibbed.MassEffect2.FileFormats
             stream.Serialize<Save.Unknown00BAE5B0>(ref this.Unknown2C8);
             stream.Serialize<Save.Unknown00BAE040>(ref this.Unknown320);
             stream.Serialize<Save.Unknown00BAE380>(ref this.Unknown2BC);
-            stream.Serialize<Save.DownloadableContent>(ref this.Unknown03C);
+            stream.Serialize<Save.DownloadableContent>(ref this.DlcRequiredToLoad);
         }
 
         public static SaveFile Load(Stream input)
