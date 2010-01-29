@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
@@ -16,6 +13,14 @@ namespace Gibbed.MassEffect2.FileFormats.Save
             stream.Serialize(ref this.Pitch);
             stream.Serialize(ref this.Yaw);
             stream.Serialize(ref this.Roll);
+        }
+
+        public override string ToString()
+        {
+            return String.Format("{0}, {1}, {2}",
+                this.Pitch,
+                this.Yaw,
+                this.Roll);
         }
     }
 }

@@ -5,7 +5,7 @@ using System.IO;
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
     // 00BAF1D0
-    public class Player : IUnrealSerializable
+    public partial class Player : IUnrealSerializable
     {
         public bool IsFemale; // +000
         public string PlayerClassName; // +004

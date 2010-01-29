@@ -11,7 +11,7 @@ namespace Gibbed.MassEffect2.FileFormats
         public uint Checksum; // CRC32 of save data (from start) to before CRC32 value
 
         public string DebugName; // +054
-        public float SecondsPlayed; // +07C  time played in seconds
+        public float SecondsPlayed; // +07C  Time played in seconds
         public int Disc; // +090
         public string BaseLevelName; // +094
         public Save.DifficultyOptions Difficulty; // +0A0
