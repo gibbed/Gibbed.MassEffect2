@@ -5,7 +5,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
     // 00BAE040
     public class ME1PlotTable : IUnrealSerializable
     {
-        public List<bool> BoolVariables; // +00  ... maybe needs to be List<int>
+        public List<int> BoolVariables; // +00  ... maybe needs to be List<int>
         public List<int> IntVariables; // +0C
         public List<float> FloatVariables; // +18
 
