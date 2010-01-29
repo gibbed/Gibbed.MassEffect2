@@ -228,7 +228,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
 
         [EditorBrowsable(EditorBrowsableState.Never)]
         [Category("Resources")]
-        [DisplayName("xxx")]
+        [DisplayName("Current Fuel")]
         public float property_CurrentFuel
         {
             get { return this.CurrentFuel; }
