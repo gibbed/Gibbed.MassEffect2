@@ -24,6 +24,11 @@ namespace Gibbed.MassEffect2.SaveEdit
         {
             this.InitializeComponent();
 
+            this.Text += String.Format(
+                " (Build revision {0} @ {1})",
+                SVN.Revision,
+                SVN.Date);
+
             string savePath;
             savePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             savePath = Path.Combine(savePath, "BioWare");

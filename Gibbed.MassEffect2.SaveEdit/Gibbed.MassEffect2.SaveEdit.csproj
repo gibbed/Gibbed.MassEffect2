@@ -12,7 +12,7 @@
     <AssemblyName>Gibbed.MassEffect2.SaveEdit</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>Pink.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Pink.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,6 +79,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SVN.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\New.png" />
@@ -90,9 +91,7 @@
     <None Include="Resources\Default_Female.pcsav" />
     <None Include="Resources\Default_Male.pcsav" />
     <None Include="Resources\Save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Pink.ico" />
+    <None Include="Resources\Pink.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gibbed.Helpers\Gibbed.Helpers.csproj">
@@ -112,4 +111,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PreBuildEvent>cd "$(ProjectDir)"
+update_svn_revision.exe $(ProjectDir)</PreBuildEvent>
+  </PropertyGroup>
 </Project>
