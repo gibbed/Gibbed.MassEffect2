@@ -1,10 +1,15 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Vector2D : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Vector2D : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("X")]
         public float X;
+
+        [UnrealFieldDisplayName("Y")]
         public float Y;
 
         public void Serialize(IUnrealStream stream)

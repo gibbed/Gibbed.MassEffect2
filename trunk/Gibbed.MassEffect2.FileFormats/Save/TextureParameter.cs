@@ -1,10 +1,15 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class TextureParameter : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class TextureParameter : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("Name")]
         public string Name;
+
+        [UnrealFieldDisplayName("Value")]
         public string Value;
 
         public void Serialize(IUnrealStream stream)

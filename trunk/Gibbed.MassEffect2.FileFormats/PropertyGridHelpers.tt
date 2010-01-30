@@ -1,0 +1,31 @@
+<#@ template language="C#" hostspecific="True" debug="True" #>
+<#@ output extension="cs" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ include file="PropertyGridHelper.tt" #>
+<#@ import namespace="EnvDTE" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#
+	PropertyGridHelper template;
+	
+	template = new PropertyGridHelper();
+	template.Targets.Add(new PropertyGridHelperTarget("SaveFile.cs", "SaveFile"));
+	// Save
+	template.Targets.Add(new PropertyGridHelperTarget("Appearance.cs", "Appearance"));
+	template.Targets.Add(new PropertyGridHelperTarget("Henchman.cs", "Henchman"));
+	template.Targets.Add(new PropertyGridHelperTarget("LinearColor.cs", "LinearColor"));
+	template.Targets.Add(new PropertyGridHelperTarget("Loadout.cs", "Loadout"));
+	template.Targets.Add(new PropertyGridHelperTarget("MorphFeature.cs", "MorphFeature"));
+	template.Targets.Add(new PropertyGridHelperTarget("MorphHead.cs", "MorphHead"));
+	template.Targets.Add(new PropertyGridHelperTarget("OffsetBone.cs", "OffsetBone"));
+	template.Targets.Add(new PropertyGridHelperTarget("Player.cs", "Player"));
+	template.Targets.Add(new PropertyGridHelperTarget("Power.cs", "Power"));
+	template.Targets.Add(new PropertyGridHelperTarget("Rotator.cs", "Rotator"));
+	template.Targets.Add(new PropertyGridHelperTarget("SaveTimeStamp.cs", "SaveTimeStamp"));
+	template.Targets.Add(new PropertyGridHelperTarget("ScalarParameter.cs", "ScalarParameter"));
+	template.Targets.Add(new PropertyGridHelperTarget("TextureParameter.cs", "TextureParameter"));
+	template.Targets.Add(new PropertyGridHelperTarget("Vector.cs", "Vector"));
+	template.Targets.Add(new PropertyGridHelperTarget("Vector2D.cs", "Vector2D"));
+	template.Targets.Add(new PropertyGridHelperTarget("VectorParameter.cs", "VectorParameter"));
+	template.Targets.Add(new PropertyGridHelperTarget("Weapon.cs", "Weapon"));
+	template.Render();
+#>

@@ -1,11 +1,18 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Rotator : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Rotator : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("Pitch")]
         public int Pitch;
+
+        [UnrealFieldDisplayName("Yaw")]
         public int Yaw;
+
+        [UnrealFieldDisplayName("Roll")]
         public int Roll;
 
         public void Serialize(IUnrealStream stream)

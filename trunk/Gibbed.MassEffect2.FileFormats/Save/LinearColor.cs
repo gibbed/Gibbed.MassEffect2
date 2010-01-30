@@ -1,12 +1,21 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class LinearColor : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class LinearColor : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("R")]
         public float R;
+
+        [UnrealFieldDisplayName("G")]
         public float G;
+
+        [UnrealFieldDisplayName("B")]
         public float B;
+
+        [UnrealFieldDisplayName("A")]
         public float A;
 
         public void Serialize(IUnrealStream stream)

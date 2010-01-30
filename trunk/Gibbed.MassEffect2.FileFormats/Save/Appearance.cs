@@ -1,26 +1,74 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BAF8E0
-    public class Appearance : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Appearance : IUnrealSerializable
     {
-        public PlayerAppearanceType CombatAppearance; // +00
-        public int CasualID; // +04
-        public int FullBodyID; // +08
-        public int TorsoID; // +0C
-        public int ShoulderID; // +10
-        public int ArmID; // +14
-        public int LegID; // +18
-        public int SpecID; // +1C
-        public int Tint1ID; // +20
-        public int Tint2ID; // +24
-        public int Tint3ID; // +28
-        public int PatternID; // +2C
-        public int PatternColorID; // +30
-        public int HelmetID; // +34
-        public bool HasMorphHead; // +38
-        public MorphHead MorphHead; // +3C
+        [UnrealFieldOffset(0x00)]
+        [UnrealFieldDisplayName("Combat Appearance")]
+        public PlayerAppearanceType CombatAppearance;
+
+        [UnrealFieldOffset(0x04)]
+        [UnrealFieldDisplayName("Casual ID")]
+        public int CasualID;
+
+        [UnrealFieldOffset(0x08)]
+        [UnrealFieldDisplayName("Full Body ID")]
+        public int FullBodyID;
+
+        [UnrealFieldOffset(0x0C)]
+        [UnrealFieldDisplayName("Torso ID")]
+        public int TorsoID;
+
+        [UnrealFieldOffset(0x10)]
+        [UnrealFieldDisplayName("Shoulder ID")]
+        public int ShoulderID;
+
+        [UnrealFieldOffset(0x14)]
+        [UnrealFieldDisplayName("Arm ID")]
+        public int ArmID;
+
+        [UnrealFieldOffset(0x18)]
+        [UnrealFieldDisplayName("Leg ID")]
+        public int LegID;
+
+        [UnrealFieldOffset(0x1C)]
+        [UnrealFieldDisplayName("Spec ID")]
+        public int SpecID;
+
+        [UnrealFieldOffset(0x20)]
+        [UnrealFieldDisplayName("Tint #1 ID")]
+        public int Tint1ID;
+
+        [UnrealFieldOffset(0x24)]
+        [UnrealFieldDisplayName("Tint #2 ID")]
+        public int Tint2ID;
+
+        [UnrealFieldOffset(0x28)]
+        [UnrealFieldDisplayName("Tint #3 ID")]
+        public int Tint3ID;
+
+        [UnrealFieldOffset(0x2C)]
+        [UnrealFieldDisplayName("Pattern ID")]
+        public int PatternID;
+
+        [UnrealFieldOffset(0x30)]
+        [UnrealFieldDisplayName("Pattern Color ID ID")]
+        public int PatternColorID;
+
+        [UnrealFieldOffset(0x34)]
+        [UnrealFieldDisplayName("Helmet ID")]
+        public int HelmetID;
+
+        [UnrealFieldOffset(0x38)]
+        [UnrealFieldDisplayName("Has Morph Head")]
+        public bool HasMorphHead;
+
+        [UnrealFieldOffset(0x3C)]
+        [UnrealFieldDisplayName("Morph Head")]
+        public MorphHead MorphHead;
 
         public void Serialize(IUnrealStream stream)
         {

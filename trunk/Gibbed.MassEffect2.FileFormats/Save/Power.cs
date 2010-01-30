@@ -1,14 +1,26 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BAF170
-    public class Power : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Power : IUnrealSerializable
     {
-        public string PowerName; // +00
-        public float CurrentRank; // +0C
-        public string PowerClassName; // +10
-        public int WheelDisplayIndex; // +1C
+        [UnrealFieldOffset(0x00)]
+        [UnrealFieldDisplayName("Name")]
+        public string PowerName;
+
+        [UnrealFieldOffset(0x0C)]
+        [UnrealFieldDisplayName("Current Rank")]
+        public float CurrentRank;
+
+        [UnrealFieldOffset(0x10)]
+        [UnrealFieldDisplayName("Class Name")]
+        public string PowerClassName;
+
+        [UnrealFieldOffset(0x1C)]
+        [UnrealFieldDisplayName("Wheel Display Index")]
+        public int WheelDisplayIndex;
 
         public void Serialize(IUnrealStream stream)
         {

@@ -1,15 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class SaveTimeStamp : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class SaveTimeStamp : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("Seconds Since Midnight")]
         public int SecondsSinceMidnight;
+
+        [UnrealFieldDisplayName("Day")]
         public int Day;
+
+        [UnrealFieldDisplayName("Month")]
         public int Month;
+
+        [UnrealFieldDisplayName("Year")]
         public int Year;
 
         public void Serialize(IUnrealStream stream)

@@ -1,14 +1,36 @@
-﻿namespace Gibbed.MassEffect2.FileFormats.Save
+﻿using System;
+using System.ComponentModel;
+
+namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BB0B60
-    public class Weapon : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Weapon : IUnrealSerializable
     {
-        public string WeaponClassName; // +00
-        public int AmmoUsedCount; // +0C
-        public int TotalAmmo; // +10
-        public bool CurrentWeapon; // +14.0
-        public bool LastWeapon; // +14.1
-        public string AmmoPowerName; // +18
+        [UnrealFieldOffset(0x00)]
+        [UnrealFieldDisplayName("Class Name")]
+        public string WeaponClassName;
+
+        [UnrealFieldOffset(0x0C)]
+        [UnrealFieldDisplayName("Ammo Used Count")]
+        public int AmmoUsedCount;
+
+        [UnrealFieldOffset(0x10)]
+        [UnrealFieldDisplayName("Ammo Total")]
+        public int TotalAmmo;
+
+        [UnrealFieldOffset(0x14)]
+        [UnrealFieldIndex(0)]
+        [UnrealFieldDisplayName("Current Weapon")]
+        public bool CurrentWeapon;
+
+        [UnrealFieldOffset(0x14)]
+        [UnrealFieldIndex(1)]
+        [UnrealFieldDisplayName("Last Weapon")]
+        public bool LastWeapon;
+
+        [UnrealFieldOffset(0x18)]
+        [UnrealFieldDisplayName("Ammo Power Name")]
+        public string AmmoPowerName;
 
         public void Serialize(IUnrealStream stream)
         {
@@ -22,6 +44,11 @@
             {
                 stream.Serialize(ref this.AmmoPowerName);
             }
+        }
+
+        public override string ToString()
+        {
+            return this.WeaponClassName;
         }
     }
 }

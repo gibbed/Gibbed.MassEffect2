@@ -5,7 +5,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
     // 00BAE5B0
     public class PlotTable : IUnrealSerializable
     {
-        public List<int> BoolVariables; // +00  ... maybe needs to be List<int>
+        public List<bool> BoolVariables; // +00  ... maybe needs to be List<int>
         public List<int> IntVariables; // +0C
         public List<float> FloatVariables; // +18
         public int QuestProgressCounter; // +24

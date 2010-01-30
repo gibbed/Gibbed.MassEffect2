@@ -1,0 +1,174 @@
+﻿<#+
+public struct PropertyGridHelperTarget
+{
+	public string ProjectItem;
+	public string Target;
+	
+	public PropertyGridHelperTarget(string projectItem, string target)
+	{
+		this.ProjectItem = projectItem;
+		this.Target = target;
+	}
+}
+
+public class PropertyGridHelper : Template
+{
+	public List<PropertyGridHelperTarget> Targets = new List<PropertyGridHelperTarget>();
+	
+	private static CodeClass FindClass(string name, CodeElements elements)
+	{
+		foreach (CodeElement element in elements)
+		{
+			if (element is CodeClass && element.Name == name)
+			{
+				return (CodeClass)element;
+			}
+			
+			CodeClass child = FindClass(name, element.Children);
+			if (child != null)
+			{
+				return child;
+			}
+		}
+		
+		return null;
+	}
+	
+	public override string TransformText()
+	{
+#>
+using System;
+using System.ComponentModel;
+
+<#+
+		foreach (PropertyGridHelperTarget target in this.Targets)
+		{
+			this.RenderTarget(target);
+		}
+		
+        return this.GenerationEnvironment.ToString();
+	}
+	
+	private void RenderTarget(PropertyGridHelperTarget victim)
+	{
+		ProjectItem projectItem =
+			TransformationContext.FindProjectItem(victim.ProjectItem);
+		
+		if (projectItem == null)
+		{
+#>
+#error Failed to find project item for <#= victim.Target #>@<#= victim.ProjectItem #>
+<#+
+			return;
+		}
+		
+		FileCodeModel codeModel = projectItem.FileCodeModel;
+		
+		CodeClass target = FindClass(victim.Target, codeModel.CodeElements);
+		if (target == null)
+		{
+#>
+#error Failed to find target for <#= victim.Target #>@<#= victim.ProjectItem #>
+<#+
+			return;
+		}
+		
+		CodeNamespace ns = target.Namespace;
+		if (ns == null)
+		{
+#>
+#error Failed to find namespace for <#= victim.Target #>@<#= victim.ProjectItem #>
+<#+
+			return;
+		}
+
+#>
+#region <#= target.FullName #>
+namespace <#= ns.FullName #>
+{
+	public partial class <#= target.Name #>
+	{
+<#+
+		foreach (CodeElement element in target.Children)
+		{
+			if (!(element is CodeVariable))
+			{
+				continue;
+			}
+				
+			CodeVariable variable = (CodeVariable)element;
+			
+			CodeAttribute category = null;
+			CodeAttribute displayName = null;
+			CodeAttribute description = null;
+			
+			foreach (CodeAttribute attribute in variable.Attributes)
+			{
+				if (attribute.FullName == "Gibbed.MassEffect2.FileFormats.UnrealFieldCategoryAttribute")
+				{
+					category = attribute;
+				}
+				else if (attribute.FullName == "Gibbed.MassEffect2.FileFormats.UnrealFieldDisplayNameAttribute")
+				{
+					displayName = attribute;
+				}
+				else if (attribute.FullName == "Gibbed.MassEffect2.FileFormats.UnrealFieldDescriptionAttribute")
+				{
+					description = attribute;
+				}
+			}
+			
+			if (category != null || displayName != null || description != null)
+			{
+				if (category != null)
+				{
+#>
+		[Category(<#= category.Value #>)]
+<#+
+				}
+
+				if (displayName == null)
+				{
+#>
+		[DisplayName("<#= variable.Name #>")]
+<#+
+				}
+				else
+				{
+#>
+		[DisplayName(<#= displayName.Value #>)]
+<#+
+				}
+				
+				if (description != null)
+				{
+#>
+		[Description(<#= description.Value #>)]
+<#+
+				}
+				
+				if (variable.Type.AsFullName == "System.Collections.Generic.List<System.String>")
+				{
+#>
+		[Editor(@"System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))]
+<#+
+				}
+
+#>
+		public <#= variable.Type.AsFullName #> _property_<#= variable.Name #>
+		{
+			get { return this.<#= variable.Name #>; }
+			set { this.<#= variable.Name #> = value; }
+		}
+
+<#+
+			}
+		}
+#>
+	}
+}
+#endregion
+<#+
+	}
+}
+#>
