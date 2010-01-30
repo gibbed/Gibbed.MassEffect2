@@ -1,15 +1,34 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BAEFF0
-    public class Henchman : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Henchman : IUnrealSerializable
     {
-        public string Tag; // +00
-        public List<Power> Powers; // +0C
-        public int CharacterLevel; // +18
-        public int TalentPoints; // +1C
-        public Loadout LoadoutWeapons; // +20
+        [UnrealFieldOffset(0x00)]
+        [UnrealFieldDisplayName("Tag")]
+        public string Tag;
+
+        [UnrealFieldOffset(0x0C)]
+        [UnrealFieldDisplayName("Powers")]
+        public List<Power> Powers;
+
+        [UnrealFieldOffset(0x18)]
+        [UnrealFieldDisplayName("Level")]
+        public int CharacterLevel;
+
+        [UnrealFieldOffset(0x1C)]
+        [UnrealFieldDisplayName("Talent Points")]
+        public int TalentPoints;
+
+        [UnrealFieldOffset(0x20)]
+        [UnrealFieldDisplayName("Loadout")]
+        public Loadout LoadoutWeapons;
+
+        [UnrealFieldOffset(0x68)]
+        [UnrealFieldDisplayName("Mapped Power")]
         public string MappedPower; // +68
 
         public void Serialize(IUnrealStream stream)

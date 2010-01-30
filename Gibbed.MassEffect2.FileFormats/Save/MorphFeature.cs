@@ -1,10 +1,15 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class MorphFeature : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class MorphFeature : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("Feature")]
         public string Feature;
+
+        [UnrealFieldDisplayName("Offset")]
         public float Offset;
 
         public void Serialize(IUnrealStream stream)

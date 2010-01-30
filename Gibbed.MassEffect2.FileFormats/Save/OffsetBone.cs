@@ -1,10 +1,15 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class OffsetBone : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class OffsetBone : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("Name")]
         public string Name;
+
+        [UnrealFieldDisplayName("Offset")]
         public Vector Offset;
 
         public void Serialize(IUnrealStream stream)

@@ -1,39 +1,149 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Collections.Generic;
 using System.IO;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BAF1D0
+    [TypeConverter(typeof(ExpandableObjectConverter))]
     public partial class Player : IUnrealSerializable
     {
-        public bool IsFemale; // +000
-        public string PlayerClassName; // +004
-        public int Level; // +018
-        public float CurrentXP; // +01C
-        public string FirstName; // +020
-        public int LastName; // +02C
-        public OriginType Origin; // +030
-        public NotorietyType Notoriety; // +031
-        public int TalentPoints; // +034
-        public string MappedPower1; // +038
-        public string MappedPower2; // +044
-        public string MappedPower3; // +058
-        public Appearance Appearance; // +05C
-        public List<Power> Powers; // +11C 00BAF330
-        public List<Weapon> Weapons; // +128 00BAF3E0
-        public Loadout LoadoutWeapons; // +134 00BAF4F8
-        public List<HotKey> HotKeys; // +17C 00BAF5A1
-        public int Credits; // +188
-        public int Medigel; // +18C
-        public int Eezo; // +190
-        public int Iridium; // +194
-        public int Palladium; // +198
-        public int Platinum; // +19C
-        public int Probes; // +1A0
-        public float CurrentFuel; // +1A4
-        public string FaceCode; // +1A8
-        public int ClassFriendlyName; // +014
+        [UnrealFieldOffset(0x000)]
+        [UnrealFieldCategory("Player")]
+        [UnrealFieldDisplayName("Is Female")]
+        public bool IsFemale;
+
+        [UnrealFieldOffset(0x004)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Class Name")]
+        public string PlayerClassName;
+
+        [UnrealFieldOffset(0x018)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Level")]
+        public int Level;
+
+        [UnrealFieldOffset(0x01C)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Current XP")]
+        public float CurrentXP;
+
+        [UnrealFieldOffset(0x020)]
+        [UnrealFieldCategory("Player")]
+        [UnrealFieldDisplayName("First Name")]
+        public string FirstName;
+
+        [UnrealFieldOffset(0x02C)]
+        [UnrealFieldCategory("Player")]
+        [UnrealFieldDisplayName("Last Name")]
+        [UnrealFieldDescription("String ID of last name. Not actually used.")]
+        public int LastName;
+
+        [UnrealFieldOffset(0x030)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Origin")]
+        public OriginType Origin;
+
+        [UnrealFieldOffset(0x031)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Notoriety")]
+        public NotorietyType Notoriety;
+
+        [UnrealFieldOffset(0x034)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Talent Points")]
+        public int TalentPoints;
+
+        [UnrealFieldOffset(0x038)]
+        [UnrealFieldCategory("Powers")]
+        [UnrealFieldDisplayName("Mapped Power #1")]
+        public string MappedPower1;
+
+        [UnrealFieldOffset(0x044)]
+        [UnrealFieldCategory("Powers")]
+        [UnrealFieldDisplayName("Mapped Power #2")]
+        public string MappedPower2;
+
+        [UnrealFieldOffset(0x058)]
+        [UnrealFieldCategory("Powers")]
+        [UnrealFieldDisplayName("Mapped Power #3")]
+        public string MappedPower3;
+
+        [UnrealFieldOffset(0x05C)]
+        [UnrealFieldCategory("Player")]
+        [UnrealFieldDisplayName("Appearance")]
+        public Appearance Appearance;
+
+        [UnrealFieldOffset(0x11C)]
+        [UnrealFieldCategory("Powers")]
+        [UnrealFieldDisplayName("Powers")]
+        public List<Power> Powers;
+
+        [UnrealFieldOffset(0x128)]
+        [UnrealFieldCategory("Inventory")]
+        [UnrealFieldDisplayName("Weapons")]
+        public List<Weapon> Weapons;
+
+        [UnrealFieldOffset(0x134)]
+        [UnrealFieldCategory("Inventory")]
+        [UnrealFieldDisplayName("Loadout")]
+        public Loadout LoadoutWeapons;
+
+        [UnrealFieldOffset(0x17C)]
+        [UnrealFieldCategory("Other")]
+        [UnrealFieldDisplayName("HotKeys")]
+        public List<HotKey> HotKeys;
+
+        [UnrealFieldOffset(0x188)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Credits")]
+        public int Credits;
+
+        [UnrealFieldOffset(0x18C)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Medigel")]
+        public int Medigel;
+
+        [UnrealFieldOffset(0x190)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Energy Zero")]
+        public int Eezo;
+
+        [UnrealFieldOffset(0x194)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Iridium")]
+        public int Iridium;
+
+        [UnrealFieldOffset(0x198)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Palladium")]
+        public int Palladium;
+
+        [UnrealFieldOffset(0x19C)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Platinum")]
+        public int Platinum;
+
+        [UnrealFieldOffset(0x1A0)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Probes")]
+        public int Probes;
+
+        [UnrealFieldOffset(0x1A4)]
+        [UnrealFieldCategory("Resources")]
+        [UnrealFieldDisplayName("Current Fuel")]
+        public float CurrentFuel;
+
+        [UnrealFieldOffset(0x1A8)]
+        [UnrealFieldCategory("Player")]
+        [UnrealFieldDisplayName("Face Code")]
+        public string FaceCode;
+
+        [UnrealFieldOffset(0x014)]
+        [UnrealFieldCategory("Statistics")]
+        [UnrealFieldDisplayName("Class Friendly Name")]
+        [UnrealFieldDescription("String ID of the player's class.")]
+        public int ClassFriendlyName;
 
         public void Serialize(IUnrealStream stream)
         {
@@ -85,11 +195,6 @@ namespace Gibbed.MassEffect2.FileFormats.Save
             {
                 stream.Serialize(ref this.ClassFriendlyName);
             }
-        }
-
-        public void Serialize(Stream output)
-        {
-            throw new NotImplementedException();
         }
     }
 }

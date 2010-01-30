@@ -35,6 +35,8 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -46,12 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CRC32.cs" />
-    <Compile Include="Helper\Player.cs" />
-    <Compile Include="Helper\SaveFile.cs" />
     <Compile Include="IUnrealSerializable.cs" />
     <Compile Include="SaveFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IUnrealStream.cs" />
+    <Compile Include="PropertyGridHelpers.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropertyGridHelpers.tt</DependentUpon>
+    </Compile>
     <Compile Include="Save\DifficultyOptions.cs" />
     <Compile Include="Save\MorphFeature.cs" />
     <Compile Include="Save\NotorietyType.cs" />
@@ -87,6 +92,11 @@
     <Compile Include="Save\MorphHead.cs" />
     <Compile Include="Save\KismetBool.cs" />
     <Compile Include="Save\Level.cs" />
+    <Compile Include="UnrealFieldCategoryAttribute.cs" />
+    <Compile Include="UnrealFieldDescriptionAttribute.cs" />
+    <Compile Include="UnrealFieldDisplayNameAttribute.cs" />
+    <Compile Include="UnrealFieldIndexAttribute.cs" />
+    <Compile Include="UnrealFieldOffsetAttribute.cs" />
     <Compile Include="UnrealStream.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +104,20 @@
       <Project>{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}</Project>
       <Name>Gibbed.Helpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PropertyGridHelper.tt">
+    </None>
+    <None Include="PropertyGridHelpers.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>PropertyGridHelpers.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

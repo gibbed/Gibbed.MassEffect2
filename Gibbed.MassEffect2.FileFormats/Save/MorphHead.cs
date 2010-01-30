@@ -1,21 +1,55 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    // 00BAF9F0
-    public class MorphHead : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class MorphHead : IUnrealSerializable
     {
-        public string HairMesh; // +00
-        public List<string> AccessoryMeshes; // +0C 00BAFA70
-        public List<MorphFeature> MorphFeatures; // +18 00BAFB14
-        public List<OffsetBone> OffsetBones; // +24 00BAFC01
-        public List<Vector> LOD0Vertices; // +30 00BAFE30 \
-        public List<Vector> LOD1Vertices; // +3C 00BB0053  \_ LOD*Vertices (0-3)
-        public List<Vector> LOD2Vertices; // +48 00BB0280  /  assumed to be named right
-        public List<Vector> LOD3Vertices; // +54 00BB04A3 /
-        public List<ScalarParameter> ScalarParameters; // +60 00BB05E0
-        public List<VectorParameter> VectorParameters; // +6C 00BB06E0
-        public List<TextureParameter> TextureParameters; // +78 00BB0852
+        [UnrealFieldOffset(0x00)]
+        [UnrealFieldDisplayName("Hair Mesh")]
+        public string HairMesh;
+
+        [UnrealFieldOffset(0x0C)]
+        [UnrealFieldDisplayName("Accessory Meshes")]
+        public List<string> AccessoryMeshes;
+
+        [UnrealFieldOffset(0x18)]
+        [UnrealFieldDisplayName("Morph Features")]
+        public List<MorphFeature> MorphFeatures;
+
+        [UnrealFieldOffset(0x24)]
+        [UnrealFieldDisplayName("Offset Bones")]
+        public List<OffsetBone> OffsetBones;
+
+        [UnrealFieldOffset(0x30)]
+        [UnrealFieldDisplayName("LOD0 Vertices")]
+        public List<Vector> LOD0Vertices;
+        
+        [UnrealFieldOffset(0x3C)]
+        [UnrealFieldDisplayName("LOD1 Vertices")]
+        public List<Vector> LOD1Vertices;
+
+        [UnrealFieldOffset(0x48)]
+        [UnrealFieldDisplayName("LOD2 Vertices")]
+        public List<Vector> LOD2Vertices;
+
+        [UnrealFieldOffset(0x54)]
+        [UnrealFieldDisplayName("LOD3 Vertices")]
+        public List<Vector> LOD3Vertices;
+
+        [UnrealFieldOffset(0x60)]
+        [UnrealFieldDisplayName("Scalar Parameters")]
+        public List<ScalarParameter> ScalarParameters;
+
+        [UnrealFieldOffset(0x6C)]
+        [UnrealFieldDisplayName("Vector Parameters")]
+        public List<VectorParameter> VectorParameters;
+
+        [UnrealFieldOffset(0x78)]
+        [UnrealFieldDisplayName("Texture Parameters")]
+        public List<TextureParameter> TextureParameters;
 
         public void Serialize(IUnrealStream stream)
         {

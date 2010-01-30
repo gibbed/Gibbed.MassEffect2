@@ -1,17 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.ComponentModel;
 
 namespace Gibbed.MassEffect2.FileFormats.Save
 {
-    public class Loadout : IUnrealSerializable
+    [TypeConverter(typeof(ExpandableObjectConverter))]
+    public partial class Loadout : IUnrealSerializable
     {
+        [UnrealFieldDisplayName("Unknown #1")]
         public string Unknown0;
+
+        [UnrealFieldDisplayName("Unknown #2")]
         public string Unknown1;
+
+        [UnrealFieldDisplayName("Unknown #3")]
         public string Unknown2;
+
+        [UnrealFieldDisplayName("Unknown #4")]
         public string Unknown3;
+
+        [UnrealFieldDisplayName("Unknown #5")]
         public string Unknown4;
+
+        [UnrealFieldDisplayName("Unknown #6")]
         public string Unknown5;
 
         public void Serialize(IUnrealStream stream)
