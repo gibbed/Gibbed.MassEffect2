@@ -1,0 +1,47 @@
+<#@ template language="C#" hostspecific="True" debug="True" #>
+<#@ output extension="cs" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.IO" #>
+<#
+	int revision = -1;
+	string date = DateTime.Now.ToString();
+	
+	if (File.Exists(@"T:\svnwin32\svnversion.exe") == true)
+	{
+		string result;
+		
+		Process svnversion = new Process();
+		svnversion.StartInfo.WorkingDirectory = Directory.GetCurrentDirectory();
+		svnversion.StartInfo.UseShellExecute = false;
+		svnversion.StartInfo.CreateNoWindow = true;
+		svnversion.StartInfo.RedirectStandardOutput = true;
+		svnversion.StartInfo.FileName = @"T:\svnwin32\svnversion.exe";
+		svnversion.StartInfo.Arguments = "-n \"" + Host.ResolvePath("") + "\"";
+		svnversion.Start();
+		svnversion.WaitForExit();
+		result = svnversion.StandardOutput.ReadToEnd();
+		svnversion.Close();
+		
+		if (result != "exported")
+		{
+			int colon = result.IndexOf(":");
+			if (colon >= 0)
+			{
+				result = result.Substring(colon + 1);
+			}
+			
+			result = result.Trim('M', 'S', 'P');
+			int.TryParse(result, out revision);
+		}
+	}
+#>
+namespace Gibbed.MassEffect2.SaveEdit
+{
+    internal static class Version
+    {
+        public const string Id = "1.0.0.<#= revision == -1 ? 0 : revision #>";
+        public const string Revision = "<#= revision == -1 ? "Unknown" : revision.ToString() #>";
+        public const string Date = "<#= date #>";
+    }
+}

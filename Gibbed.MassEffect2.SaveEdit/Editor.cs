@@ -26,8 +26,8 @@ namespace Gibbed.MassEffect2.SaveEdit
 
             this.Text += String.Format(
                 " (Build revision {0} @ {1})",
-                SVN.Revision,
-                SVN.Date);
+                Version.Revision,
+                Version.Date);
 
             string savePath;
             savePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -44,6 +44,8 @@ namespace Gibbed.MassEffect2.SaveEdit
             MemoryStream memory = new MemoryStream(Properties.Resources.DefaultMale);
             FileFormats.SaveFile saveFile = FileFormats.SaveFile.Load(memory);
             this.SaveFile = saveFile;
+
+            this.mainTabControl.SelectedTab = this.rawTabPage;
         }
 
         private void OnNewMale(object sender, EventArgs e)
