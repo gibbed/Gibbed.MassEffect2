@@ -188,7 +188,7 @@
             this.headMorphFunGroupBox.Size = new System.Drawing.Size(266, 114);
             this.headMorphFunGroupBox.TabIndex = 1;
             this.headMorphFunGroupBox.TabStop = false;
-            this.headMorphFunGroupBox.Text = "Face Morph Fun Stuff!";
+            this.headMorphFunGroupBox.Text = "Head Morph Fun Stuff!";
             // 
             // headMorphFunButton
             // 
