@@ -430,12 +430,15 @@
   </category>-->
   <category name="Mass Effect 1" legacy="true">
     <notes>
-** Note: Some values (such as paragon points, origin, etc) may be coming from the ME2 character, mostly untested.
+** Note: Some values (such as paragon points, origin, etc) may be coming from the ME2 character when importing a ME2 save, mostly untested.
+
 To count as romanced someone, check their romancing flag and set their progress value to 4. Also check [Player] Romanced someone.
 To count as having pushed Garrus toward paragon or renegade path, set the progress value to 4.
 [Player] Origin values: 1 = Spacer, 2 = Colonist, 3 = Earthborn
 [Player] Notoriety values: 1 = Survivor, 2 = War Hero, 3 = Ruthless
 Paragon / renegade bonus points come from the ME2 character, so edit those values on the Player tab.
+
+You can set the End Game State under the Plot section on the Raw tab.
     </notes>
     <ints>
       <plot id="1">[Player] Origin</plot>
