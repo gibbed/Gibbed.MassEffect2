@@ -1,0 +1,11 @@
+These are the ME1 plot states that are set if you create a new game without
+importing one, everything else is false:
+
+[Virmire] Wrex killed by Ashley
+[Virmire] Rescued Ashley, if Shepard is male
+[Virmire] Rescued Kaidan, if Shepard is female
+[Citadel] Abandoned the Council
+[Citadel] Chose Udina
+[Henchmen] Garrus recruited
+[Henchmen] Wrex recruited
+[Virmire] Rana Thanoptis is dead

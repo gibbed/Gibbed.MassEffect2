@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Gibbed.MassEffect2.FileFormats
@@ -23,6 +24,7 @@ namespace Gibbed.MassEffect2.FileFormats
         void Serialize(ref List<float> values);
         void Serialize(ref List<string> values);
         void Serialize(ref List<Guid> values);
+        void Serialize(ref BitArray values);
 
         // Serializables
         void Serialize<TFormat>(ref TFormat value)

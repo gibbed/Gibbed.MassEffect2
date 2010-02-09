@@ -55,6 +55,10 @@
     <Compile Include="Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayerClass.cs" />
+    <Compile Include="PlayerNotoriety.cs" />
+    <Compile Include="PlayerOrigin.cs" />
+    <Compile Include="Plot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Editor.resx">
@@ -92,6 +96,7 @@
     <None Include="Resources\Open.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\DataSources\Gibbed.MassEffect2.FileFormats.SaveFile.datasource" />
     <None Include="Resources\Default_Female.pcsav" />
     <None Include="Resources\Default_Male.pcsav" />
     <None Include="Resources\Save.png" />
@@ -113,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Plots.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

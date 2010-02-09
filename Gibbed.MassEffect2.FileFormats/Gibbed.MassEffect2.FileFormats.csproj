@@ -58,6 +58,7 @@
       <DependentUpon>PropertyGridHelpers.tt</DependentUpon>
     </Compile>
     <Compile Include="Save\DifficultyOptions.cs" />
+    <Compile Include="Save\EndGameType.cs" />
     <Compile Include="Save\MorphFeature.cs" />
     <Compile Include="Save\NotorietyType.cs" />
     <Compile Include="Save\OriginType.cs" />

@@ -106,7 +106,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
 
         [UnrealFieldOffset(0x190)]
         [UnrealFieldCategory("Resources")]
-        [UnrealFieldDisplayName("Energy Zero")]
+        [UnrealFieldDisplayName("Element Zero")]
         public int Eezo;
 
         [UnrealFieldOffset(0x194)]

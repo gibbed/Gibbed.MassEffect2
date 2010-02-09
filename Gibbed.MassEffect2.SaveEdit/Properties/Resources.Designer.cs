@@ -88,6 +88,16 @@ namespace Gibbed.MassEffect2.SaveEdit.Properties {
             }
         }
         
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
+        ///.
+        /// </summary>
+        internal static string Plots {
+            get {
+                return ResourceManager.GetString("Plots", resourceCulture);
+            }
+        }
+        
         internal static System.Drawing.Bitmap Save {
             get {
                 object obj = ResourceManager.GetObject("Save", resourceCulture);
