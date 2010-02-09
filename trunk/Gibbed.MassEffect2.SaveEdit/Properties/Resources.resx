@@ -133,4 +133,7 @@
   <data name="DefaultFemale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Default_Female.pcsav;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Plots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plots.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

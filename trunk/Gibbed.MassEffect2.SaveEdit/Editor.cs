@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using FileFormats = Gibbed.MassEffect2.FileFormats;
 using System.IO;
 using Gibbed.Helpers;
+using System.Xml.XPath;
 
 namespace Gibbed.MassEffect2.SaveEdit
 {
@@ -17,8 +18,15 @@ namespace Gibbed.MassEffect2.SaveEdit
         private FileFormats.SaveFile SaveFile
         {
             get { return (FileFormats.SaveFile)this.rawPropertyGrid.SelectedObject; }
-            set { this.rawPropertyGrid.SelectedObject = value; }
+            set
+            {
+                this.rawPropertyGrid.SelectedObject = value;
+                this.saveFileBindingSource.DataSource = value;
+            }
         }
+
+        private List<CheckedListBox> PlotLists = new List<CheckedListBox>();
+        private List<NumericUpDown> PlotNumerics = new List<NumericUpDown>();
 
         public Editor()
         {
@@ -41,25 +49,337 @@ namespace Gibbed.MassEffect2.SaveEdit
                 this.saveFileDialog.InitialDirectory = savePath;
             }
 
-            MemoryStream memory = new MemoryStream(Properties.Resources.DefaultMale);
-            FileFormats.SaveFile saveFile = FileFormats.SaveFile.Load(memory);
-            this.SaveFile = saveFile;
+            this.AddPlotEditors();
 
-            this.mainTabControl.SelectedTab = this.rawTabPage;
+            this.playerPlayerClassNameComboBox.ValueMember = "Type";
+            this.playerPlayerClassNameComboBox.DisplayMember = "Name";
+            this.playerPlayerClassNameComboBox.DataSource = PlayerClass.GetClasses();
+
+            this.playerOriginComboBox.ValueMember = "Type";
+            this.playerOriginComboBox.DisplayMember = "Name";
+            this.playerOriginComboBox.DataSource = PlayerOrigin.GetOrigins();
+
+            this.playerNotorietyComboBox.ValueMember = "Type";
+            this.playerNotorietyComboBox.DisplayMember = "Name";
+            this.playerNotorietyComboBox.DataSource = PlayerNotoriety.GetNotorieties();
+
+            MemoryStream memory = new MemoryStream(Properties.Resources.DefaultMale);
+            this.LoadSaveFromStream(memory);
+            memory.Close();
+
+            //this.mainTabControl.SelectedTab = this.rawTabPage;
+        }
+
+        private void UpdatePlotEditors()
+        {
+            foreach (var list in this.PlotLists)
+            {
+                for (int i = 0; i < list.Items.Count; i++)
+                {
+                    var plot = list.Items[i] as Plot;
+                    if (plot == null)
+                    {
+                        continue;
+                    }
+
+                    bool value;
+
+                    if (plot.Legacy == false)
+                    {
+                        value = this.SaveFile.PlotRecord.GetBoolVariable(plot.Id);
+                    }
+                    else
+                    {
+                        value = this.SaveFile.ME1PlotRecord.GetBoolVariable(plot.Id);
+                    }
+
+                    list.SetItemChecked(i, value);
+                }
+            }
+
+            foreach (var numericUpDown in this.PlotNumerics)
+            {
+                var plot = numericUpDown.Tag as Plot;
+                if (plot == null)
+                {
+                    continue;
+                }
+
+                if (plot.Legacy == false)
+                {
+                    numericUpDown.Value = this.SaveFile.PlotRecord.GetIntVariable(plot.Id);
+                }
+                else
+                {
+                    numericUpDown.Value = this.SaveFile.ME1PlotRecord.GetIntVariable(plot.Id);
+                }
+            }
+        }
+
+        private void OnPlotFlagCheck(object sender, ItemCheckEventArgs e)
+        {
+            CheckedListBox list = sender as CheckedListBox;
+            
+            if (list == null)
+            {
+                e.NewValue = e.CurrentValue;
+                return;
+            }
+
+            Plot plot = list.Items[e.Index] as Plot;
+
+            if (plot == null)
+            {
+                e.NewValue = e.CurrentValue;
+                return;
+            }
+
+            if (plot.Legacy == true)
+            {
+                this.SaveFile.ME1PlotRecord.SetBoolVariable(plot.Id, e.NewValue == CheckState.Checked);
+            }
+            else
+            {
+                this.SaveFile.PlotRecord.SetBoolVariable(plot.Id, e.NewValue == CheckState.Checked);
+            }
+        }
+
+        private void OnPlotValueChange(object sender, EventArgs e)
+        {
+            NumericUpDown numericUpDown = sender as NumericUpDown;
+
+            if (numericUpDown == null)
+            {
+                return;
+            }
+
+            Plot plot = numericUpDown.Tag as Plot;
+
+            if (plot == null)
+            {
+                return;
+            }
+
+            if (plot.Legacy == true)
+            {
+                this.SaveFile.ME1PlotRecord.SetIntVariable(plot.Id, (int)numericUpDown.Value);
+            }
+            else
+            {
+                this.SaveFile.PlotRecord.SetIntVariable(plot.Id, (int)numericUpDown.Value);
+            }
+        }
+
+        private void AddPlotEditors()
+        {
+            var reader = new StringReader(Properties.Resources.Plots);
+            var doc = new XPathDocument(reader);
+            var nav = doc.CreateNavigator();
+
+            List<int> me1FlagIds = new List<int>();
+            List<int> me2FlagIds = new List<int>();
+            List<int> me1ValueIds = new List<int>();
+            List<int> me2ValueIds = new List<int>();
+
+            var categories = nav.Select("/categories/category");
+            while (categories.MoveNext() == true)
+            {
+                string category = categories.Current.GetAttribute("name", "");
+                string slegacy = categories.Current.GetAttribute("legacy", "");
+                bool legacy = slegacy == "" ? false : bool.Parse(slegacy);
+
+                bool multicolumn = false;
+
+                var notes = categories.Current.SelectSingleNode("notes");
+                List<Plot> flags = new List<Plot>();
+                List<Plot> values = new List<Plot>();
+
+                // bools
+                var bools = categories.Current.SelectSingleNode("bools");
+                if (bools != null)
+                {
+                    string smulticolumn = bools.GetAttribute("multicolumn", "");
+                    multicolumn = smulticolumn == "" ? true : bool.Parse(smulticolumn);
+
+                    var plots = bools.Select("plot");
+                    while (plots.MoveNext() == true)
+                    {
+                        int id = int.Parse(plots.Current.GetAttribute("id", ""));
+
+                        if (legacy == true && me1FlagIds.Contains(id) == true)
+                        {
+                            throw new Exception();
+                        }
+                        else if (legacy == false && me2FlagIds.Contains(id) == true)
+                        {
+                            throw new Exception();
+                        }
+
+                        flags.Add(new Plot(id, plots.Current.Value.Trim(), legacy));
+
+                        if (legacy == true)
+                        {
+                            me1FlagIds.Add(id);
+                        }
+                        else
+                        {
+                            me2FlagIds.Add(id);
+                        }
+                    }
+                }
+
+                // ints
+                var ints = categories.Current.SelectSingleNode("ints");
+                if (ints != null)
+                {
+                    var plots = ints.Select("plot");
+                    while (plots.MoveNext() == true)
+                    {
+                        int id = int.Parse(plots.Current.GetAttribute("id", ""));
+
+                        if (legacy == true && me1ValueIds.Contains(id) == true)
+                        {
+                            throw new Exception();
+                        }
+                        else if (legacy == false && me2ValueIds.Contains(id) == true)
+                        {
+                            throw new Exception();
+                        }
+
+                        values.Add(new Plot(id, plots.Current.Value.Trim(), legacy));
+
+                        if (legacy == true)
+                        {
+                            me1ValueIds.Add(id);
+                        }
+                        else
+                        {
+                            me2ValueIds.Add(id);
+                        }
+                    }
+                }
+
+                if (notes != null || flags.Count > 0 || values.Count > 0)
+                {
+                    TabPage masterTabPage = new TabPage();
+                    masterTabPage.Text = category;
+                    masterTabPage.UseVisualStyleBackColor = true;
+                    this.plotTabControl.TabPages.Add(masterTabPage);
+
+                    TabControl masterTabControl = new TabControl();
+                    masterTabControl.Dock = DockStyle.Fill;
+                    masterTabPage.Controls.Add(masterTabControl);
+
+                    if (notes != null)
+                    {
+                        TabPage tabPage = new TabPage();
+                        tabPage.Text = "Notes";
+                        tabPage.UseVisualStyleBackColor = true;
+                        masterTabControl.Controls.Add(tabPage);
+
+                        TextBox textBox = new TextBox();
+                        textBox.Dock = DockStyle.Fill;
+                        textBox.Multiline = true;
+                        textBox.Text = notes.Value.Trim();
+                        tabPage.Controls.Add(textBox);
+                    }
+
+                    if (flags.Count > 0)
+                    {
+                        TabPage tabPage = new TabPage();
+                        tabPage.Text = "Flags";
+                        tabPage.UseVisualStyleBackColor = true;
+                        masterTabControl.Controls.Add(tabPage);
+
+                        CheckedListBox listBox = new CheckedListBox();
+                        listBox.Dock = DockStyle.Fill;
+                        listBox.MultiColumn = multicolumn;
+                        listBox.ColumnWidth = 225;
+                        listBox.Sorted = true;
+                        listBox.ItemCheck += this.OnPlotFlagCheck;
+                        listBox.IntegralHeight = false;
+
+                        foreach (var plot in flags)
+                        {
+                            listBox.Items.Add(plot);
+                        }
+
+                        this.PlotLists.Add(listBox);
+                        tabPage.Controls.Add(listBox);
+                    }
+
+                    if (values.Count > 0)
+                    {
+                        TabPage tabPage = new TabPage();
+                        tabPage.Text = "Values";
+                        tabPage.UseVisualStyleBackColor = true;
+                        masterTabControl.Controls.Add(tabPage);
+
+                        TableLayoutPanel tableLayoutPanel = new TableLayoutPanel();
+                        tableLayoutPanel.Dock = DockStyle.Fill;
+
+                        tableLayoutPanel.ColumnCount = 2;
+                        tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(SizeType.AutoSize));
+                        tableLayoutPanel.RowCount = values.Count + 1;
+
+                        foreach (var value in values)
+                        {
+                            Label label = new Label();
+                            label.Text = value.Name + ":";
+                            label.Dock = DockStyle.Fill;
+                            label.AutoSize = true;
+                            label.TextAlign = ContentAlignment.MiddleRight;
+                            tableLayoutPanel.Controls.Add(label);
+
+                            // I am a terrible person and this is a terrible
+                            // way to do it. BUT OH WELL :)
+                            NumericUpDown numericUpDown = new NumericUpDown();
+                            numericUpDown.Minimum = int.MinValue;
+                            numericUpDown.Maximum = int.MaxValue;
+                            numericUpDown.Increment = 1;
+                            numericUpDown.Tag = value;
+                            numericUpDown.ValueChanged += this.OnPlotValueChange;
+                            tableLayoutPanel.Controls.Add(numericUpDown);
+
+                            this.PlotNumerics.Add(numericUpDown);
+                        }
+                        
+                        tabPage.Controls.Add(tableLayoutPanel);
+                    }
+
+                    if (legacy == true)
+                    {
+                        Label label = new Label();
+                        label.Dock = DockStyle.Bottom;
+                        label.AutoSize = true;
+                        label.Text = "Editing these values will only affect anything if you import this save as a new game.";
+                        masterTabPage.Controls.Add(label);
+                    }
+                }
+            }
+
+            reader.Close();
+        }
+
+        private void LoadSaveFromStream(Stream stream)
+        {
+            FileFormats.SaveFile saveFile = FileFormats.SaveFile.Load(stream);
+            this.SaveFile = saveFile;
+            this.UpdatePlotEditors();
         }
 
         private void OnNewMale(object sender, EventArgs e)
         {
             MemoryStream memory = new MemoryStream(Properties.Resources.DefaultMale);
-            FileFormats.SaveFile saveFile = FileFormats.SaveFile.Load(memory);
-            this.SaveFile = saveFile;
+            this.LoadSaveFromStream(memory);
+            memory.Close();
         }
 
         private void OnNewFemale(object sender, EventArgs e)
         {
             MemoryStream memory = new MemoryStream(Properties.Resources.DefaultFemale);
-            FileFormats.SaveFile saveFile = FileFormats.SaveFile.Load(memory);
-            this.SaveFile = saveFile;
+            this.LoadSaveFromStream(memory);
+            memory.Close();
         }
 
         private void OnOpen(object sender, EventArgs e)
@@ -70,8 +390,8 @@ namespace Gibbed.MassEffect2.SaveEdit
             }
 
             Stream input = this.openFileDialog.OpenFile();
-            FileFormats.SaveFile saveFile = FileFormats.SaveFile.Load(input);
-            this.SaveFile = saveFile;
+            this.LoadSaveFromStream(input);
+            input.Close();
         }
 
         private void OnSave(object sender, EventArgs e)
@@ -269,6 +589,30 @@ namespace Gibbed.MassEffect2.SaveEdit
                         MessageBoxIcon.Error);
                     break;
                 }
+            }
+        }
+
+        private void OnHenchmenResetPowers(object sender, EventArgs e)
+        {
+            int[] costs = new int[] { 1, 2, 3, 4 };
+
+            foreach (var henchman in this.SaveFile.HenchmanRecords)
+            {
+                int refund = 0;
+                foreach (var power in henchman.Powers.Where(p =>
+                    p.PowerName != "LoyaltyRequirement" &&
+                    p.CurrentRank >= 1 && p.CurrentRank <= 4))
+                {
+                    for (int i = 1; i < power.CurrentRank; i++)
+                    {
+                        refund += costs[i];
+                    }
+                }
+
+                henchman.Powers.RemoveAll(p =>
+                    p.PowerName != "LoyaltyRequirement" &&
+                    p.CurrentRank >= 1 && p.CurrentRank <= 4);
+                henchman.TalentPoints += refund;
             }
         }
     }

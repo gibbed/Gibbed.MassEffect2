@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Gibbed.Helpers;
@@ -320,6 +321,57 @@ namespace Gibbed.MassEffect2.FileFormats
                 foreach (Guid value in values)
                 {
                     this.Stream.WriteValueGuid(value);
+                }
+            }
+        }
+
+        public void Serialize(ref BitArray values)
+        {
+            if (this.Loading == true)
+            {
+                uint count = this.Stream.ReadValueU32();
+
+                if (count >= 0x7FFFFF)
+                {
+                    throw new Exception("sanity check");
+                }
+
+                BitArray list = new BitArray((int)(count * 32));
+
+                for (uint i = 0; i < count; i++)
+                {
+                    uint offset = i * 32;
+                    int value = this.Stream.ReadValueS32();
+
+                    for (int bit = 0; bit < 32; bit++)
+                    {
+                        list.Set((int)(offset + bit), (value & (1 << bit)) != 0);
+                    }
+                }
+
+                values = list;
+            }
+            else
+            {
+                if (values == null)
+                {
+                    throw new ArgumentNullException("values");
+                }
+
+                uint count = ((uint)values.Count + 31) / 32;
+                this.Stream.WriteValueU32(count);
+
+                for (uint i = 0; i < count; i++)
+                {
+                    uint offset = i * 32;
+                    int value = 0;
+                    
+                    for (int bit = 0; bit < 32 && offset + bit < values.Count; bit++)
+                    {
+                        value |= (values.Get((int)(offset + bit)) ? 1 : 0) << bit;
+                    }
+
+                    this.Stream.WriteValueS32(value);
                 }
             }
         }

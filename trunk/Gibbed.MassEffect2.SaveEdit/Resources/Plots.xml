@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<categories>
+  <category name="Player">
+    <bools>
+      <plot id="5978">Cosmetic surgery applied</plot>
+      <plot id="5979">Cosmetic surgery unlocked</plot>
+      <plot id="2279">Played Mass Effect 1</plot>
+      <plot id="5616">Changed difficulty</plot>
+      <plot id="6022">Ignore Grinder Achievements</plot>
+    </bools>
+  </category>
+  <category name="Henchmen">
+    <notes>Don't put extra people in your squad until after you meet The Illusive Man. There is a part of the introduction that will break (when Wilson joins your squad) if your party has Jacob and someone else in it already.</notes>
+    <bools>
+      <plot id="21">Miranda in squad</plot>
+      <plot id="22">Jacob in squad</plot>
+      <plot id="23">Jack in squad</plot>
+      <plot id="24">Legion in squad</plot>
+      <plot id="25">Kasumi in squad</plot>
+      <plot id="26">Garrus in squad</plot>
+      <plot id="27">Thane in squad</plot>
+      <plot id="28">Tali in squad</plot>
+      <plot id="29">Mordin in squad</plot>
+      <plot id="30">Grunt in squad</plot>
+      <plot id="31">Samara in squad</plot>
+      <plot id="32">Zaeed in squad</plot>
+      <plot id="33">Miranda acquired</plot>
+      <plot id="34">Jacob acquired</plot>
+      <plot id="35">Jack acquired</plot>
+      <plot id="36">Legion acquired</plot>
+      <plot id="37">Kasumi acquired</plot>
+      <plot id="38">Garrus acquired</plot>
+      <plot id="39">Thane acquired</plot>
+      <plot id="40">Tali acquired</plot>
+      <plot id="41">Mordin acquired</plot>
+      <plot id="42">Grunt acquired</plot>
+      <plot id="43">Samara acquired</plot>
+      <plot id="44">Zaeed acquired</plot>
+
+      <plot id="177">Miranda is loyal</plot>
+      <plot id="178">Jacob is loyal</plot>
+      <plot id="179">Jack is loyal</plot>
+      <plot id="180">Legion is loyal</plot>
+      
+      <plot id="182">Kasumi is loyal</plot>
+      <plot id="183">Garrus is loyal</plot>
+      <plot id="185">Thane is loyal</plot>
+      <plot id="186">Tali is loyal</plot>
+      <plot id="188">Mordin is loyal</plot>
+      <plot id="189">Grunt is loyal</plot>
+      
+      <plot id="191">Samara is loyal</plot>
+      <plot id="192">Zaeed is loyal</plot>
+      
+      <plot id="195">Miranda is dead</plot>
+      <plot id="196">Jacob is dead</plot>
+      <plot id="197">Jack is dead</plot>
+      <plot id="198">Legion is dead</plot>
+      <plot id="199">Kasumi is dead</plot>
+      <plot id="200">Garrus is dead</plot>
+      <plot id="201">Thane is dead</plot>
+      <plot id="202">Tali is dead</plot>
+      <plot id="203">Mordin is dead</plot>
+      <plot id="204">Grunt is dead</plot>
+      <plot id="205">Samara is dead</plot>
+      <plot id="206">Zaeed is dead</plot>
+      <plot id="207">Miranda is selectable</plot>
+      <plot id="208">Jacob is selectable</plot>
+      <plot id="209">Jack is selectable</plot>
+      <plot id="210">Legion is selectable</plot>
+      <plot id="211">Kasumi is selectable</plot>
+      <plot id="212">Garrus is selectable</plot>
+      <plot id="213">Thane is selectable</plot>
+      <plot id="214">Tali is selectable</plot>
+      <plot id="215">Mordin is selectable</plot>
+      <plot id="216">Grunt is selectable</plot>
+      <plot id="217">Samara is selectable</plot>
+      <plot id="218">Zaeed is selectable</plot>
+      <plot id="219">Miranda is specialized</plot>
+      <plot id="220">Jacob is specialized</plot>
+      <plot id="221">Jack is specialized</plot>
+      <plot id="222">Legion is specialized</plot>
+      <plot id="223">Kasumi is specialized</plot>
+      <plot id="224">Garrus is specialized</plot>
+      <plot id="225">Thane is specialized</plot>
+      <plot id="226">Tali is specialized</plot>
+      <plot id="227">Mordin is specialized</plot>
+      <plot id="228">Grunt is specialized</plot>
+      <plot id="229">Samara is specialized</plot>
+      <plot id="230">Zaeed is specialized</plot>
+
+      <plot id="312">Miranda in alternate appearance</plot>
+      <plot id="313">Jacob in alternate appearance</plot>
+      <plot id="314">Jack in alternate appearance</plot>
+      <plot id="315">Legion in alternate appearance</plot>
+      <plot id="317">Kasumi in alternate appearance</plot>
+      <plot id="318">Garrus in alternate appearance</plot>
+      <plot id="319">Thane in alternate appearance</plot>
+      <plot id="320">Tali in alternate appearance</plot>
+      <plot id="321">Mordin in alternate appearance</plot>
+      <plot id="322">Grunt in alternate appearance</plot>
+      <plot id="323">Samara in alternate appearance</plot>
+      <plot id="324">Zaeed in alternate appearance</plot>
+
+      <plot id="1664">Samara is Morinth</plot>
+
+      <plot id="3804">Miranda was loyal</plot>
+      <plot id="3805">Jacob was loyal</plot>
+      <plot id="3806">Jack was loyal</plot>
+      <plot id="3807">Legion was loyal</plot>
+      <plot id="3808">Kasumi was loyal</plot>
+      <plot id="3809">Garrus was loyal</plot>
+      <plot id="3810">Thane was loyal</plot>
+      <plot id="3811">Tali was loyal</plot>
+      <plot id="3812">Mordin was loyal</plot>
+      <plot id="3813">Grunt was loyal</plot>
+      <plot id="3814">Samara was loyal</plot>
+      <plot id="3815">Zaeed was loyal</plot>
+
+      <plot id="5048">Jack is revealed</plot>
+      <plot id="5049">Legion is revealed</plot>
+      <plot id="5050">Kasumi is revealed</plot>
+      <plot id="5051">Garrus is revealed</plot>
+      <plot id="5052">Thane is revealed</plot>
+      <plot id="5053">Tali is revealed</plot>
+      <plot id="5054">Mordin is revealed</plot>
+      <plot id="5055">Grunt is revealed</plot>
+      <plot id="5056">Samara is revealed</plot>
+      <plot id="5057">Zaeed is revealed</plot>
+
+      <plot id="6247">Miranda 1st appearance</plot>
+      <plot id="6248">Jacob 1st appearance</plot>
+      <plot id="6249">Jack 1st appearance</plot>
+      <plot id="6250">Legion 1st appearance</plot>
+      <plot id="6251">Kasumi 1st appearance</plot>
+      <plot id="6252">Garrus 1st appearance</plot>
+      <plot id="6253">Thane 1st appearance</plot>
+      <plot id="6254">Tali 1st appearance</plot>
+      <plot id="6255">Mordin 1st appearance</plot>
+      <plot id="6256">Grunt 1st appearance</plot>
+      <plot id="6257">Samara 1st appearance</plot>
+      <plot id="6258">Zaeed 1st appearance</plot>
+      
+      <plot id="2288">Kasumi downloaded (??)</plot>
+      <plot id="2289">Zaeed downloaded (??)</plot>
+    </bools>
+  </category>
+  <!--<category name="Research">
+    <bools>
+      <plot id="68">Tec_AssaultRifle</plot>
+      <plot id="6038">Tec_AssaultRifle discovered</plot>
+      <plot id="6051">Tec_AssaultRifle unlocked</plot>
+
+      <plot id="426">Tec_AutoPistol</plot>
+      <plot id="6040">Tec_AutoPistol discovered</plot>
+      <plot id="6052">Tec_AutoPistol unlocked</plot>
+
+      <plot id="103">Tec_BioticUpgrade</plot>
+      <plot id="6041">Tec_BioticUpgrade discovered</plot>
+      <plot id="6053">Tec_BioticUpgrade unlocked</plot>
+
+      <plot id="101">Tec_GruntUpgrade</plot>
+      <plot id="6042">Tec_GruntUpgrade discovered</plot>
+      <plot id="6054">Tec_GruntUpgrade unlocked</plot>
+
+      <plot id="428">Tec_HeavyAmmo</plot>
+      <plot id="6043">Tec_HeavyAmmo discovered</plot>
+      <plot id="6055">Tec_HeavyAmmo unlocked</plot>
+
+      <plot id="69">Tec_HeavyPistol</plot>
+      <plot id="6044">Tec_HeavyPistol discovered</plot>
+      <plot id="6056">Tec_HeavyPistol unlocked</plot>
+
+      <plot id="121">Tec_LegionUpgrade</plot>
+      <plot id="6045">Tec_LegionUpgrade discovered</plot>
+      <plot id="6057">Tec_LegionUpgrade unlocked</plot>
+
+      <plot id="67">Tec_MediGel</plot>
+      <plot id="6046">Tec_MediGel discovered</plot>
+      <plot id="6058">Tec_MediGel unlocked</plot>
+
+      <plot id="73">Tec_ShepardHealth</plot>
+      <plot id="6047">Tec_ShepardHealth discovered</plot>
+      <plot id="6059">Tec_ShepardHealth unlocked</plot>
+
+      <plot id="434">Tec_Shield</plot>
+      <plot id="6048">Tec_Shield discovered</plot>
+      <plot id="6060">Tec_Shield unlocked</plot>
+
+      <plot id="71">Tec_Shotgun</plot>
+      <plot id="6049">Tec_Shotgun discovered</plot>
+      <plot id="6061">Tec_Shotgun unlocked</plot>
+
+      <plot id="72">Tec_SniperRifle</plot>
+      <plot id="6050">Tec_SniperRifle discovered</plot>
+      <plot id="6062">Tec_SniperRifle unlocked</plot>
+
+      <plot id="75">Tec_TechUpgrade</plot>
+      <plot id="6039">Tec_TechUpgrade discovered</plot>
+      <plot id="6063">Tec_TechUpgrade unlocked</plot>
+
+      <plot id="652">Tec_Facelift</plot>
+      <plot id="6141">Tec_Facelift discovered</plot>
+      <plot id="6144">Tec_Facelift unlocked</plot>
+
+      <plot id="453">Tec_AssaultRifleR1</plot>
+      <plot id="4770">Tec_AssaultRifleR1 discovered</plot>
+      <plot id="5133">Tec_AssaultRifleR1 unlocked</plot>
+
+      <plot id="451">Tec_AssaultRifleR2</plot>
+      <plot id="4771">Tec_AssaultRifleR2 discovered</plot>
+      <plot id="5134">Tec_AssaultRifleR2 unlocked</plot>
+
+      <plot id="456">Tec_AutoPistolR1</plot>
+      <plot id="4988">Tec_AutoPistolR1 discovered</plot>
+      <plot id="5135">Tec_AutoPistolR1 unlocked</plot>
+
+      <plot id="457">Tec_AutoPistolR2</plot>
+      <plot id="4990">Tec_AutoPistolR2 discovered</plot>
+      <plot id="5136">Tec_AutoPistolR2 unlocked</plot>
+
+      <plot id="458">Tec_BioticR1</plot>
+      <plot id="4991">Tec_BioticR1 discovered</plot>
+      <plot id="5154">Tec_BioticR1 unlocked</plot>
+
+      <plot id="459">Tec_BioticR2</plot>
+      <plot id="4992">Tec_BioticR2 discovered</plot>
+      <plot id="5155">Tec_BioticR2 unlocked</plot>
+
+      <plot id="427">Tec_GruntShotgun</plot>
+      <plot id="1190">Tec_GruntShotgun discovered</plot>
+      <plot id="5638">Tec_GruntShotgun unlocked</plot>
+
+      <plot id="462">Tec_HeavyPistolR1</plot>
+      <plot id="4995">Tec_HeavyPistolR1 discovered</plot>
+      <plot id="5139">Tec_HeavyPistolR1 unlocked</plot>
+
+      <plot id="463">Tec_HeavyPistolR2</plot>
+      <plot id="4996">Tec_HeavyPistolR2 discovered</plot>
+      <plot id="5140">Tec_HeavyPistolR2 unlocked</plot>
+
+      <plot id="429">Tec_JackUpgrade</plot>
+      <plot id="1181">Tec_JackUpgrade discovered</plot>
+      <plot id="5639">Tec_JackUpgrade unlocked</plot>
+
+      <plot id="116">Tec_LegionSniper</plot>
+      <plot id="1184">Tec_LegionSniper discovered</plot>
+      <plot id="5640">Tec_LegionSniper unlocked</plot>
+
+      <plot id="551">Tec_LoyaltyPower</plot>
+      <plot id="5459">Tec_LoyaltyPower discovered</plot>
+
+      <plot id="464">Tec_MedigelR1</plot>
+      <plot id="4997">Tec_MedigelR1 discovered</plot>
+      <plot id="5141">Tec_MedigelR1 unlocked</plot>
+
+      <plot id="465">Tec_MedigelR2</plot>
+      <plot id="4998">Tec_MedigelR2 discovered</plot>
+      <plot id="5142">Tec_MedigelR2 unlocked</plot>
+
+      <plot id="432">Tec_MordinUpgrade</plot>
+      <plot id="4480">Tec_MordinUpgrade discovered</plot>
+      <plot id="5641">Tec_MordinUpgrade unlocked</plot>
+
+      <plot id="114">Tec_ShipArmor</plot>
+      <plot id="1183">Tec_ShipArmor discovered</plot>
+      <plot id="5642">Tec_ShipArmor unlocked</plot>
+
+      <plot id="435">Tec_ShipFuel</plot>
+      <plot id="1186">Tec_ShipFuel discovered</plot>
+      <plot id="5644">Tec_ShipFuel unlocked</plot>
+
+      <plot id="117">Tec_ShipGun</plot>
+      <plot id="1182">Tec_ShipGun discovered</plot>
+      <plot id="5645">Tec_ShipGun unlocked</plot>
+
+      <plot id="111">Tec_ShipProbes</plot>
+      <plot id="1195">Tec_ShipProbes discovered</plot>
+      <plot id="5646">Tec_ShipProbes unlocked</plot>
+
+      <plot id="436">Tec_ShipScanner</plot>
+      <plot id="1188">Tec_ShipScanner discovered</plot>
+      <plot id="5647">Tec_ShipScanner unlocked</plot>
+
+      <plot id="110">Tec_ShipShield</plot>
+      <plot id="1192">Tec_ShipShield discovered</plot>
+      <plot id="5648">Tec_ShipShield unlocked</plot>
+
+      <plot id="548">Tec_Retrain</plot>
+      <plot id="5458">Tec_Retrain discovered</plot>
+
+      <plot id="466">Tec_ShepardR1</plot>
+      <plot id="4999">Tec_ShepardR1 discovered</plot>
+      <plot id="5144">Tec_ShepardR1 unlocked</plot>
+
+      <plot id="467">Tec_ShepardR2</plot>
+      <plot id="5000">Tec_ShepardR2 discovered</plot>
+      <plot id="5145">Tec_ShepardR2 unlocked</plot>
+
+      <plot id="468">Tec_ShieldR1</plot>
+      <plot id="5007">Tec_ShieldR1 discovered</plot>
+      <plot id="5146">Tec_ShieldR1 unlocked</plot>
+
+      <plot id="469">Tec_ShieldR2</plot>
+      <plot id="5008">Tec_ShieldR2 discovered</plot>
+      <plot id="5147">Tec_ShieldR2 unlocked</plot>
+
+      <plot id="470">Tec_ShotgunR1</plot>
+      <plot id="5001">Tec_ShotgunR1 discovered</plot>
+      <plot id="5152">Tec_ShotgunR1 unlocked</plot>
+
+      <plot id="471">Tec_ShotgunR2</plot>
+      <plot id="5002">Tec_ShotgunR2 discovered</plot>
+      <plot id="5153">Tec_ShotgunR2 unlocked</plot>
+
+      <plot id="474">Tec_SniperRifleR1</plot>
+      <plot id="5003">Tec_SniperRifleR1 discovered</plot>
+      <plot id="5148">Tec_SniperRifleR1 unlocked</plot>
+
+      <plot id="475">Tec_SniperRifleR2</plot>
+      <plot id="5004">Tec_SniperRifleR2 discovered</plot>
+      <plot id="5149">Tec_SniperRifleR2 unlocked</plot>
+
+      <plot id="472">Tec_TechR1</plot>
+      <plot id="5005">Tec_TechR1 discovered</plot>
+      <plot id="5150">Tec_TechR1 unlocked</plot>
+
+      <plot id="473">Tec_TechR2</plot>
+      <plot id="5006">Tec_TechR2 discovered</plot>
+      <plot id="5151">Tec_TechR2 unlocked</plot>
+
+      <plot id="460">Wpn_MissileLauncher</plot>
+      <plot id="4993">Wpn_MissileLauncher discovered</plot>
+      <plot id="5137">Wpn_MissileLauncher unlocked</plot>
+
+      <plot id="461">Wpn_CryoBlaster</plot>
+      <plot id="4994">Wpn_CryoBlaster discovered</plot>
+      <plot id="5138">Wpn_CryoBlaster unlocked</plot>
+
+      <plot id="496">Wpn_NukeLauncher</plot>
+      <plot id="5291">Wpn_NukeLauncher discovered</plot>
+      <plot id="5290">Wpn_NukeLauncher unlocked</plot>
+    </bools>
+  </category>
+  <category name="Mission Rewards">
+    <bools>
+      <plot id="5794">ProCer</plot>
+      <plot id="5795">ProFre</plot>
+      <plot id="5796">HorCr1</plot>
+      <plot id="5797">ShpCr2</plot>
+      <plot id="5798">EndGm1</plot>
+      <plot id="5799">EndGm2_1</plot>
+      <plot id="5800">EndGm2_2</plot>
+      <plot id="5801">EndGm2_3</plot>
+      <plot id="5802">BchLmL</plot>
+      <plot id="5803">BlbGtl</plot>
+      <plot id="5804">CitAsL</plot>
+      <plot id="5805">JunCvL</plot>
+      <plot id="5806">KroKgL</plot>
+      <plot id="5807">KroPrL</plot>
+      <plot id="5808">OmgMwL</plot>
+      <plot id="5809">QuaTlL</plot>
+      <plot id="5810">TwrVxL</plot>
+      <plot id="5811">CitGrL</plot>
+      <plot id="5812">JnkKgA</plot>
+      <plot id="5813">OmgGrA</plot>
+      <plot id="5814">OmgPrA</plot>
+      <plot id="5815">PrsCvA</plot>
+      <plot id="5816">RprGtA</plot>
+      <plot id="5817">SunTlA</plot>
+      <plot id="5818">TwrAsA</plot>
+      <plot id="5819">TwrMwA</plot>
+      <plot id="5820">N7Shipwreck</plot>
+      <plot id="5821">N7Ruins</plot>
+      <plot id="5822">N7DriveBy</plot>
+      <plot id="5823">N7Spdr1</plot>
+      <plot id="5824">N7Spdr2</plot>
+      <plot id="5825">N7Spdr3</plot>
+      <plot id="5826">N7Geth2</plot>
+      <plot id="5827">N7BldInv1</plot>
+      <plot id="5828">N7VIQ1</plot>
+      <plot id="5829">N7BldInv2</plot>
+      <plot id="5830">N7VIQ3</plot>
+      <plot id="5831">N7Geth1</plot>
+      <plot id="5832">N7VIQ2</plot>
+      <plot id="5833">N7Crsh</plot>
+      <plot id="5834">N7mine</plot>
+      <plot id="5835">n7mmnt1</plot>
+      <plot id="5836">n7mmnt2</plot>
+      <plot id="5837">n7mmnt3</plot>
+      <plot id="5838">n7mmnt4</plot>
+      <plot id="5839">n7mmnt5</plot>
+      <plot id="5840">n7mmnt6</plot>
+      <plot id="5841">n7mmnt7</plot>
+      <plot id="5842">n7mmnt8</plot>
+      <plot id="5843">n7mmnt10</plot>
+      <plot id="5844">Astrosmash</plot>
+      <plot id="5845">norcook</plot>
+      <plot id="5846">nordoc</plot>
+      <plot id="5847">noreng</plot>
+      <plot id="5848">twrhack</plot>
+      <plot id="5849">twrobs</plot>
+      <plot id="5850">twrrose</plot>
+      <plot id="5851">twrconrad</plot>
+      <plot id="5852">twrferos</plot>
+      <plot id="5853">twrgianna</plot>
+      <plot id="5854">twrslave</plot>
+      <plot id="5855">twrlocket</plot>
+      <plot id="5856">twrfamily</plot>
+      <plot id="5857">twrgoods</plot>
+      <plot id="5858">omgish</plot>
+      <plot id="5859">omgoracle</plot>
+      <plot id="5860">omgsun</plot>
+      <plot id="5861">omgbekke</plot>
+      <plot id="5862">omgaria</plot>
+      <plot id="5863">asaworkers</plot>
+      <plot id="5864">kroratch</plot>
+      <plot id="5865">kromech</plot>
+      <plot id="5866">citfish</plot>
+      <plot id="5867">citquarian</plot>
+      <plot id="5868">citreport</plot>
+      <plot id="5869">citasari</plot>
+      <plot id="5870">mwaelnora</plot>
+      <plot id="5871">mwapitne</plot>
+      <plot id="5873">prabatarian</plot>
+      <plot id="5874">pradaniel</plot>
+      <plot id="5875">prlbrain</plot>
+    </bools>
+  </category>-->
+  <category name="Mass Effect 1" legacy="true">
+    <notes>
+** Note: Some values (such as paragon points, origin, etc) may be coming from the ME2 character, mostly untested.
+To count as romanced someone, check their romancing flag and set their progress value to 4. Also check [Player] Romanced someone.
+To count as having pushed Garrus toward paragon or renegade path, set the progress value to 4.
+[Player] Origin values: 1 = Spacer, 2 = Colonist, 3 = Earthborn
+[Player] Notoriety values: 1 = Survivor, 2 = War Hero, 3 = Ruthless
+Paragon / renegade bonus points come from the ME2 character, so edit those values on the Player tab.
+    </notes>
+    <ints>
+      <plot id="1">[Player] Origin</plot>
+      <plot id="2">[Player] Notoriety</plot>
+      <plot id="47">[Player] Paragon points</plot>
+      <plot id="46">[Player] Renegade points</plot>
+      <plot id="39">[Citadel: Scan the Keepers] Number of keepers scanned</plot>
+      <plot id="17">[Player] Romance progress with Ashley</plot>
+      <plot id="15">[Player] Romance progress with Kaidan</plot>
+      <plot id="16">[Player] Romance progress with Liara</plot>
+      <plot id="37">[Henchmen] Garrus pushed toward C-Sec progress (paragon)</plot>
+      <plot id="38">[Henchmen] Garrus pushed toward Spectres progress (renegade)</plot>
+    </ints>
+    <bools multicolumn="false">
+      <plot id="3941">[Henchmen] Garrus recruited</plot>
+      <plot id="3942">[Henchmen] Wrex recruited</plot>
+
+      <plot id="4281">[Player] Romancing Ashley</plot>
+      <plot id="3960">[Player] Romancing Kaidan</plot>
+      <plot id="4169">[Player] Romancing Liara</plot>
+      <plot id="6528">[Player] Romanced someone</plot>
+      
+      <plot id="4596">[Tali and the Geth] Gave Tali a copy of the data found in UNC: Geth Incursions</plot>
+      
+      <plot id="4768">[Citadel: The Fourth Estate] Punched her</plot>
+      <plot id="4767">[Citadel: The Fourth Estate] Excused themself (looked good)</plot>
+      <plot id="4766">[Citadel: The Fourth Estate] Refused interview (looked bad)</plot>
+      
+      <plot id="3979">[Citadel] Talked to Harkin</plot>
+
+      <plot id="5853">[Citadel: Asari Consort] Completed quest</plot>
+      <plot id="4032">[Citadel: Asari Consort] Received Trinket</plot>
+      <plot id="7015">[Citadel: Asari Consort] Used Trinket on Eletania</plot>
+      
+      <plot id="7270">[Citadel] Released Fist</plot>
+      <plot id="4731">[Citadel: The Fan] Met Conrad Verner</plot>
+      <plot id="4914">[Citadel: The Fan] Charmed him</plot>
+      <plot id="4915">[Citadel: The Fan] Got him killed</plot>
+      <plot id="4913">[Citadel: The Fan] Intimidated him</plot>
+      <plot id="2514">[Feros] Too many colonists killed</plot>
+      <plot id="2490">[Feros] Intimidated Ethan Jeong</plot>
+      <plot id="2491">[Feros] Convinced Ethan Jeong</plot>
+      <plot id="4133">[Feros] Released Shiala</plot>
+      <plot id="3798">[Feros] Killed Shiala</plot>
+      <plot id="2713">[Noveria] Betrayed Gianna Parasini</plot>
+      <plot id="2690">[Noveria] Gave evidence to Gianna Parasini</plot>
+      <plot id="2687">[Noveria] Gave evidence to Lorik Qui'in</plot>
+      <plot id="2587">[Noveria] Rachni Queen released</plot>
+      <plot id="3828">[Virmire] Rescued Kaidan</plot>
+      <plot id="3827">[Virmire] Rescued Ashley</plot>
+      <plot id="3029">[Virmire] Wrex killed by Shepard</plot>
+      <plot id="3028">[Virmire] Wrex killed by Ashley</plot>
+      <plot id="5543">[Virmire] Wrex killed by Ashley, without permission</plot>
+      <plot id="4464">[Virmire: Assisting Kirrahe's Team] Geth flyers disabled</plot>
+      <plot id="4459">[Virmire: Assisting Kirrahe's Team] Geth flyers reported</plot>
+      <plot id="6058">[Virmire] Killed Rana Thanoptis</plot>
+      <plot id="5434">[Citadel] Chose Udina</plot>
+      <plot id="5435">[Citadel] Chose Anderson</plot>
+      <plot id="3001">[Citadel] Saved the Council</plot>
+      <plot id="3002">[Citadel] Abandoned the Council</plot>
+
+      <plot id="4608">"Fought Cerberus" ??? maybe -> [UNC: Hades' Dogs] Found files</plot>
+      <plot id="5885">"Heard of Cerberus" ??? maybe -> [UNC: Cerberus] Obtained quest</plot>
+      
+      <plot id="7164">[Contract and Licenses] Got Elkoss Combine license</plot>
+      
+      <plot id="6848">[UNC: Asari Diplomacy] Killed sister</plot>
+      <plot id="4621">[UNC: Asari Diplomacy] Met Nassana</plot>
+      <plot id="5014">[UNC: Hostile Takeover] Accepted money</plot>
+      <plot id="5015">[UNC: Hostile Takeover] Persuaded criminal to disband gang</plot>
+      
+      <plot id="7156">[Player] Rich</plot>
+      
+      <plot id="3872">[Citadel: Doctor Michel] Persuaded blackmailer</plot>
+      <plot id="3873">[Citadel: Doctor Michel] Killed blackmailer</plot>
+      <plot id="6922">[Citadel: Scan the Keepers] Accepted quest</plot>
+      <plot id="3880">[Citadel: Scan the Keepers] Killed Chorban</plot>
+      <plot id="3881">[Citadel: Scan the Keepers] Scared off Chorban</plot>
+      
+      <plot id="4948">[Citadel] RP105a_Expose_Quest_Completed_Gave_Info</plot>
+      
+      <plot id="4820">[Citadel: Homecoming] Returned body</plot>
+      <plot id="4926">[Citadel: Old, Unhappy, Far-Off Things] Spoke to Mom</plot>
+      <plot id="4861">[Citadel: I Remember Me] Talked Talitha down</plot>
+      <plot id="4862">[Citadel: I Remember Me] Bait and switch</plot>
+      <plot id="4847">[Citadel: Old Friends] Met Finch</plot>
+      <plot id="4855">[Citadel: Old Friends] Killed Finch</plot>
+      
+      <plot id="6252">[Feros] Outcome_Give_Good_Plus</plot>
+      <plot id="6253">[Feros] Outcome_Give_Good</plot>
+      <plot id="6380">[Feros] Outcome_Give_Fail</plot>
+      <plot id="6254">[Feros] Outcome_Renegade</plot>
+      
+      <plot id="3860">[Noveria] Talked to Han Olar</plot>
+      
+      <plot id="4883">[UNC: Hostage] Chairman Burns died</plot>
+      <plot id="4885">[UNC: Hostage] Killed biotics</plot>
+      <plot id="4886">[UNC: Hostage] Biotics surrendered</plot>
+      
+      <plot id="5038">[UNC: Dead Scientists] Convinced Corporal Toombs</plot>
+      <plot id="5039">[UNC: Dead Scientists] Killed scientist</plot>
+      
+      <plot id="7317">[DLC: Bring Down the Sky] Humans rescued</plot>
+    </bools>
+  </category>
+</categories>

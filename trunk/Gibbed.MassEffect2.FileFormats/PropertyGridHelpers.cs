@@ -48,7 +48,7 @@ namespace Gibbed.MassEffect2.FileFormats
 
 		[Category("4. Plot")]
 		[DisplayName("End Game State")]
-		public System.Int32 _property_EndGameState
+		public Gibbed.MassEffect2.FileFormats.Save.EndGameType _property_EndGameState
 		{
 			get { return this.EndGameState; }
 			set { this.EndGameState = value; }
@@ -722,7 +722,7 @@ namespace Gibbed.MassEffect2.FileFormats.Save
 		}
 
 		[Category("Resources")]
-		[DisplayName("Energy Zero")]
+		[DisplayName("Element Zero")]
 		public System.Int32 _property_Eezo
 		{
 			get { return this.Eezo; }

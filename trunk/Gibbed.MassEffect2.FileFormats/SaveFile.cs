@@ -40,7 +40,7 @@ namespace Gibbed.MassEffect2.FileFormats
         [UnrealFieldOffset(0x0A4)]
         [UnrealFieldCategory("4. Plot")]
         [UnrealFieldDisplayName("End Game State")]
-        public int EndGameState;
+        public Save.EndGameType EndGameState;
 
         [UnrealFieldOffset(0x080)]
         [UnrealFieldCategory("1. Information")]
@@ -124,7 +124,7 @@ namespace Gibbed.MassEffect2.FileFormats
             stream.Serialize(ref this.Disc);
             stream.Serialize(ref this.BaseLevelName);
             stream.SerializeEnum(ref this.Difficulty);
-            stream.Serialize(ref this.EndGameState);
+            stream.SerializeEnum(ref this.EndGameState);
             stream.Serialize(ref this.TimeStamp);
             stream.Serialize(ref this.SaveLocation);
             stream.Serialize(ref this.SaveRotation);
