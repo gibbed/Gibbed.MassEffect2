@@ -1,0 +1,23 @@
+!!Index,Label,X,Y,Name,NameText,Colour,Colour2,NebularDensity,CloudTile,SphereIntensity,SphereSize,VisibleConditional,VisibleFunction,VisibleParameter,UsableConditional,UsableFunction,UsableParameter,Background
+1,Cluster01,0.3,0.63,135731,Serpent Nebula,4294902015,4286578816,0.5,1,3,4.2,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster03
+2,Cluster02,0.52,0.28,180756,Omega Cluster,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+3,Cluster03,0.6,0.72,191513,Local Cluster (REF),4294967295,4294967295,1,1,3,6,1,51,1,1,52,1,BIOA_GalaxyMap_T.Cluster18
+4,Cluster04,0.32,0.7,191514,Krogan DMZ,4294967295,4294967295,1,1,3,6,1,196,1,1,196,1,BIOA_GalaxyMap_T.Cluster15
+5,Cluster05,0.18,0.57,191515,Asari Homeworlds (REF),4294967295,4294967295,1,1,3,6,1,51,1,1,52,1,
+6,Cluster06,0.32,0.25,191516,Illium Economic Zone,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+7,Cluster07,0.31,0.79,191517,Turian Homeworlds (REF),4294967295,4294967295,1,1,3,6,1,51,1,1,52,1,
+8,Cluster08,0.36,0.67,191518,Salarian Homeworlds (REF),4294967295,4294967295,1,1,3,6,1,51,1,1,52,1,
+9,Cluster09,0.77,0.28,191520,Perseus Veil (REF),4294967295,4294967295,1,1,3,6,1,51,1,1,52,1,
+10,Cluster10,0.87,0.33,191530,Outer Rim,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+11,Cluster11,0.64,0.51,191532,Hawking Eta,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+12,Cluster12,0.58,0.74,191533,Horsehead Nebula,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+13,Cluster13,0.77,0.63,191534,Horizon Cluster,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+14,Cluster14,0.48,0.49,191535,Five Kiloparsec Barrier,4294967295,4294967295,1,1,3,6,1,238,1,1,238,1,BIOA_GalaxyMap_T.Cluster15
+15,Cluster15,0.7,0.21,191536,Heretic Space,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+16,Cluster16,0.73,0.43,191537,Pragia Cluster,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+17,Cluster17,0.47,0.23,191607,Korlus Cluster,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+18,Cluster18,0.67,0.8,191608,Exodus Cluster (REF),4294967295,4294967295,1,1,3,6,1,51,1,1,52,1,
+19,Cluster19,0.64,0.15,191609,Aeia Cluster,4294967295,4294967295,1,1,3,6,1,186,1,1,186,1,BIOA_GalaxyMap_T.Cluster15
+20,Cluster20,0.41,0.19,191610,Purgatory Cluster,4294967295,4294967295,1,1,3,6,1,177,1,1,177,1,BIOA_GalaxyMap_T.Cluster15
+21,Cluster21,0.5,0.16,191611,Collector Ship,4294967295,4294967295,1,1,3,6,1,51,1,1,51,1,BIOA_GalaxyMap_T.Cluster15
+22,Cluster22,0.45,0.12,191612,Migrant Fleet,4294967295,4294967295,1,1,3,6,1,192,1,1,192,1,BIOA_GalaxyMap_T.Cluster15
