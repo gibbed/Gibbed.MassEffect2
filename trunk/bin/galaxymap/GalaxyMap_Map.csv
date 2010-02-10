@@ -1,0 +1,16 @@
+!!Index,Map,StartPoint
+0,BioP_Nor,start_galaxyMap
+1,BioP_KroHub,start_arrive
+2,BioP_TwrHub,start_arrive
+3,BioP_OmgHub,start_arrive
+4,BioP_CitHub,start_arrive
+5,BioP_SunTlA,start_arrive
+6,BioP_BlbGtL,start_arrive
+7,BioP_QuaTlL,start_arrive
+8,BioP_RprGtA,start_arrive
+9,BioP_BchLmL,start_arrive
+10,BioP_EndGm1,start_arrive
+11,BioP_JunCvL,start_arrive
+12,BioP_PrsCvA,start_arrive
+13,BioP_JnkVtA,start_arrive
+14,BioP_JnkKgA,start_arrive
