@@ -9,7 +9,7 @@
     <Description>http://gib.me/</Description>
     <Copyright>Copyright © Gibbed 2021</Copyright>
     <ApplicationIcon>Resources\Application.ico</ApplicationIcon>
-    <Configurations>Debug;Release;SaveEdit Packing</Configurations>
+    <Configurations>Debug;Release;SaveEdit Packaging</Configurations>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>..\..\bin\</OutputPath>
