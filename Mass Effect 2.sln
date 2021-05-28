@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gibbed.MassEffect2.FileFormats", "projects\Gibbed.MassEffect2.FileFormats\Gibbed.MassEffect2.FileFormats.csproj", "{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gibbed.IO", "projects\Gibbed.IO\Gibbed.IO.csproj", "{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gibbed.MassEffect2.SaveEdit", "projects\Gibbed.MassEffect2.SaveEdit\Gibbed.MassEffect2.SaveEdit.csproj", "{B22C740D-E5E9-4E01-877A-C5D5431BCC28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gibbed.MassEffect2.AudioExtract", "projects\Gibbed.MassEffect2.AudioExtract\Gibbed.MassEffect2.AudioExtract.csproj", "{3874A4D0-B99D-4415-94E4-89E34E571414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SaveEdit Packing|Any CPU = SaveEdit Packing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.SaveEdit Packing|Any CPU.ActiveCfg = Release|Any CPU
+		{55DEF11F-FF97-40A9-9DD5-E69F0571E6CD}.SaveEdit Packing|Any CPU.Build.0 = Release|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.SaveEdit Packing|Any CPU.ActiveCfg = Release|Any CPU
+		{5162A9FB-4DE1-4BBF-B7A2-5E8116AB0D26}.SaveEdit Packing|Any CPU.Build.0 = Release|Any CPU
+		{B22C740D-E5E9-4E01-877A-C5D5431BCC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22C740D-E5E9-4E01-877A-C5D5431BCC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22C740D-E5E9-4E01-877A-C5D5431BCC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22C740D-E5E9-4E01-877A-C5D5431BCC28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22C740D-E5E9-4E01-877A-C5D5431BCC28}.SaveEdit Packing|Any CPU.ActiveCfg = SaveEdit Packing|Any CPU
+		{B22C740D-E5E9-4E01-877A-C5D5431BCC28}.SaveEdit Packing|Any CPU.Build.0 = SaveEdit Packing|Any CPU
+		{3874A4D0-B99D-4415-94E4-89E34E571414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3874A4D0-B99D-4415-94E4-89E34E571414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3874A4D0-B99D-4415-94E4-89E34E571414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3874A4D0-B99D-4415-94E4-89E34E571414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3874A4D0-B99D-4415-94E4-89E34E571414}.SaveEdit Packing|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24485D73-8DB4-4F6A-AF21-EB6173B9E8CF}
+	EndGlobalSection
+EndGlobal
