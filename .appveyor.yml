@@ -1,0 +1,68 @@
+version: 1.1.{build}
+
+branches:
+  only:
+    - main
+
+skip_tags: true
+skip_commits:
+  files:
+    - README.md
+    - .github/*
+
+max_jobs: 1
+
+image: Visual Studio 2019
+
+clone_folder: c:\projects\gibbed-masseffect2
+
+cache:
+  - packages -> **\packages.config
+  - '%LocalAppData%\NuGet\Cache'
+  - '%LocalAppData%\NuGet\v3-cache'
+
+install:
+  - git submodule update --init --recursive
+
+configuration:
+  - SaveEdit Packaging
+  - Debug
+
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+
+build:
+  project: Mass Effect 2.sln
+  parallel: true
+  verbosity: minimal
+
+before_build:
+  - nuget restore
+  - echo namespace Gibbed.MassEffect2.SaveEdit > projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo { >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo   using System; >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo   internal static class VersionInfo >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo   { >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - if "%CONFIGURATION%"=="SaveEdit Packaging" echo public const string Configuration = null; >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - if NOT "%CONFIGURATION%"=="SaveEdit Packaging" echo public const string Configuration = "%CONFIGURATION%"; >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo     public static readonly Version Version = new Version("%APPVEYOR_BUILD_VERSION%"); >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo     public const string Commit = "%APPVEYOR_REPO_COMMIT%"; >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo     public const string Timestamp = "%APPVEYOR_REPO_COMMIT_TIMESTAMP%"; >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo   } >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+  - echo } >> projects/Gibbed.MassEffect2.SaveEdit/VersionInfo.cs
+
+after_build:
+  - set TZ=GMT
+  - git log . > git-log.txt
+  - if NOT "%CONFIGURATION%"=="SaveEdit Packaging" 7z a -r -tzip -mx=9 -x!*/LICENSE.txt me2_all-tools_%APPVEYOR_BUILD_VERSION%.zip                    ./LICENSE.txt ./README.txt   git-log.txt bin/*.exe bin/*.dll           bin/projects
+  - if NOT "%CONFIGURATION%"=="SaveEdit Packaging" 7z a -r -tzip -mx=9 -x!*/LICENSE.txt me2_all-tools_%APPVEYOR_BUILD_VERSION%_with-debug-symbols.zip ./LICENSE.txt ./README.txt   git-log.txt bin/*.exe bin/*.dll bin/*.pdb bin/projects
+  - if     "%CONFIGURATION%"=="SaveEdit Packaging" 7z a -r -tzip -mx=9 -x!*/LICENSE.txt me2_saveedit_%APPVEYOR_BUILD_VERSION%.zip                     ./LICENSE.txt ./README.txt ./git-log.txt ./upload/*.exe                ./dist/*
+  - if     "%CONFIGURATION%"=="SaveEdit Packaging" 7z a -r -tzip -mx=9 -x!*/LICENSE.txt me2_saveedit_%APPVEYOR_BUILD_VERSION%_with-debug-symbols.zip  ./LICENSE.txt ./README.txt ./git-log.txt ./upload/*.exe ./upload/*.pdb ./dist/*
+
+artifacts:
+  - path: '*.zip'
