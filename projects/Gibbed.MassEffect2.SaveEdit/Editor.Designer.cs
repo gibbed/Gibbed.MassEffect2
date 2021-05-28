@@ -29,1039 +29,1039 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label playerFirstNameLabel;
-            System.Windows.Forms.Label playerNotorietyLabel;
-            System.Windows.Forms.Label playerOriginLabel;
-            System.Windows.Forms.Label playerPlayerClassNameLabel;
-            System.Windows.Forms.Label playerLevelLabel;
-            System.Windows.Forms.Label playerIsFemaleLabel;
-            System.Windows.Forms.Label playerPalladiumLabel;
-            System.Windows.Forms.Label playerIridiumLabel;
-            System.Windows.Forms.Label playerPlatinumLabel;
-            System.Windows.Forms.Label playerEezoLabel;
-            System.Windows.Forms.Label playerCreditsLabel;
-            System.Windows.Forms.Label _property_TalentPointsLabel;
-            System.Windows.Forms.Label playerMedigelLabel;
-            System.Windows.Forms.Label playerProbesLabel;
-            System.Windows.Forms.Label playerParagonPointsLabel;
-            System.Windows.Forms.Label playerRenegadePointsLabel;
+            System.Windows.Forms.Label _PlayerFirstNameLabel;
+            System.Windows.Forms.Label _PlayerNotorietyLabel;
+            System.Windows.Forms.Label _PlayerOriginLabel;
+            System.Windows.Forms.Label _PlayerPlayerClassNameLabel;
+            System.Windows.Forms.Label _PlayerLevelLabel;
+            System.Windows.Forms.Label _PlayerIsFemaleLabel;
+            System.Windows.Forms.Label _PlayerPalladiumLabel;
+            System.Windows.Forms.Label _PlayerIridiumLabel;
+            System.Windows.Forms.Label _PlayerPlatinumLabel;
+            System.Windows.Forms.Label _PlayerEezoLabel;
+            System.Windows.Forms.Label _PlayerCreditsLabel;
+            System.Windows.Forms.Label _TalentPointsLabel;
+            System.Windows.Forms.Label _PlayerMedigelLabel;
+            System.Windows.Forms.Label _PlayerProbesLabel;
+            System.Windows.Forms.Label _PlayerParagonPointsLabel;
+            System.Windows.Forms.Label _PlayerRenegadePointsLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
-            this.mainToolStrip = new System.Windows.Forms.ToolStrip();
-            this.newButton = new System.Windows.Forms.ToolStripDropDownButton();
-            this.newMaleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newFemaleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openButton = new System.Windows.Forms.ToolStripButton();
-            this.saveButton = new System.Windows.Forms.ToolStripButton();
-            this.mainTabControl = new System.Windows.Forms.TabControl();
-            this.playerTabPage = new System.Windows.Forms.TabPage();
-            this.playerTabControl = new System.Windows.Forms.TabControl();
-            this.playerBasicTabPage = new System.Windows.Forms.TabPage();
-            this.playerBasicResourcesGroupBox = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.playerProbesNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.saveFileBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.playerMedigelNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerCreditsNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerEezoNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerPlatinumNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerIridiumNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerPalladiumNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.playerBasicCharacterGroupBox = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.playerRenegadePointsNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerParagonPointsNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerTalentPointsNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerIsFemaleCheckBox = new System.Windows.Forms.CheckBox();
-            this.playerFirstNameTextBox = new System.Windows.Forms.TextBox();
-            this.playerNotorietyComboBox = new System.Windows.Forms.ComboBox();
-            this.playerOriginComboBox = new System.Windows.Forms.ComboBox();
-            this.playerPlayerClassNameComboBox = new System.Windows.Forms.ComboBox();
-            this.playerLevelNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.playerPowersTabPage = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.playerAppearanceTabPage = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.henchmentTabPage = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.plotTabPage = new System.Windows.Forms.TabPage();
-            this.plotTabControl = new System.Windows.Forms.TabControl();
-            this.toolboxTabPage = new System.Windows.Forms.TabPage();
-            this.toolboxHenchmenGroupBox = new System.Windows.Forms.GroupBox();
-            this.toolboxHenchmenRespec = new System.Windows.Forms.Button();
-            this.toolboxHeadMorphFunGroupBox = new System.Windows.Forms.GroupBox();
-            this.headMorphFunButton = new System.Windows.Forms.Button();
-            this.headMorphFunComboBox = new System.Windows.Forms.ComboBox();
-            this.toolboxHeadMorphFunWarningLabel = new System.Windows.Forms.Label();
-            this.toolboxHeadMorphGroupBox = new System.Windows.Forms.GroupBox();
-            this.toolboxHeadMorphWarningLabel = new System.Windows.Forms.Label();
-            this.toolboxHeadMorphImportButton = new System.Windows.Forms.Button();
-            this.toolboxHeadMorphExportButton = new System.Windows.Forms.Button();
-            this.rawTabPage = new System.Windows.Forms.TabPage();
-            this.rawPropertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.saveHeadMorphDialog = new System.Windows.Forms.SaveFileDialog();
-            this.openHeadMorphDialog = new System.Windows.Forms.OpenFileDialog();
-            playerFirstNameLabel = new System.Windows.Forms.Label();
-            playerNotorietyLabel = new System.Windows.Forms.Label();
-            playerOriginLabel = new System.Windows.Forms.Label();
-            playerPlayerClassNameLabel = new System.Windows.Forms.Label();
-            playerLevelLabel = new System.Windows.Forms.Label();
-            playerIsFemaleLabel = new System.Windows.Forms.Label();
-            playerPalladiumLabel = new System.Windows.Forms.Label();
-            playerIridiumLabel = new System.Windows.Forms.Label();
-            playerPlatinumLabel = new System.Windows.Forms.Label();
-            playerEezoLabel = new System.Windows.Forms.Label();
-            playerCreditsLabel = new System.Windows.Forms.Label();
-            _property_TalentPointsLabel = new System.Windows.Forms.Label();
-            playerMedigelLabel = new System.Windows.Forms.Label();
-            playerProbesLabel = new System.Windows.Forms.Label();
-            playerParagonPointsLabel = new System.Windows.Forms.Label();
-            playerRenegadePointsLabel = new System.Windows.Forms.Label();
-            this.mainToolStrip.SuspendLayout();
-            this.mainTabControl.SuspendLayout();
-            this.playerTabPage.SuspendLayout();
-            this.playerTabControl.SuspendLayout();
-            this.playerBasicTabPage.SuspendLayout();
-            this.playerBasicResourcesGroupBox.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.playerProbesNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saveFileBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerMedigelNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerCreditsNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerEezoNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerPlatinumNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerIridiumNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerPalladiumNumericUpDown)).BeginInit();
-            this.playerBasicCharacterGroupBox.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.playerRenegadePointsNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerParagonPointsNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerTalentPointsNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerLevelNumericUpDown)).BeginInit();
-            this.playerPowersTabPage.SuspendLayout();
-            this.playerAppearanceTabPage.SuspendLayout();
-            this.henchmentTabPage.SuspendLayout();
-            this.plotTabPage.SuspendLayout();
-            this.toolboxTabPage.SuspendLayout();
-            this.toolboxHenchmenGroupBox.SuspendLayout();
-            this.toolboxHeadMorphFunGroupBox.SuspendLayout();
-            this.toolboxHeadMorphGroupBox.SuspendLayout();
-            this.rawTabPage.SuspendLayout();
+            this._MainToolStrip = new System.Windows.Forms.ToolStrip();
+            this._NewToolStripDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
+            this._NewMaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._NewFemaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._OpenToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this._SaveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this._MainTabControl = new System.Windows.Forms.TabControl();
+            this._PlayerTabPage = new System.Windows.Forms.TabPage();
+            this._PlayerTabControl = new System.Windows.Forms.TabControl();
+            this._PlayerBasicTabPage = new System.Windows.Forms.TabPage();
+            this._PlayerBasicResourcesGroupBox = new System.Windows.Forms.GroupBox();
+            this._PlayerBasicResourcesTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._PlayerProbesNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._SaveFileBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PlayerMedigelNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerCreditsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerEezoNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerPlatinumNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerIridiumNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerPalladiumNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._GenderHeadMorphWarningLabel = new System.Windows.Forms.Label();
+            this._PlayerBasicCharacterGroupBox = new System.Windows.Forms.GroupBox();
+            this._PlayerBasicCharacterTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this._PlayerRenegadePointsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerParagonPointsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerTalentPointsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerIsFemaleCheckBox = new System.Windows.Forms.CheckBox();
+            this._PlayerFirstNameTextBox = new System.Windows.Forms.TextBox();
+            this._PlayerNotorietyComboBox = new System.Windows.Forms.ComboBox();
+            this._PlayerOriginComboBox = new System.Windows.Forms.ComboBox();
+            this._PlayerPlayerClassNameComboBox = new System.Windows.Forms.ComboBox();
+            this._PlayerLevelNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this._PlayerPowersTabPage = new System.Windows.Forms.TabPage();
+            this._PlayerPowersNotImplementedLabel = new System.Windows.Forms.Label();
+            this._PlayerAppearanceTabPage = new System.Windows.Forms.TabPage();
+            this._PlayerAppearanceNotImplementedLabel = new System.Windows.Forms.Label();
+            this._HenchmenTabPage = new System.Windows.Forms.TabPage();
+            this._HenchmenNotImplementedLabel = new System.Windows.Forms.Label();
+            this._PlotTabPage = new System.Windows.Forms.TabPage();
+            this._PlotTabControl = new System.Windows.Forms.TabControl();
+            this._ToolboxTabPage = new System.Windows.Forms.TabPage();
+            this._ToolboxHenchmenGroupBox = new System.Windows.Forms.GroupBox();
+            this._ToolboxHenchmenRespecButton = new System.Windows.Forms.Button();
+            this._ToolboxHeadMorphFunGroupBox = new System.Windows.Forms.GroupBox();
+            this._HeadMorphFunButton = new System.Windows.Forms.Button();
+            this._HeadMorphFunComboBox = new System.Windows.Forms.ComboBox();
+            this._ToolboxHeadMorphFunWarningLabel = new System.Windows.Forms.Label();
+            this._ToolboxHeadMorphGroupBox = new System.Windows.Forms.GroupBox();
+            this._ToolboxHeadMorphWarningLabel = new System.Windows.Forms.Label();
+            this._ToolboxHeadMorphImportButton = new System.Windows.Forms.Button();
+            this._ToolboxHeadMorphExportButton = new System.Windows.Forms.Button();
+            this._RawTabPage = new System.Windows.Forms.TabPage();
+            this._RawPropertyGrid = new System.Windows.Forms.PropertyGrid();
+            this._SaveOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this._SaveSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this._HeadMorphSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this._HeadMorphOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            _PlayerFirstNameLabel = new System.Windows.Forms.Label();
+            _PlayerNotorietyLabel = new System.Windows.Forms.Label();
+            _PlayerOriginLabel = new System.Windows.Forms.Label();
+            _PlayerPlayerClassNameLabel = new System.Windows.Forms.Label();
+            _PlayerLevelLabel = new System.Windows.Forms.Label();
+            _PlayerIsFemaleLabel = new System.Windows.Forms.Label();
+            _PlayerPalladiumLabel = new System.Windows.Forms.Label();
+            _PlayerIridiumLabel = new System.Windows.Forms.Label();
+            _PlayerPlatinumLabel = new System.Windows.Forms.Label();
+            _PlayerEezoLabel = new System.Windows.Forms.Label();
+            _PlayerCreditsLabel = new System.Windows.Forms.Label();
+            _TalentPointsLabel = new System.Windows.Forms.Label();
+            _PlayerMedigelLabel = new System.Windows.Forms.Label();
+            _PlayerProbesLabel = new System.Windows.Forms.Label();
+            _PlayerParagonPointsLabel = new System.Windows.Forms.Label();
+            _PlayerRenegadePointsLabel = new System.Windows.Forms.Label();
+            this._MainToolStrip.SuspendLayout();
+            this._MainTabControl.SuspendLayout();
+            this._PlayerTabPage.SuspendLayout();
+            this._PlayerTabControl.SuspendLayout();
+            this._PlayerBasicTabPage.SuspendLayout();
+            this._PlayerBasicResourcesGroupBox.SuspendLayout();
+            this._PlayerBasicResourcesTableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerProbesNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._SaveFileBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerMedigelNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerCreditsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerEezoNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerPlatinumNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerIridiumNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerPalladiumNumericUpDown)).BeginInit();
+            this._PlayerBasicCharacterGroupBox.SuspendLayout();
+            this._PlayerBasicCharacterTableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerRenegadePointsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerParagonPointsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerTalentPointsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerLevelNumericUpDown)).BeginInit();
+            this._PlayerPowersTabPage.SuspendLayout();
+            this._PlayerAppearanceTabPage.SuspendLayout();
+            this._HenchmenTabPage.SuspendLayout();
+            this._PlotTabPage.SuspendLayout();
+            this._ToolboxTabPage.SuspendLayout();
+            this._ToolboxHenchmenGroupBox.SuspendLayout();
+            this._ToolboxHeadMorphFunGroupBox.SuspendLayout();
+            this._ToolboxHeadMorphGroupBox.SuspendLayout();
+            this._RawTabPage.SuspendLayout();
             this.SuspendLayout();
             // 
-            // playerFirstNameLabel
+            // _PlayerFirstNameLabel
             // 
-            playerFirstNameLabel.AutoSize = true;
-            playerFirstNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerFirstNameLabel.Location = new System.Drawing.Point(3, 0);
-            playerFirstNameLabel.Name = "playerFirstNameLabel";
-            playerFirstNameLabel.Size = new System.Drawing.Size(92, 26);
-            playerFirstNameLabel.TabIndex = 8;
-            playerFirstNameLabel.Text = "Name:";
-            playerFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerFirstNameLabel.AutoSize = true;
+            _PlayerFirstNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerFirstNameLabel.Location = new System.Drawing.Point(3, 0);
+            _PlayerFirstNameLabel.Name = "_PlayerFirstNameLabel";
+            _PlayerFirstNameLabel.Size = new System.Drawing.Size(92, 26);
+            _PlayerFirstNameLabel.TabIndex = 8;
+            _PlayerFirstNameLabel.Text = "Name:";
+            _PlayerFirstNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerNotorietyLabel
+            // _PlayerNotorietyLabel
             // 
-            playerNotorietyLabel.AutoSize = true;
-            playerNotorietyLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerNotorietyLabel.Location = new System.Drawing.Point(3, 106);
-            playerNotorietyLabel.Name = "playerNotorietyLabel";
-            playerNotorietyLabel.Size = new System.Drawing.Size(92, 27);
-            playerNotorietyLabel.TabIndex = 6;
-            playerNotorietyLabel.Text = "Notoriety:";
-            playerNotorietyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerNotorietyLabel.AutoSize = true;
+            _PlayerNotorietyLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerNotorietyLabel.Location = new System.Drawing.Point(3, 106);
+            _PlayerNotorietyLabel.Name = "_PlayerNotorietyLabel";
+            _PlayerNotorietyLabel.Size = new System.Drawing.Size(92, 27);
+            _PlayerNotorietyLabel.TabIndex = 6;
+            _PlayerNotorietyLabel.Text = "Notoriety:";
+            _PlayerNotorietyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerOriginLabel
+            // _PlayerOriginLabel
             // 
-            playerOriginLabel.AutoSize = true;
-            playerOriginLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerOriginLabel.Location = new System.Drawing.Point(3, 79);
-            playerOriginLabel.Name = "playerOriginLabel";
-            playerOriginLabel.Size = new System.Drawing.Size(92, 27);
-            playerOriginLabel.TabIndex = 4;
-            playerOriginLabel.Text = "Origin:";
-            playerOriginLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerOriginLabel.AutoSize = true;
+            _PlayerOriginLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerOriginLabel.Location = new System.Drawing.Point(3, 79);
+            _PlayerOriginLabel.Name = "_PlayerOriginLabel";
+            _PlayerOriginLabel.Size = new System.Drawing.Size(92, 27);
+            _PlayerOriginLabel.TabIndex = 4;
+            _PlayerOriginLabel.Text = "Origin:";
+            _PlayerOriginLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerPlayerClassNameLabel
+            // _PlayerPlayerClassNameLabel
             // 
-            playerPlayerClassNameLabel.AutoSize = true;
-            playerPlayerClassNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerPlayerClassNameLabel.Location = new System.Drawing.Point(3, 52);
-            playerPlayerClassNameLabel.Name = "playerPlayerClassNameLabel";
-            playerPlayerClassNameLabel.Size = new System.Drawing.Size(92, 27);
-            playerPlayerClassNameLabel.TabIndex = 2;
-            playerPlayerClassNameLabel.Text = "Class:";
-            playerPlayerClassNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerPlayerClassNameLabel.AutoSize = true;
+            _PlayerPlayerClassNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerPlayerClassNameLabel.Location = new System.Drawing.Point(3, 52);
+            _PlayerPlayerClassNameLabel.Name = "_PlayerPlayerClassNameLabel";
+            _PlayerPlayerClassNameLabel.Size = new System.Drawing.Size(92, 27);
+            _PlayerPlayerClassNameLabel.TabIndex = 2;
+            _PlayerPlayerClassNameLabel.Text = "Class:";
+            _PlayerPlayerClassNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerLevelLabel
+            // _PlayerLevelLabel
             // 
-            playerLevelLabel.AutoSize = true;
-            playerLevelLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerLevelLabel.Location = new System.Drawing.Point(3, 26);
-            playerLevelLabel.Name = "playerLevelLabel";
-            playerLevelLabel.Size = new System.Drawing.Size(92, 26);
-            playerLevelLabel.TabIndex = 1;
-            playerLevelLabel.Text = "Level:";
-            playerLevelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerLevelLabel.AutoSize = true;
+            _PlayerLevelLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerLevelLabel.Location = new System.Drawing.Point(3, 26);
+            _PlayerLevelLabel.Name = "_PlayerLevelLabel";
+            _PlayerLevelLabel.Size = new System.Drawing.Size(92, 26);
+            _PlayerLevelLabel.TabIndex = 1;
+            _PlayerLevelLabel.Text = "Level:";
+            _PlayerLevelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerIsFemaleLabel
+            // _PlayerIsFemaleLabel
             // 
-            playerIsFemaleLabel.AutoSize = true;
-            playerIsFemaleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerIsFemaleLabel.Location = new System.Drawing.Point(3, 133);
-            playerIsFemaleLabel.Name = "playerIsFemaleLabel";
-            playerIsFemaleLabel.Size = new System.Drawing.Size(92, 30);
-            playerIsFemaleLabel.TabIndex = 10;
-            playerIsFemaleLabel.Text = "Is Female:";
-            playerIsFemaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerIsFemaleLabel.AutoSize = true;
+            _PlayerIsFemaleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerIsFemaleLabel.Location = new System.Drawing.Point(3, 133);
+            _PlayerIsFemaleLabel.Name = "_PlayerIsFemaleLabel";
+            _PlayerIsFemaleLabel.Size = new System.Drawing.Size(92, 30);
+            _PlayerIsFemaleLabel.TabIndex = 10;
+            _PlayerIsFemaleLabel.Text = "Is Female:";
+            _PlayerIsFemaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerPalladiumLabel
+            // _PlayerPalladiumLabel
             // 
-            playerPalladiumLabel.AutoSize = true;
-            playerPalladiumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerPalladiumLabel.Location = new System.Drawing.Point(3, 52);
-            playerPalladiumLabel.Name = "playerPalladiumLabel";
-            playerPalladiumLabel.Size = new System.Drawing.Size(73, 26);
-            playerPalladiumLabel.TabIndex = 0;
-            playerPalladiumLabel.Text = "Palladium:";
-            playerPalladiumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerPalladiumLabel.AutoSize = true;
+            _PlayerPalladiumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerPalladiumLabel.Location = new System.Drawing.Point(3, 52);
+            _PlayerPalladiumLabel.Name = "_PlayerPalladiumLabel";
+            _PlayerPalladiumLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerPalladiumLabel.TabIndex = 0;
+            _PlayerPalladiumLabel.Text = "Palladium:";
+            _PlayerPalladiumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerIridiumLabel
+            // _PlayerIridiumLabel
             // 
-            playerIridiumLabel.AutoSize = true;
-            playerIridiumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerIridiumLabel.Location = new System.Drawing.Point(3, 78);
-            playerIridiumLabel.Name = "playerIridiumLabel";
-            playerIridiumLabel.Size = new System.Drawing.Size(73, 26);
-            playerIridiumLabel.TabIndex = 2;
-            playerIridiumLabel.Text = "Iridium:";
-            playerIridiumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerIridiumLabel.AutoSize = true;
+            _PlayerIridiumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerIridiumLabel.Location = new System.Drawing.Point(3, 78);
+            _PlayerIridiumLabel.Name = "_PlayerIridiumLabel";
+            _PlayerIridiumLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerIridiumLabel.TabIndex = 2;
+            _PlayerIridiumLabel.Text = "Iridium:";
+            _PlayerIridiumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerPlatinumLabel
+            // _PlayerPlatinumLabel
             // 
-            playerPlatinumLabel.AutoSize = true;
-            playerPlatinumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerPlatinumLabel.Location = new System.Drawing.Point(3, 104);
-            playerPlatinumLabel.Name = "playerPlatinumLabel";
-            playerPlatinumLabel.Size = new System.Drawing.Size(73, 26);
-            playerPlatinumLabel.TabIndex = 4;
-            playerPlatinumLabel.Text = "Platinum:";
-            playerPlatinumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerPlatinumLabel.AutoSize = true;
+            _PlayerPlatinumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerPlatinumLabel.Location = new System.Drawing.Point(3, 104);
+            _PlayerPlatinumLabel.Name = "_PlayerPlatinumLabel";
+            _PlayerPlatinumLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerPlatinumLabel.TabIndex = 4;
+            _PlayerPlatinumLabel.Text = "Platinum:";
+            _PlayerPlatinumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerEezoLabel
+            // _PlayerEezoLabel
             // 
-            playerEezoLabel.AutoSize = true;
-            playerEezoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerEezoLabel.Location = new System.Drawing.Point(3, 130);
-            playerEezoLabel.Name = "playerEezoLabel";
-            playerEezoLabel.Size = new System.Drawing.Size(73, 26);
-            playerEezoLabel.TabIndex = 6;
-            playerEezoLabel.Text = "Element Zero:";
-            playerEezoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerEezoLabel.AutoSize = true;
+            _PlayerEezoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerEezoLabel.Location = new System.Drawing.Point(3, 130);
+            _PlayerEezoLabel.Name = "_PlayerEezoLabel";
+            _PlayerEezoLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerEezoLabel.TabIndex = 6;
+            _PlayerEezoLabel.Text = "Element Zero:";
+            _PlayerEezoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerCreditsLabel
+            // _PlayerCreditsLabel
             // 
-            playerCreditsLabel.AutoSize = true;
-            playerCreditsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerCreditsLabel.Location = new System.Drawing.Point(3, 0);
-            playerCreditsLabel.Name = "playerCreditsLabel";
-            playerCreditsLabel.Size = new System.Drawing.Size(73, 26);
-            playerCreditsLabel.TabIndex = 8;
-            playerCreditsLabel.Text = "Credits:";
-            playerCreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerCreditsLabel.AutoSize = true;
+            _PlayerCreditsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerCreditsLabel.Location = new System.Drawing.Point(3, 0);
+            _PlayerCreditsLabel.Name = "_PlayerCreditsLabel";
+            _PlayerCreditsLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerCreditsLabel.TabIndex = 8;
+            _PlayerCreditsLabel.Text = "Credits:";
+            _PlayerCreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // _property_TalentPointsLabel
+            // _TalentPointsLabel
             // 
-            _property_TalentPointsLabel.AutoSize = true;
-            _property_TalentPointsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            _property_TalentPointsLabel.Location = new System.Drawing.Point(3, 163);
-            _property_TalentPointsLabel.Name = "_property_TalentPointsLabel";
-            _property_TalentPointsLabel.Size = new System.Drawing.Size(92, 26);
-            _property_TalentPointsLabel.TabIndex = 12;
-            _property_TalentPointsLabel.Text = "Talent Points:";
-            _property_TalentPointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _TalentPointsLabel.AutoSize = true;
+            _TalentPointsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _TalentPointsLabel.Location = new System.Drawing.Point(3, 163);
+            _TalentPointsLabel.Name = "_TalentPointsLabel";
+            _TalentPointsLabel.Size = new System.Drawing.Size(92, 26);
+            _TalentPointsLabel.TabIndex = 12;
+            _TalentPointsLabel.Text = "Talent Points:";
+            _TalentPointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerMedigelLabel
+            // _PlayerMedigelLabel
             // 
-            playerMedigelLabel.AutoSize = true;
-            playerMedigelLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerMedigelLabel.Location = new System.Drawing.Point(3, 26);
-            playerMedigelLabel.Name = "playerMedigelLabel";
-            playerMedigelLabel.Size = new System.Drawing.Size(73, 26);
-            playerMedigelLabel.TabIndex = 10;
-            playerMedigelLabel.Text = "Medigel:";
-            playerMedigelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerMedigelLabel.AutoSize = true;
+            _PlayerMedigelLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerMedigelLabel.Location = new System.Drawing.Point(3, 26);
+            _PlayerMedigelLabel.Name = "_PlayerMedigelLabel";
+            _PlayerMedigelLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerMedigelLabel.TabIndex = 10;
+            _PlayerMedigelLabel.Text = "Medigel:";
+            _PlayerMedigelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerProbesLabel
+            // _PlayerProbesLabel
             // 
-            playerProbesLabel.AutoSize = true;
-            playerProbesLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerProbesLabel.Location = new System.Drawing.Point(3, 176);
-            playerProbesLabel.Name = "playerProbesLabel";
-            playerProbesLabel.Size = new System.Drawing.Size(73, 26);
-            playerProbesLabel.TabIndex = 12;
-            playerProbesLabel.Text = "Probes:";
-            playerProbesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerProbesLabel.AutoSize = true;
+            _PlayerProbesLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerProbesLabel.Location = new System.Drawing.Point(3, 176);
+            _PlayerProbesLabel.Name = "_PlayerProbesLabel";
+            _PlayerProbesLabel.Size = new System.Drawing.Size(73, 26);
+            _PlayerProbesLabel.TabIndex = 12;
+            _PlayerProbesLabel.Text = "Probes:";
+            _PlayerProbesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerParagonPointsLabel
+            // _PlayerParagonPointsLabel
             // 
-            playerParagonPointsLabel.AutoSize = true;
-            playerParagonPointsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerParagonPointsLabel.Location = new System.Drawing.Point(3, 189);
-            playerParagonPointsLabel.Name = "playerParagonPointsLabel";
-            playerParagonPointsLabel.Size = new System.Drawing.Size(92, 26);
-            playerParagonPointsLabel.TabIndex = 14;
-            playerParagonPointsLabel.Text = "Paragon Points:";
-            playerParagonPointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerParagonPointsLabel.AutoSize = true;
+            _PlayerParagonPointsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerParagonPointsLabel.Location = new System.Drawing.Point(3, 189);
+            _PlayerParagonPointsLabel.Name = "_PlayerParagonPointsLabel";
+            _PlayerParagonPointsLabel.Size = new System.Drawing.Size(92, 26);
+            _PlayerParagonPointsLabel.TabIndex = 14;
+            _PlayerParagonPointsLabel.Text = "Paragon Points:";
+            _PlayerParagonPointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // playerRenegadePointsLabel
+            // _PlayerRenegadePointsLabel
             // 
-            playerRenegadePointsLabel.AutoSize = true;
-            playerRenegadePointsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            playerRenegadePointsLabel.Location = new System.Drawing.Point(3, 215);
-            playerRenegadePointsLabel.Name = "playerRenegadePointsLabel";
-            playerRenegadePointsLabel.Size = new System.Drawing.Size(92, 26);
-            playerRenegadePointsLabel.TabIndex = 16;
-            playerRenegadePointsLabel.Text = "Renegade Points:";
-            playerRenegadePointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            _PlayerRenegadePointsLabel.AutoSize = true;
+            _PlayerRenegadePointsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _PlayerRenegadePointsLabel.Location = new System.Drawing.Point(3, 215);
+            _PlayerRenegadePointsLabel.Name = "_PlayerRenegadePointsLabel";
+            _PlayerRenegadePointsLabel.Size = new System.Drawing.Size(92, 26);
+            _PlayerRenegadePointsLabel.TabIndex = 16;
+            _PlayerRenegadePointsLabel.Text = "Renegade Points:";
+            _PlayerRenegadePointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // mainToolStrip
+            // _MainToolStrip
             // 
-            this.mainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newButton,
-            this.openButton,
-            this.saveButton});
-            this.mainToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.mainToolStrip.Name = "mainToolStrip";
-            this.mainToolStrip.Size = new System.Drawing.Size(624, 25);
-            this.mainToolStrip.TabIndex = 0;
-            this.mainToolStrip.Text = "toolStrip1";
+            this._MainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._NewToolStripDropDownButton,
+            this._OpenToolStripButton,
+            this._SaveToolStripButton});
+            this._MainToolStrip.Location = new System.Drawing.Point(0, 0);
+            this._MainToolStrip.Name = "_MainToolStrip";
+            this._MainToolStrip.Size = new System.Drawing.Size(624, 25);
+            this._MainToolStrip.TabIndex = 0;
+            this._MainToolStrip.Text = "toolStrip1";
             // 
-            // newButton
+            // _NewToolStripDropDownButton
             // 
-            this.newButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.newButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newMaleMenuItem,
-            this.newFemaleMenuItem});
-            this.newButton.Image = global::Gibbed.MassEffect2.SaveEdit.Resources.New;
-            this.newButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(29, 22);
-            this.newButton.Text = "New";
+            this._NewToolStripDropDownButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._NewToolStripDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this._NewMaleToolStripMenuItem,
+            this._NewFemaleToolStripMenuItem});
+            this._NewToolStripDropDownButton.Image = global::Gibbed.MassEffect2.SaveEdit.Resources.New;
+            this._NewToolStripDropDownButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._NewToolStripDropDownButton.Name = "_NewToolStripDropDownButton";
+            this._NewToolStripDropDownButton.Size = new System.Drawing.Size(29, 22);
+            this._NewToolStripDropDownButton.Text = "New";
             // 
-            // newMaleMenuItem
+            // _NewMaleToolStripMenuItem
             // 
-            this.newMaleMenuItem.Name = "newMaleMenuItem";
-            this.newMaleMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.newMaleMenuItem.Text = "New &Male";
-            this.newMaleMenuItem.Click += new System.EventHandler(this.OnNewMale);
+            this._NewMaleToolStripMenuItem.Name = "_NewMaleToolStripMenuItem";
+            this._NewMaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this._NewMaleToolStripMenuItem.Text = "New &Male";
+            this._NewMaleToolStripMenuItem.Click += new System.EventHandler(this.OnNewMale);
             // 
-            // newFemaleMenuItem
+            // _NewFemaleToolStripMenuItem
             // 
-            this.newFemaleMenuItem.Name = "newFemaleMenuItem";
-            this.newFemaleMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.newFemaleMenuItem.Text = "New &Female";
-            this.newFemaleMenuItem.Click += new System.EventHandler(this.OnNewFemale);
+            this._NewFemaleToolStripMenuItem.Name = "_NewFemaleToolStripMenuItem";
+            this._NewFemaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this._NewFemaleToolStripMenuItem.Text = "New &Female";
+            this._NewFemaleToolStripMenuItem.Click += new System.EventHandler(this.OnNewFemale);
             // 
-            // openButton
+            // _OpenToolStripButton
             // 
-            this.openButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openButton.Image = global::Gibbed.MassEffect2.SaveEdit.Resources.Open;
-            this.openButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(23, 22);
-            this.openButton.Text = "Open";
-            this.openButton.Click += new System.EventHandler(this.OnOpen);
+            this._OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._OpenToolStripButton.Image = global::Gibbed.MassEffect2.SaveEdit.Resources.Open;
+            this._OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._OpenToolStripButton.Name = "_OpenToolStripButton";
+            this._OpenToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this._OpenToolStripButton.Text = "Open";
+            this._OpenToolStripButton.Click += new System.EventHandler(this.OnOpen);
             // 
-            // saveButton
+            // _SaveToolStripButton
             // 
-            this.saveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveButton.Image = global::Gibbed.MassEffect2.SaveEdit.Resources.Save;
-            this.saveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(23, 22);
-            this.saveButton.Text = "Save";
-            this.saveButton.Click += new System.EventHandler(this.OnSave);
+            this._SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this._SaveToolStripButton.Image = global::Gibbed.MassEffect2.SaveEdit.Resources.Save;
+            this._SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this._SaveToolStripButton.Name = "_SaveToolStripButton";
+            this._SaveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this._SaveToolStripButton.Text = "Save";
+            this._SaveToolStripButton.Click += new System.EventHandler(this.OnSave);
             // 
-            // mainTabControl
+            // _MainTabControl
             // 
-            this.mainTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainTabControl.Controls.Add(this.playerTabPage);
-            this.mainTabControl.Controls.Add(this.henchmentTabPage);
-            this.mainTabControl.Controls.Add(this.plotTabPage);
-            this.mainTabControl.Controls.Add(this.toolboxTabPage);
-            this.mainTabControl.Controls.Add(this.rawTabPage);
-            this.mainTabControl.Location = new System.Drawing.Point(12, 28);
-            this.mainTabControl.Name = "mainTabControl";
-            this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(600, 402);
-            this.mainTabControl.TabIndex = 1;
+            this._MainTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._MainTabControl.Controls.Add(this._PlayerTabPage);
+            this._MainTabControl.Controls.Add(this._HenchmenTabPage);
+            this._MainTabControl.Controls.Add(this._PlotTabPage);
+            this._MainTabControl.Controls.Add(this._ToolboxTabPage);
+            this._MainTabControl.Controls.Add(this._RawTabPage);
+            this._MainTabControl.Location = new System.Drawing.Point(12, 28);
+            this._MainTabControl.Name = "_MainTabControl";
+            this._MainTabControl.SelectedIndex = 0;
+            this._MainTabControl.Size = new System.Drawing.Size(600, 402);
+            this._MainTabControl.TabIndex = 1;
             // 
-            // playerTabPage
+            // _PlayerTabPage
             // 
-            this.playerTabPage.Controls.Add(this.playerTabControl);
-            this.playerTabPage.Location = new System.Drawing.Point(4, 22);
-            this.playerTabPage.Name = "playerTabPage";
-            this.playerTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.playerTabPage.Size = new System.Drawing.Size(592, 376);
-            this.playerTabPage.TabIndex = 0;
-            this.playerTabPage.Text = "Player";
-            this.playerTabPage.UseVisualStyleBackColor = true;
+            this._PlayerTabPage.Controls.Add(this._PlayerTabControl);
+            this._PlayerTabPage.Location = new System.Drawing.Point(4, 22);
+            this._PlayerTabPage.Name = "_PlayerTabPage";
+            this._PlayerTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._PlayerTabPage.Size = new System.Drawing.Size(592, 376);
+            this._PlayerTabPage.TabIndex = 0;
+            this._PlayerTabPage.Text = "Player";
+            this._PlayerTabPage.UseVisualStyleBackColor = true;
             // 
-            // playerTabControl
+            // _PlayerTabControl
             // 
-            this.playerTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.playerTabControl.Controls.Add(this.playerBasicTabPage);
-            this.playerTabControl.Controls.Add(this.playerPowersTabPage);
-            this.playerTabControl.Controls.Add(this.playerAppearanceTabPage);
-            this.playerTabControl.Location = new System.Drawing.Point(6, 6);
-            this.playerTabControl.Name = "playerTabControl";
-            this.playerTabControl.SelectedIndex = 0;
-            this.playerTabControl.Size = new System.Drawing.Size(580, 364);
-            this.playerTabControl.TabIndex = 0;
+            this._PlayerTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._PlayerTabControl.Controls.Add(this._PlayerBasicTabPage);
+            this._PlayerTabControl.Controls.Add(this._PlayerPowersTabPage);
+            this._PlayerTabControl.Controls.Add(this._PlayerAppearanceTabPage);
+            this._PlayerTabControl.Location = new System.Drawing.Point(6, 6);
+            this._PlayerTabControl.Name = "_PlayerTabControl";
+            this._PlayerTabControl.SelectedIndex = 0;
+            this._PlayerTabControl.Size = new System.Drawing.Size(580, 364);
+            this._PlayerTabControl.TabIndex = 0;
             // 
-            // playerBasicTabPage
+            // _PlayerBasicTabPage
             // 
-            this.playerBasicTabPage.Controls.Add(this.playerBasicResourcesGroupBox);
-            this.playerBasicTabPage.Controls.Add(this.label1);
-            this.playerBasicTabPage.Controls.Add(this.playerBasicCharacterGroupBox);
-            this.playerBasicTabPage.Location = new System.Drawing.Point(4, 22);
-            this.playerBasicTabPage.Name = "playerBasicTabPage";
-            this.playerBasicTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.playerBasicTabPage.Size = new System.Drawing.Size(572, 338);
-            this.playerBasicTabPage.TabIndex = 0;
-            this.playerBasicTabPage.Text = "Basic";
-            this.playerBasicTabPage.UseVisualStyleBackColor = true;
+            this._PlayerBasicTabPage.Controls.Add(this._PlayerBasicResourcesGroupBox);
+            this._PlayerBasicTabPage.Controls.Add(this._GenderHeadMorphWarningLabel);
+            this._PlayerBasicTabPage.Controls.Add(this._PlayerBasicCharacterGroupBox);
+            this._PlayerBasicTabPage.Location = new System.Drawing.Point(4, 22);
+            this._PlayerBasicTabPage.Name = "_PlayerBasicTabPage";
+            this._PlayerBasicTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._PlayerBasicTabPage.Size = new System.Drawing.Size(572, 338);
+            this._PlayerBasicTabPage.TabIndex = 0;
+            this._PlayerBasicTabPage.Text = "Basic";
+            this._PlayerBasicTabPage.UseVisualStyleBackColor = true;
             // 
-            // playerBasicResourcesGroupBox
+            // _PlayerBasicResourcesGroupBox
             // 
-            this.playerBasicResourcesGroupBox.Controls.Add(this.tableLayoutPanel2);
-            this.playerBasicResourcesGroupBox.Location = new System.Drawing.Point(304, 6);
-            this.playerBasicResourcesGroupBox.Name = "playerBasicResourcesGroupBox";
-            this.playerBasicResourcesGroupBox.Size = new System.Drawing.Size(213, 292);
-            this.playerBasicResourcesGroupBox.TabIndex = 4;
-            this.playerBasicResourcesGroupBox.TabStop = false;
-            this.playerBasicResourcesGroupBox.Text = "Resources";
+            this._PlayerBasicResourcesGroupBox.Controls.Add(this._PlayerBasicResourcesTableLayoutPanel);
+            this._PlayerBasicResourcesGroupBox.Location = new System.Drawing.Point(304, 6);
+            this._PlayerBasicResourcesGroupBox.Name = "_PlayerBasicResourcesGroupBox";
+            this._PlayerBasicResourcesGroupBox.Size = new System.Drawing.Size(213, 292);
+            this._PlayerBasicResourcesGroupBox.TabIndex = 4;
+            this._PlayerBasicResourcesGroupBox.TabStop = false;
+            this._PlayerBasicResourcesGroupBox.Text = "Resources";
             // 
-            // tableLayoutPanel2
+            // _PlayerBasicResourcesTableLayoutPanel
             // 
-            this.tableLayoutPanel2.AutoScroll = true;
-            this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(playerProbesLabel, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.playerProbesNumericUpDown, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(playerMedigelLabel, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.playerMedigelNumericUpDown, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(playerCreditsLabel, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.playerCreditsNumericUpDown, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(playerEezoLabel, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.playerEezoNumericUpDown, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(playerPlatinumLabel, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.playerPlatinumNumericUpDown, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(playerIridiumLabel, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.playerIridiumNumericUpDown, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(playerPalladiumLabel, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.playerPalladiumNumericUpDown, 1, 2);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 11;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(207, 273);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this._PlayerBasicResourcesTableLayoutPanel.AutoScroll = true;
+            this._PlayerBasicResourcesTableLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._PlayerBasicResourcesTableLayoutPanel.ColumnCount = 2;
+            this._PlayerBasicResourcesTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerProbesLabel, 0, 8);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerProbesNumericUpDown, 1, 8);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerMedigelLabel, 0, 1);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerMedigelNumericUpDown, 1, 1);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerCreditsLabel, 0, 0);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerCreditsNumericUpDown, 1, 0);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerEezoLabel, 0, 5);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerEezoNumericUpDown, 1, 5);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerPlatinumLabel, 0, 4);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerPlatinumNumericUpDown, 1, 4);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerIridiumLabel, 0, 3);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerIridiumNumericUpDown, 1, 3);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(_PlayerPalladiumLabel, 0, 2);
+            this._PlayerBasicResourcesTableLayoutPanel.Controls.Add(this._PlayerPalladiumNumericUpDown, 1, 2);
+            this._PlayerBasicResourcesTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._PlayerBasicResourcesTableLayoutPanel.Location = new System.Drawing.Point(3, 16);
+            this._PlayerBasicResourcesTableLayoutPanel.Name = "_PlayerBasicResourcesTableLayoutPanel";
+            this._PlayerBasicResourcesTableLayoutPanel.RowCount = 11;
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._PlayerBasicResourcesTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicResourcesTableLayoutPanel.Size = new System.Drawing.Size(207, 273);
+            this._PlayerBasicResourcesTableLayoutPanel.TabIndex = 0;
             // 
-            // playerProbesNumericUpDown
+            // _PlayerProbesNumericUpDown
             // 
-            this.playerProbesNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Probes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerProbesNumericUpDown.Location = new System.Drawing.Point(82, 179);
-            this.playerProbesNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerProbesNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Probes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerProbesNumericUpDown.Location = new System.Drawing.Point(82, 179);
+            this._PlayerProbesNumericUpDown.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.playerProbesNumericUpDown.Minimum = new decimal(new int[] {
+            this._PlayerProbesNumericUpDown.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.playerProbesNumericUpDown.Name = "playerProbesNumericUpDown";
-            this.playerProbesNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerProbesNumericUpDown.TabIndex = 13;
+            this._PlayerProbesNumericUpDown.Name = "_PlayerProbesNumericUpDown";
+            this._PlayerProbesNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerProbesNumericUpDown.TabIndex = 13;
             // 
-            // saveFileBindingSource
+            // _SaveFileBindingSource
             // 
-            this.saveFileBindingSource.DataSource = typeof(Gibbed.MassEffect2.FileFormats.SaveFile);
+            this._SaveFileBindingSource.DataSource = typeof(Gibbed.MassEffect2.FileFormats.SaveFile);
             // 
-            // playerMedigelNumericUpDown
+            // _PlayerMedigelNumericUpDown
             // 
-            this.playerMedigelNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Medigel", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerMedigelNumericUpDown.Location = new System.Drawing.Point(82, 29);
-            this.playerMedigelNumericUpDown.Name = "playerMedigelNumericUpDown";
-            this.playerMedigelNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerMedigelNumericUpDown.TabIndex = 11;
+            this._PlayerMedigelNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Medigel", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerMedigelNumericUpDown.Location = new System.Drawing.Point(82, 29);
+            this._PlayerMedigelNumericUpDown.Name = "_PlayerMedigelNumericUpDown";
+            this._PlayerMedigelNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerMedigelNumericUpDown.TabIndex = 11;
             // 
-            // playerCreditsNumericUpDown
+            // _PlayerCreditsNumericUpDown
             // 
-            this.playerCreditsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Credits", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerCreditsNumericUpDown.Location = new System.Drawing.Point(82, 3);
-            this.playerCreditsNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerCreditsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Credits", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerCreditsNumericUpDown.Location = new System.Drawing.Point(82, 3);
+            this._PlayerCreditsNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
-            this.playerCreditsNumericUpDown.Name = "playerCreditsNumericUpDown";
-            this.playerCreditsNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerCreditsNumericUpDown.TabIndex = 9;
+            this._PlayerCreditsNumericUpDown.Name = "_PlayerCreditsNumericUpDown";
+            this._PlayerCreditsNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerCreditsNumericUpDown.TabIndex = 9;
             // 
-            // playerEezoNumericUpDown
+            // _PlayerEezoNumericUpDown
             // 
-            this.playerEezoNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Eezo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerEezoNumericUpDown.Location = new System.Drawing.Point(82, 133);
-            this.playerEezoNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerEezoNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Eezo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerEezoNumericUpDown.Location = new System.Drawing.Point(82, 133);
+            this._PlayerEezoNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
-            this.playerEezoNumericUpDown.Name = "playerEezoNumericUpDown";
-            this.playerEezoNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerEezoNumericUpDown.TabIndex = 7;
+            this._PlayerEezoNumericUpDown.Name = "_PlayerEezoNumericUpDown";
+            this._PlayerEezoNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerEezoNumericUpDown.TabIndex = 7;
             // 
-            // playerPlatinumNumericUpDown
+            // _PlayerPlatinumNumericUpDown
             // 
-            this.playerPlatinumNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Platinum", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerPlatinumNumericUpDown.Location = new System.Drawing.Point(82, 107);
-            this.playerPlatinumNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerPlatinumNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Platinum", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerPlatinumNumericUpDown.Location = new System.Drawing.Point(82, 107);
+            this._PlayerPlatinumNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
-            this.playerPlatinumNumericUpDown.Name = "playerPlatinumNumericUpDown";
-            this.playerPlatinumNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerPlatinumNumericUpDown.TabIndex = 5;
+            this._PlayerPlatinumNumericUpDown.Name = "_PlayerPlatinumNumericUpDown";
+            this._PlayerPlatinumNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerPlatinumNumericUpDown.TabIndex = 5;
             // 
-            // playerIridiumNumericUpDown
+            // _PlayerIridiumNumericUpDown
             // 
-            this.playerIridiumNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Iridium", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerIridiumNumericUpDown.Location = new System.Drawing.Point(82, 81);
-            this.playerIridiumNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerIridiumNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Iridium", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerIridiumNumericUpDown.Location = new System.Drawing.Point(82, 81);
+            this._PlayerIridiumNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
-            this.playerIridiumNumericUpDown.Name = "playerIridiumNumericUpDown";
-            this.playerIridiumNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerIridiumNumericUpDown.TabIndex = 3;
+            this._PlayerIridiumNumericUpDown.Name = "_PlayerIridiumNumericUpDown";
+            this._PlayerIridiumNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerIridiumNumericUpDown.TabIndex = 3;
             // 
-            // playerPalladiumNumericUpDown
+            // _PlayerPalladiumNumericUpDown
             // 
-            this.playerPalladiumNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Palladium", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerPalladiumNumericUpDown.Location = new System.Drawing.Point(82, 55);
-            this.playerPalladiumNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerPalladiumNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Palladium", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerPalladiumNumericUpDown.Location = new System.Drawing.Point(82, 55);
+            this._PlayerPalladiumNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
-            this.playerPalladiumNumericUpDown.Name = "playerPalladiumNumericUpDown";
-            this.playerPalladiumNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerPalladiumNumericUpDown.TabIndex = 1;
+            this._PlayerPalladiumNumericUpDown.Name = "_PlayerPalladiumNumericUpDown";
+            this._PlayerPalladiumNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerPalladiumNumericUpDown.TabIndex = 1;
             // 
-            // label1
+            // _GenderHeadMorphWarningLabel
             // 
-            this.label1.Location = new System.Drawing.Point(7, 304);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "* If you change your gender, delete your head morph or import one from the new ge" +
-                "nder (under Toolbox), otherwise your head will be messed up in-game. (a clusterf" +
-                "uck of polygons!)";
+            this._GenderHeadMorphWarningLabel.Location = new System.Drawing.Point(7, 304);
+            this._GenderHeadMorphWarningLabel.Name = "_GenderHeadMorphWarningLabel";
+            this._GenderHeadMorphWarningLabel.Size = new System.Drawing.Size(559, 31);
+            this._GenderHeadMorphWarningLabel.TabIndex = 3;
+            this._GenderHeadMorphWarningLabel.Text = "* If you change your gender, delete your head morph or import one from the new ge" +
+    "nder (under Toolbox), otherwise your head will be messed up in-game. (a clusterf" +
+    "uck of polygons!)";
             // 
-            // playerBasicCharacterGroupBox
+            // _PlayerBasicCharacterGroupBox
             // 
-            this.playerBasicCharacterGroupBox.Controls.Add(this.tableLayoutPanel1);
-            this.playerBasicCharacterGroupBox.Location = new System.Drawing.Point(6, 6);
-            this.playerBasicCharacterGroupBox.Name = "playerBasicCharacterGroupBox";
-            this.playerBasicCharacterGroupBox.Size = new System.Drawing.Size(231, 295);
-            this.playerBasicCharacterGroupBox.TabIndex = 2;
-            this.playerBasicCharacterGroupBox.TabStop = false;
-            this.playerBasicCharacterGroupBox.Text = "Character";
+            this._PlayerBasicCharacterGroupBox.Controls.Add(this._PlayerBasicCharacterTableLayoutPanel);
+            this._PlayerBasicCharacterGroupBox.Location = new System.Drawing.Point(6, 6);
+            this._PlayerBasicCharacterGroupBox.Name = "_PlayerBasicCharacterGroupBox";
+            this._PlayerBasicCharacterGroupBox.Size = new System.Drawing.Size(231, 295);
+            this._PlayerBasicCharacterGroupBox.TabIndex = 2;
+            this._PlayerBasicCharacterGroupBox.TabStop = false;
+            this._PlayerBasicCharacterGroupBox.Text = "Character";
             // 
-            // tableLayoutPanel1
+            // _PlayerBasicCharacterTableLayoutPanel
             // 
-            this.tableLayoutPanel1.AutoScroll = true;
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(playerRenegadePointsLabel, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.playerRenegadePointsNumericUpDown, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(playerParagonPointsLabel, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.playerParagonPointsNumericUpDown, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(_property_TalentPointsLabel, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.playerTalentPointsNumericUpDown, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(playerIsFemaleLabel, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.playerIsFemaleCheckBox, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(playerFirstNameLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.playerFirstNameTextBox, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(playerNotorietyLabel, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.playerNotorietyComboBox, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(playerOriginLabel, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.playerOriginComboBox, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(playerPlayerClassNameLabel, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.playerPlayerClassNameComboBox, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(playerLevelLabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.playerLevelNumericUpDown, 1, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(225, 276);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this._PlayerBasicCharacterTableLayoutPanel.AutoScroll = true;
+            this._PlayerBasicCharacterTableLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._PlayerBasicCharacterTableLayoutPanel.ColumnCount = 2;
+            this._PlayerBasicCharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerRenegadePointsLabel, 0, 8);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerRenegadePointsNumericUpDown, 1, 8);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerParagonPointsLabel, 0, 7);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerParagonPointsNumericUpDown, 1, 7);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_TalentPointsLabel, 0, 6);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerTalentPointsNumericUpDown, 1, 6);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerIsFemaleLabel, 0, 5);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerIsFemaleCheckBox, 1, 5);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerFirstNameLabel, 0, 0);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerFirstNameTextBox, 1, 0);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerNotorietyLabel, 0, 4);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerNotorietyComboBox, 1, 4);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerOriginLabel, 0, 3);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerOriginComboBox, 1, 3);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerPlayerClassNameLabel, 0, 2);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerPlayerClassNameComboBox, 1, 2);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(_PlayerLevelLabel, 0, 1);
+            this._PlayerBasicCharacterTableLayoutPanel.Controls.Add(this._PlayerLevelNumericUpDown, 1, 1);
+            this._PlayerBasicCharacterTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._PlayerBasicCharacterTableLayoutPanel.Location = new System.Drawing.Point(3, 16);
+            this._PlayerBasicCharacterTableLayoutPanel.Name = "_PlayerBasicCharacterTableLayoutPanel";
+            this._PlayerBasicCharacterTableLayoutPanel.RowCount = 11;
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._PlayerBasicCharacterTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this._PlayerBasicCharacterTableLayoutPanel.Size = new System.Drawing.Size(225, 276);
+            this._PlayerBasicCharacterTableLayoutPanel.TabIndex = 2;
             // 
-            // playerRenegadePointsNumericUpDown
+            // _PlayerRenegadePointsNumericUpDown
             // 
-            this.playerRenegadePointsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlotRecord._helper_RenegadePoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerRenegadePointsNumericUpDown.Location = new System.Drawing.Point(101, 218);
-            this.playerRenegadePointsNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerRenegadePointsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlotRecord._helper_RenegadePoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerRenegadePointsNumericUpDown.Location = new System.Drawing.Point(101, 218);
+            this._PlayerRenegadePointsNumericUpDown.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.playerRenegadePointsNumericUpDown.Minimum = new decimal(new int[] {
+            this._PlayerRenegadePointsNumericUpDown.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.playerRenegadePointsNumericUpDown.Name = "playerRenegadePointsNumericUpDown";
-            this.playerRenegadePointsNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerRenegadePointsNumericUpDown.TabIndex = 17;
+            this._PlayerRenegadePointsNumericUpDown.Name = "_PlayerRenegadePointsNumericUpDown";
+            this._PlayerRenegadePointsNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerRenegadePointsNumericUpDown.TabIndex = 17;
             // 
-            // playerParagonPointsNumericUpDown
+            // _PlayerParagonPointsNumericUpDown
             // 
-            this.playerParagonPointsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlotRecord._helper_ParagonPoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerParagonPointsNumericUpDown.Location = new System.Drawing.Point(101, 192);
-            this.playerParagonPointsNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerParagonPointsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlotRecord._helper_ParagonPoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerParagonPointsNumericUpDown.Location = new System.Drawing.Point(101, 192);
+            this._PlayerParagonPointsNumericUpDown.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.playerParagonPointsNumericUpDown.Minimum = new decimal(new int[] {
+            this._PlayerParagonPointsNumericUpDown.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.playerParagonPointsNumericUpDown.Name = "playerParagonPointsNumericUpDown";
-            this.playerParagonPointsNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerParagonPointsNumericUpDown.TabIndex = 15;
+            this._PlayerParagonPointsNumericUpDown.Name = "_PlayerParagonPointsNumericUpDown";
+            this._PlayerParagonPointsNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerParagonPointsNumericUpDown.TabIndex = 15;
             // 
-            // playerTalentPointsNumericUpDown
+            // _PlayerTalentPointsNumericUpDown
             // 
-            this.playerTalentPointsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_TalentPoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerTalentPointsNumericUpDown.Location = new System.Drawing.Point(101, 166);
-            this.playerTalentPointsNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerTalentPointsNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_TalentPoints", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerTalentPointsNumericUpDown.Location = new System.Drawing.Point(101, 166);
+            this._PlayerTalentPointsNumericUpDown.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.playerTalentPointsNumericUpDown.Minimum = new decimal(new int[] {
+            this._PlayerTalentPointsNumericUpDown.Minimum = new decimal(new int[] {
             -2147483648,
             0,
             0,
             -2147483648});
-            this.playerTalentPointsNumericUpDown.Name = "playerTalentPointsNumericUpDown";
-            this.playerTalentPointsNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerTalentPointsNumericUpDown.TabIndex = 13;
+            this._PlayerTalentPointsNumericUpDown.Name = "_PlayerTalentPointsNumericUpDown";
+            this._PlayerTalentPointsNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerTalentPointsNumericUpDown.TabIndex = 13;
             // 
-            // playerIsFemaleCheckBox
+            // _PlayerIsFemaleCheckBox
             // 
-            this.playerIsFemaleCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.saveFileBindingSource, "_property_PlayerRecord._property_IsFemale", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerIsFemaleCheckBox.Location = new System.Drawing.Point(101, 136);
-            this.playerIsFemaleCheckBox.Name = "playerIsFemaleCheckBox";
-            this.playerIsFemaleCheckBox.Size = new System.Drawing.Size(120, 24);
-            this.playerIsFemaleCheckBox.TabIndex = 11;
-            this.playerIsFemaleCheckBox.Text = "* See note below.";
-            this.playerIsFemaleCheckBox.UseVisualStyleBackColor = true;
+            this._PlayerIsFemaleCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this._SaveFileBindingSource, "_property_PlayerRecord._property_IsFemale", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerIsFemaleCheckBox.Location = new System.Drawing.Point(101, 136);
+            this._PlayerIsFemaleCheckBox.Name = "_PlayerIsFemaleCheckBox";
+            this._PlayerIsFemaleCheckBox.Size = new System.Drawing.Size(120, 24);
+            this._PlayerIsFemaleCheckBox.TabIndex = 11;
+            this._PlayerIsFemaleCheckBox.Text = "* See note below.";
+            this._PlayerIsFemaleCheckBox.UseVisualStyleBackColor = true;
             // 
-            // playerFirstNameTextBox
+            // _PlayerFirstNameTextBox
             // 
-            this.playerFirstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.saveFileBindingSource, "_property_PlayerRecord._property_FirstName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerFirstNameTextBox.Location = new System.Drawing.Point(101, 3);
-            this.playerFirstNameTextBox.Name = "playerFirstNameTextBox";
-            this.playerFirstNameTextBox.Size = new System.Drawing.Size(120, 20);
-            this.playerFirstNameTextBox.TabIndex = 9;
+            this._PlayerFirstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._SaveFileBindingSource, "_property_PlayerRecord._property_FirstName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerFirstNameTextBox.Location = new System.Drawing.Point(101, 3);
+            this._PlayerFirstNameTextBox.Name = "_PlayerFirstNameTextBox";
+            this._PlayerFirstNameTextBox.Size = new System.Drawing.Size(120, 20);
+            this._PlayerFirstNameTextBox.TabIndex = 9;
             // 
-            // playerNotorietyComboBox
+            // _PlayerNotorietyComboBox
             // 
-            this.playerNotorietyComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.saveFileBindingSource, "_property_PlayerRecord._property_Notoriety", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerNotorietyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.playerNotorietyComboBox.FormattingEnabled = true;
-            this.playerNotorietyComboBox.Location = new System.Drawing.Point(101, 109);
-            this.playerNotorietyComboBox.Name = "playerNotorietyComboBox";
-            this.playerNotorietyComboBox.Size = new System.Drawing.Size(120, 21);
-            this.playerNotorietyComboBox.TabIndex = 7;
+            this._PlayerNotorietyComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this._SaveFileBindingSource, "_property_PlayerRecord._property_Notoriety", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerNotorietyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._PlayerNotorietyComboBox.FormattingEnabled = true;
+            this._PlayerNotorietyComboBox.Location = new System.Drawing.Point(101, 109);
+            this._PlayerNotorietyComboBox.Name = "_PlayerNotorietyComboBox";
+            this._PlayerNotorietyComboBox.Size = new System.Drawing.Size(120, 21);
+            this._PlayerNotorietyComboBox.TabIndex = 7;
             // 
-            // playerOriginComboBox
+            // _PlayerOriginComboBox
             // 
-            this.playerOriginComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.saveFileBindingSource, "_property_PlayerRecord._property_Origin", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerOriginComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.playerOriginComboBox.FormattingEnabled = true;
-            this.playerOriginComboBox.Location = new System.Drawing.Point(101, 82);
-            this.playerOriginComboBox.Name = "playerOriginComboBox";
-            this.playerOriginComboBox.Size = new System.Drawing.Size(120, 21);
-            this.playerOriginComboBox.TabIndex = 5;
+            this._PlayerOriginComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this._SaveFileBindingSource, "_property_PlayerRecord._property_Origin", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerOriginComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._PlayerOriginComboBox.FormattingEnabled = true;
+            this._PlayerOriginComboBox.Location = new System.Drawing.Point(101, 82);
+            this._PlayerOriginComboBox.Name = "_PlayerOriginComboBox";
+            this._PlayerOriginComboBox.Size = new System.Drawing.Size(120, 21);
+            this._PlayerOriginComboBox.TabIndex = 5;
             // 
-            // playerPlayerClassNameComboBox
+            // _PlayerPlayerClassNameComboBox
             // 
-            this.playerPlayerClassNameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.saveFileBindingSource, "_property_PlayerRecord._property_PlayerClassName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerPlayerClassNameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.playerPlayerClassNameComboBox.FormattingEnabled = true;
-            this.playerPlayerClassNameComboBox.Location = new System.Drawing.Point(101, 55);
-            this.playerPlayerClassNameComboBox.Name = "playerPlayerClassNameComboBox";
-            this.playerPlayerClassNameComboBox.Size = new System.Drawing.Size(120, 21);
-            this.playerPlayerClassNameComboBox.Sorted = true;
-            this.playerPlayerClassNameComboBox.TabIndex = 3;
+            this._PlayerPlayerClassNameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this._SaveFileBindingSource, "_property_PlayerRecord._property_PlayerClassName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerPlayerClassNameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._PlayerPlayerClassNameComboBox.FormattingEnabled = true;
+            this._PlayerPlayerClassNameComboBox.Location = new System.Drawing.Point(101, 55);
+            this._PlayerPlayerClassNameComboBox.Name = "_PlayerPlayerClassNameComboBox";
+            this._PlayerPlayerClassNameComboBox.Size = new System.Drawing.Size(120, 21);
+            this._PlayerPlayerClassNameComboBox.Sorted = true;
+            this._PlayerPlayerClassNameComboBox.TabIndex = 3;
             // 
-            // playerLevelNumericUpDown
+            // _PlayerLevelNumericUpDown
             // 
-            this.playerLevelNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.saveFileBindingSource, "_property_PlayerRecord._property_Level", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.playerLevelNumericUpDown.Location = new System.Drawing.Point(101, 29);
-            this.playerLevelNumericUpDown.Maximum = new decimal(new int[] {
+            this._PlayerLevelNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this._SaveFileBindingSource, "_property_PlayerRecord._property_Level", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._PlayerLevelNumericUpDown.Location = new System.Drawing.Point(101, 29);
+            this._PlayerLevelNumericUpDown.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
-            this.playerLevelNumericUpDown.Minimum = new decimal(new int[] {
+            this._PlayerLevelNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.playerLevelNumericUpDown.Name = "playerLevelNumericUpDown";
-            this.playerLevelNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.playerLevelNumericUpDown.TabIndex = 2;
-            this.playerLevelNumericUpDown.Value = new decimal(new int[] {
+            this._PlayerLevelNumericUpDown.Name = "_PlayerLevelNumericUpDown";
+            this._PlayerLevelNumericUpDown.Size = new System.Drawing.Size(120, 20);
+            this._PlayerLevelNumericUpDown.TabIndex = 2;
+            this._PlayerLevelNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // playerPowersTabPage
+            // _PlayerPowersTabPage
             // 
-            this.playerPowersTabPage.Controls.Add(this.label2);
-            this.playerPowersTabPage.Location = new System.Drawing.Point(4, 22);
-            this.playerPowersTabPage.Name = "playerPowersTabPage";
-            this.playerPowersTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.playerPowersTabPage.Size = new System.Drawing.Size(572, 338);
-            this.playerPowersTabPage.TabIndex = 1;
-            this.playerPowersTabPage.Text = "Powers";
-            this.playerPowersTabPage.UseVisualStyleBackColor = true;
+            this._PlayerPowersTabPage.Controls.Add(this._PlayerPowersNotImplementedLabel);
+            this._PlayerPowersTabPage.Location = new System.Drawing.Point(4, 22);
+            this._PlayerPowersTabPage.Name = "_PlayerPowersTabPage";
+            this._PlayerPowersTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._PlayerPowersTabPage.Size = new System.Drawing.Size(572, 338);
+            this._PlayerPowersTabPage.TabIndex = 1;
+            this._PlayerPowersTabPage.Text = "Powers";
+            this._PlayerPowersTabPage.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // _PlayerPowersNotImplementedLabel
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(566, 332);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Not implemented yet.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._PlayerPowersNotImplementedLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._PlayerPowersNotImplementedLabel.Location = new System.Drawing.Point(3, 3);
+            this._PlayerPowersNotImplementedLabel.Name = "_PlayerPowersNotImplementedLabel";
+            this._PlayerPowersNotImplementedLabel.Size = new System.Drawing.Size(566, 332);
+            this._PlayerPowersNotImplementedLabel.TabIndex = 0;
+            this._PlayerPowersNotImplementedLabel.Text = "Not implemented yet.";
+            this._PlayerPowersNotImplementedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // playerAppearanceTabPage
+            // _PlayerAppearanceTabPage
             // 
-            this.playerAppearanceTabPage.Controls.Add(this.label4);
-            this.playerAppearanceTabPage.Location = new System.Drawing.Point(4, 22);
-            this.playerAppearanceTabPage.Name = "playerAppearanceTabPage";
-            this.playerAppearanceTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.playerAppearanceTabPage.Size = new System.Drawing.Size(572, 338);
-            this.playerAppearanceTabPage.TabIndex = 2;
-            this.playerAppearanceTabPage.Text = "Appearance";
-            this.playerAppearanceTabPage.UseVisualStyleBackColor = true;
+            this._PlayerAppearanceTabPage.Controls.Add(this._PlayerAppearanceNotImplementedLabel);
+            this._PlayerAppearanceTabPage.Location = new System.Drawing.Point(4, 22);
+            this._PlayerAppearanceTabPage.Name = "_PlayerAppearanceTabPage";
+            this._PlayerAppearanceTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._PlayerAppearanceTabPage.Size = new System.Drawing.Size(572, 338);
+            this._PlayerAppearanceTabPage.TabIndex = 2;
+            this._PlayerAppearanceTabPage.Text = "Appearance";
+            this._PlayerAppearanceTabPage.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // _PlayerAppearanceNotImplementedLabel
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(566, 332);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Not implemented yet.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._PlayerAppearanceNotImplementedLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._PlayerAppearanceNotImplementedLabel.Location = new System.Drawing.Point(3, 3);
+            this._PlayerAppearanceNotImplementedLabel.Name = "_PlayerAppearanceNotImplementedLabel";
+            this._PlayerAppearanceNotImplementedLabel.Size = new System.Drawing.Size(566, 332);
+            this._PlayerAppearanceNotImplementedLabel.TabIndex = 1;
+            this._PlayerAppearanceNotImplementedLabel.Text = "Not implemented yet.";
+            this._PlayerAppearanceNotImplementedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // henchmentTabPage
+            // _HenchmenTabPage
             // 
-            this.henchmentTabPage.Controls.Add(this.label3);
-            this.henchmentTabPage.Location = new System.Drawing.Point(4, 22);
-            this.henchmentTabPage.Name = "henchmentTabPage";
-            this.henchmentTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.henchmentTabPage.Size = new System.Drawing.Size(592, 376);
-            this.henchmentTabPage.TabIndex = 2;
-            this.henchmentTabPage.Text = "Henchmen";
-            this.henchmentTabPage.UseVisualStyleBackColor = true;
+            this._HenchmenTabPage.Controls.Add(this._HenchmenNotImplementedLabel);
+            this._HenchmenTabPage.Location = new System.Drawing.Point(4, 22);
+            this._HenchmenTabPage.Name = "_HenchmenTabPage";
+            this._HenchmenTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._HenchmenTabPage.Size = new System.Drawing.Size(592, 376);
+            this._HenchmenTabPage.TabIndex = 2;
+            this._HenchmenTabPage.Text = "Henchmen";
+            this._HenchmenTabPage.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // _HenchmenNotImplementedLabel
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(586, 370);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Not implemented yet.";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._HenchmenNotImplementedLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._HenchmenNotImplementedLabel.Location = new System.Drawing.Point(3, 3);
+            this._HenchmenNotImplementedLabel.Name = "_HenchmenNotImplementedLabel";
+            this._HenchmenNotImplementedLabel.Size = new System.Drawing.Size(586, 370);
+            this._HenchmenNotImplementedLabel.TabIndex = 1;
+            this._HenchmenNotImplementedLabel.Text = "Not implemented yet.";
+            this._HenchmenNotImplementedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plotTabPage
+            // _PlotTabPage
             // 
-            this.plotTabPage.Controls.Add(this.plotTabControl);
-            this.plotTabPage.Location = new System.Drawing.Point(4, 22);
-            this.plotTabPage.Name = "plotTabPage";
-            this.plotTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.plotTabPage.Size = new System.Drawing.Size(592, 376);
-            this.plotTabPage.TabIndex = 6;
-            this.plotTabPage.Text = "Plot";
-            this.plotTabPage.UseVisualStyleBackColor = true;
+            this._PlotTabPage.Controls.Add(this._PlotTabControl);
+            this._PlotTabPage.Location = new System.Drawing.Point(4, 22);
+            this._PlotTabPage.Name = "_PlotTabPage";
+            this._PlotTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._PlotTabPage.Size = new System.Drawing.Size(592, 376);
+            this._PlotTabPage.TabIndex = 6;
+            this._PlotTabPage.Text = "Plot";
+            this._PlotTabPage.UseVisualStyleBackColor = true;
             // 
-            // plotTabControl
+            // _PlotTabControl
             // 
-            this.plotTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.plotTabControl.Location = new System.Drawing.Point(6, 6);
-            this.plotTabControl.Name = "plotTabControl";
-            this.plotTabControl.SelectedIndex = 0;
-            this.plotTabControl.Size = new System.Drawing.Size(580, 364);
-            this.plotTabControl.TabIndex = 0;
+            this._PlotTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._PlotTabControl.Location = new System.Drawing.Point(6, 6);
+            this._PlotTabControl.Name = "_PlotTabControl";
+            this._PlotTabControl.SelectedIndex = 0;
+            this._PlotTabControl.Size = new System.Drawing.Size(580, 364);
+            this._PlotTabControl.TabIndex = 0;
             // 
-            // toolboxTabPage
+            // _ToolboxTabPage
             // 
-            this.toolboxTabPage.Controls.Add(this.toolboxHenchmenGroupBox);
-            this.toolboxTabPage.Controls.Add(this.toolboxHeadMorphFunGroupBox);
-            this.toolboxTabPage.Controls.Add(this.toolboxHeadMorphGroupBox);
-            this.toolboxTabPage.Location = new System.Drawing.Point(4, 22);
-            this.toolboxTabPage.Name = "toolboxTabPage";
-            this.toolboxTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.toolboxTabPage.Size = new System.Drawing.Size(592, 376);
-            this.toolboxTabPage.TabIndex = 4;
-            this.toolboxTabPage.Text = "Toolbox";
-            this.toolboxTabPage.UseVisualStyleBackColor = true;
+            this._ToolboxTabPage.Controls.Add(this._ToolboxHenchmenGroupBox);
+            this._ToolboxTabPage.Controls.Add(this._ToolboxHeadMorphFunGroupBox);
+            this._ToolboxTabPage.Controls.Add(this._ToolboxHeadMorphGroupBox);
+            this._ToolboxTabPage.Location = new System.Drawing.Point(4, 22);
+            this._ToolboxTabPage.Name = "_ToolboxTabPage";
+            this._ToolboxTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._ToolboxTabPage.Size = new System.Drawing.Size(592, 376);
+            this._ToolboxTabPage.TabIndex = 4;
+            this._ToolboxTabPage.Text = "Toolbox";
+            this._ToolboxTabPage.UseVisualStyleBackColor = true;
             // 
-            // toolboxHenchmenGroupBox
+            // _ToolboxHenchmenGroupBox
             // 
-            this.toolboxHenchmenGroupBox.Controls.Add(this.toolboxHenchmenRespec);
-            this.toolboxHenchmenGroupBox.Location = new System.Drawing.Point(12, 135);
-            this.toolboxHenchmenGroupBox.Name = "toolboxHenchmenGroupBox";
-            this.toolboxHenchmenGroupBox.Size = new System.Drawing.Size(168, 53);
-            this.toolboxHenchmenGroupBox.TabIndex = 2;
-            this.toolboxHenchmenGroupBox.TabStop = false;
-            this.toolboxHenchmenGroupBox.Text = "Henchmen";
+            this._ToolboxHenchmenGroupBox.Controls.Add(this._ToolboxHenchmenRespecButton);
+            this._ToolboxHenchmenGroupBox.Location = new System.Drawing.Point(12, 135);
+            this._ToolboxHenchmenGroupBox.Name = "_ToolboxHenchmenGroupBox";
+            this._ToolboxHenchmenGroupBox.Size = new System.Drawing.Size(168, 53);
+            this._ToolboxHenchmenGroupBox.TabIndex = 2;
+            this._ToolboxHenchmenGroupBox.TabStop = false;
+            this._ToolboxHenchmenGroupBox.Text = "Henchmen";
             // 
-            // toolboxHenchmenRespec
+            // _ToolboxHenchmenRespecButton
             // 
-            this.toolboxHenchmenRespec.Location = new System.Drawing.Point(9, 19);
-            this.toolboxHenchmenRespec.Name = "toolboxHenchmenRespec";
-            this.toolboxHenchmenRespec.Size = new System.Drawing.Size(153, 23);
-            this.toolboxHenchmenRespec.TabIndex = 0;
-            this.toolboxHenchmenRespec.Text = "Refund All Talent Points";
-            this.toolboxHenchmenRespec.UseVisualStyleBackColor = true;
-            this.toolboxHenchmenRespec.Click += new System.EventHandler(this.OnHenchmenResetPowers);
+            this._ToolboxHenchmenRespecButton.Location = new System.Drawing.Point(9, 19);
+            this._ToolboxHenchmenRespecButton.Name = "_ToolboxHenchmenRespecButton";
+            this._ToolboxHenchmenRespecButton.Size = new System.Drawing.Size(153, 23);
+            this._ToolboxHenchmenRespecButton.TabIndex = 0;
+            this._ToolboxHenchmenRespecButton.Text = "Refund All Talent Points";
+            this._ToolboxHenchmenRespecButton.UseVisualStyleBackColor = true;
+            this._ToolboxHenchmenRespecButton.Click += new System.EventHandler(this.OnHenchmenResetPowers);
             // 
-            // toolboxHeadMorphFunGroupBox
+            // _ToolboxHeadMorphFunGroupBox
             // 
-            this.toolboxHeadMorphFunGroupBox.Controls.Add(this.headMorphFunButton);
-            this.toolboxHeadMorphFunGroupBox.Controls.Add(this.headMorphFunComboBox);
-            this.toolboxHeadMorphFunGroupBox.Controls.Add(this.toolboxHeadMorphFunWarningLabel);
-            this.toolboxHeadMorphFunGroupBox.Location = new System.Drawing.Point(186, 12);
-            this.toolboxHeadMorphFunGroupBox.Name = "toolboxHeadMorphFunGroupBox";
-            this.toolboxHeadMorphFunGroupBox.Size = new System.Drawing.Size(266, 114);
-            this.toolboxHeadMorphFunGroupBox.TabIndex = 1;
-            this.toolboxHeadMorphFunGroupBox.TabStop = false;
-            this.toolboxHeadMorphFunGroupBox.Text = "Head Morph Fun Stuff!";
+            this._ToolboxHeadMorphFunGroupBox.Controls.Add(this._HeadMorphFunButton);
+            this._ToolboxHeadMorphFunGroupBox.Controls.Add(this._HeadMorphFunComboBox);
+            this._ToolboxHeadMorphFunGroupBox.Controls.Add(this._ToolboxHeadMorphFunWarningLabel);
+            this._ToolboxHeadMorphFunGroupBox.Location = new System.Drawing.Point(186, 12);
+            this._ToolboxHeadMorphFunGroupBox.Name = "_ToolboxHeadMorphFunGroupBox";
+            this._ToolboxHeadMorphFunGroupBox.Size = new System.Drawing.Size(266, 114);
+            this._ToolboxHeadMorphFunGroupBox.TabIndex = 1;
+            this._ToolboxHeadMorphFunGroupBox.TabStop = false;
+            this._ToolboxHeadMorphFunGroupBox.Text = "Head Morph Fun Stuff!";
             // 
-            // headMorphFunButton
+            // _HeadMorphFunButton
             // 
-            this.headMorphFunButton.Location = new System.Drawing.Point(213, 18);
-            this.headMorphFunButton.Name = "headMorphFunButton";
-            this.headMorphFunButton.Size = new System.Drawing.Size(44, 21);
-            this.headMorphFunButton.TabIndex = 3;
-            this.headMorphFunButton.Text = "Do It!";
-            this.headMorphFunButton.UseVisualStyleBackColor = true;
-            this.headMorphFunButton.Click += new System.EventHandler(this.OnHeadMorphFun);
+            this._HeadMorphFunButton.Location = new System.Drawing.Point(213, 18);
+            this._HeadMorphFunButton.Name = "_HeadMorphFunButton";
+            this._HeadMorphFunButton.Size = new System.Drawing.Size(44, 21);
+            this._HeadMorphFunButton.TabIndex = 3;
+            this._HeadMorphFunButton.Text = "Do It!";
+            this._HeadMorphFunButton.UseVisualStyleBackColor = true;
+            this._HeadMorphFunButton.Click += new System.EventHandler(this.OnHeadMorphFun);
             // 
-            // headMorphFunComboBox
+            // _HeadMorphFunComboBox
             // 
-            this.headMorphFunComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.headMorphFunComboBox.FormattingEnabled = true;
-            this.headMorphFunComboBox.Items.AddRange(new object[] {
+            this._HeadMorphFunComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._HeadMorphFunComboBox.FormattingEnabled = true;
+            this._HeadMorphFunComboBox.Items.AddRange(new object[] {
             "Delete",
             "Expand (Big Head Mode!!)",
             "Shrink",
             "Flatten X",
             "Flatten Y",
             "Flatten Z"});
-            this.headMorphFunComboBox.Location = new System.Drawing.Point(6, 19);
-            this.headMorphFunComboBox.Name = "headMorphFunComboBox";
-            this.headMorphFunComboBox.Size = new System.Drawing.Size(201, 21);
-            this.headMorphFunComboBox.TabIndex = 2;
+            this._HeadMorphFunComboBox.Location = new System.Drawing.Point(6, 19);
+            this._HeadMorphFunComboBox.Name = "_HeadMorphFunComboBox";
+            this._HeadMorphFunComboBox.Size = new System.Drawing.Size(201, 21);
+            this._HeadMorphFunComboBox.TabIndex = 2;
             // 
-            // toolboxHeadMorphFunWarningLabel
+            // _ToolboxHeadMorphFunWarningLabel
             // 
-            this.toolboxHeadMorphFunWarningLabel.Location = new System.Drawing.Point(6, 45);
-            this.toolboxHeadMorphFunWarningLabel.Name = "toolboxHeadMorphFunWarningLabel";
-            this.toolboxHeadMorphFunWarningLabel.Size = new System.Drawing.Size(251, 66);
-            this.toolboxHeadMorphFunWarningLabel.TabIndex = 1;
-            this.toolboxHeadMorphFunWarningLabel.Text = "These operations are irreversible, so keep a backup of the save you\'re modifying." +
-                " Unfortunately they only affect the head mesh, hair, accessories and helmets rem" +
-                "ain unaffected.";
+            this._ToolboxHeadMorphFunWarningLabel.Location = new System.Drawing.Point(6, 45);
+            this._ToolboxHeadMorphFunWarningLabel.Name = "_ToolboxHeadMorphFunWarningLabel";
+            this._ToolboxHeadMorphFunWarningLabel.Size = new System.Drawing.Size(251, 66);
+            this._ToolboxHeadMorphFunWarningLabel.TabIndex = 1;
+            this._ToolboxHeadMorphFunWarningLabel.Text = "These operations are irreversible, so keep a backup of the save you\'re modifying." +
+    " Unfortunately they only affect the head mesh, hair, accessories and helmets rem" +
+    "ain unaffected.";
             // 
-            // toolboxHeadMorphGroupBox
+            // _ToolboxHeadMorphGroupBox
             // 
-            this.toolboxHeadMorphGroupBox.Controls.Add(this.toolboxHeadMorphWarningLabel);
-            this.toolboxHeadMorphGroupBox.Controls.Add(this.toolboxHeadMorphImportButton);
-            this.toolboxHeadMorphGroupBox.Controls.Add(this.toolboxHeadMorphExportButton);
-            this.toolboxHeadMorphGroupBox.Location = new System.Drawing.Point(12, 12);
-            this.toolboxHeadMorphGroupBox.Name = "toolboxHeadMorphGroupBox";
-            this.toolboxHeadMorphGroupBox.Size = new System.Drawing.Size(168, 117);
-            this.toolboxHeadMorphGroupBox.TabIndex = 0;
-            this.toolboxHeadMorphGroupBox.TabStop = false;
-            this.toolboxHeadMorphGroupBox.Text = "Head Morph";
+            this._ToolboxHeadMorphGroupBox.Controls.Add(this._ToolboxHeadMorphWarningLabel);
+            this._ToolboxHeadMorphGroupBox.Controls.Add(this._ToolboxHeadMorphImportButton);
+            this._ToolboxHeadMorphGroupBox.Controls.Add(this._ToolboxHeadMorphExportButton);
+            this._ToolboxHeadMorphGroupBox.Location = new System.Drawing.Point(12, 12);
+            this._ToolboxHeadMorphGroupBox.Name = "_ToolboxHeadMorphGroupBox";
+            this._ToolboxHeadMorphGroupBox.Size = new System.Drawing.Size(168, 117);
+            this._ToolboxHeadMorphGroupBox.TabIndex = 0;
+            this._ToolboxHeadMorphGroupBox.TabStop = false;
+            this._ToolboxHeadMorphGroupBox.Text = "Head Morph";
             // 
-            // toolboxHeadMorphWarningLabel
+            // _ToolboxHeadMorphWarningLabel
             // 
-            this.toolboxHeadMorphWarningLabel.Location = new System.Drawing.Point(6, 45);
-            this.toolboxHeadMorphWarningLabel.Name = "toolboxHeadMorphWarningLabel";
-            this.toolboxHeadMorphWarningLabel.Size = new System.Drawing.Size(156, 69);
-            this.toolboxHeadMorphWarningLabel.TabIndex = 2;
-            this.toolboxHeadMorphWarningLabel.Text = "Exporting / importing face morph data works on a raw level, problems could occur," +
-                " so keep a backup of the save you\'re modifying.";
+            this._ToolboxHeadMorphWarningLabel.Location = new System.Drawing.Point(6, 45);
+            this._ToolboxHeadMorphWarningLabel.Name = "_ToolboxHeadMorphWarningLabel";
+            this._ToolboxHeadMorphWarningLabel.Size = new System.Drawing.Size(156, 69);
+            this._ToolboxHeadMorphWarningLabel.TabIndex = 2;
+            this._ToolboxHeadMorphWarningLabel.Text = "Exporting / importing face morph data works on a raw level, problems could occur," +
+    " so keep a backup of the save you\'re modifying.";
             // 
-            // toolboxHeadMorphImportButton
+            // _ToolboxHeadMorphImportButton
             // 
-            this.toolboxHeadMorphImportButton.Location = new System.Drawing.Point(87, 19);
-            this.toolboxHeadMorphImportButton.Name = "toolboxHeadMorphImportButton";
-            this.toolboxHeadMorphImportButton.Size = new System.Drawing.Size(75, 23);
-            this.toolboxHeadMorphImportButton.TabIndex = 1;
-            this.toolboxHeadMorphImportButton.Text = "Import";
-            this.toolboxHeadMorphImportButton.UseVisualStyleBackColor = true;
-            this.toolboxHeadMorphImportButton.Click += new System.EventHandler(this.OnHeadMorphImport);
+            this._ToolboxHeadMorphImportButton.Location = new System.Drawing.Point(87, 19);
+            this._ToolboxHeadMorphImportButton.Name = "_ToolboxHeadMorphImportButton";
+            this._ToolboxHeadMorphImportButton.Size = new System.Drawing.Size(75, 23);
+            this._ToolboxHeadMorphImportButton.TabIndex = 1;
+            this._ToolboxHeadMorphImportButton.Text = "Import";
+            this._ToolboxHeadMorphImportButton.UseVisualStyleBackColor = true;
+            this._ToolboxHeadMorphImportButton.Click += new System.EventHandler(this.OnHeadMorphImport);
             // 
-            // toolboxHeadMorphExportButton
+            // _ToolboxHeadMorphExportButton
             // 
-            this.toolboxHeadMorphExportButton.Location = new System.Drawing.Point(6, 19);
-            this.toolboxHeadMorphExportButton.Name = "toolboxHeadMorphExportButton";
-            this.toolboxHeadMorphExportButton.Size = new System.Drawing.Size(75, 23);
-            this.toolboxHeadMorphExportButton.TabIndex = 0;
-            this.toolboxHeadMorphExportButton.Text = "Export";
-            this.toolboxHeadMorphExportButton.UseVisualStyleBackColor = true;
-            this.toolboxHeadMorphExportButton.Click += new System.EventHandler(this.OnHeadMorphExport);
+            this._ToolboxHeadMorphExportButton.Location = new System.Drawing.Point(6, 19);
+            this._ToolboxHeadMorphExportButton.Name = "_ToolboxHeadMorphExportButton";
+            this._ToolboxHeadMorphExportButton.Size = new System.Drawing.Size(75, 23);
+            this._ToolboxHeadMorphExportButton.TabIndex = 0;
+            this._ToolboxHeadMorphExportButton.Text = "Export";
+            this._ToolboxHeadMorphExportButton.UseVisualStyleBackColor = true;
+            this._ToolboxHeadMorphExportButton.Click += new System.EventHandler(this.OnHeadMorphExport);
             // 
-            // rawTabPage
+            // _RawTabPage
             // 
-            this.rawTabPage.Controls.Add(this.rawPropertyGrid);
-            this.rawTabPage.Location = new System.Drawing.Point(4, 22);
-            this.rawTabPage.Name = "rawTabPage";
-            this.rawTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.rawTabPage.Size = new System.Drawing.Size(592, 376);
-            this.rawTabPage.TabIndex = 1;
-            this.rawTabPage.Text = "Raw";
-            this.rawTabPage.UseVisualStyleBackColor = true;
+            this._RawTabPage.Controls.Add(this._RawPropertyGrid);
+            this._RawTabPage.Location = new System.Drawing.Point(4, 22);
+            this._RawTabPage.Name = "_RawTabPage";
+            this._RawTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this._RawTabPage.Size = new System.Drawing.Size(592, 376);
+            this._RawTabPage.TabIndex = 1;
+            this._RawTabPage.Text = "Raw";
+            this._RawTabPage.UseVisualStyleBackColor = true;
             // 
-            // rawPropertyGrid
+            // _RawPropertyGrid
             // 
-            this.rawPropertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rawPropertyGrid.Location = new System.Drawing.Point(3, 3);
-            this.rawPropertyGrid.Name = "rawPropertyGrid";
-            this.rawPropertyGrid.Size = new System.Drawing.Size(586, 370);
-            this.rawPropertyGrid.TabIndex = 0;
+            this._RawPropertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._RawPropertyGrid.Location = new System.Drawing.Point(3, 3);
+            this._RawPropertyGrid.Name = "_RawPropertyGrid";
+            this._RawPropertyGrid.Size = new System.Drawing.Size(586, 370);
+            this._RawPropertyGrid.TabIndex = 0;
             // 
-            // openFileDialog
+            // _SaveOpenFileDialog
             // 
-            this.openFileDialog.DefaultExt = "sav";
-            this.openFileDialog.Filter = "Mass Effect 2 Saves (*.pcsav)|*.pcsav|All Files (*.*)|*.*";
+            this._SaveOpenFileDialog.DefaultExt = "sav";
+            this._SaveOpenFileDialog.Filter = "Mass Effect 2 Saves (*.pcsav)|*.pcsav|All Files (*.*)|*.*";
             // 
-            // saveFileDialog
+            // _SaveSaveFileDialog
             // 
-            this.saveFileDialog.Filter = "Mass Effect 2 Saves (*.pcsav)|*.pcsav|All Files (*.*)|*.*";
+            this._SaveSaveFileDialog.Filter = "Mass Effect 2 Saves (*.pcsav)|*.pcsav|All Files (*.*)|*.*";
             // 
-            // saveHeadMorphDialog
+            // _HeadMorphSaveFileDialog
             // 
-            this.saveHeadMorphDialog.Filter = "Mass Effect 2 Head Morphs (*.me2headmorph)|*.me2headmorph";
+            this._HeadMorphSaveFileDialog.Filter = "Mass Effect 2 Head Morphs (*.me2headmorph)|*.me2headmorph";
             // 
-            // openHeadMorphDialog
+            // _HeadMorphOpenFileDialog
             // 
-            this.openHeadMorphDialog.DefaultExt = "sav";
-            this.openHeadMorphDialog.Filter = "Mass Effect 2 Head Morphs (*.me2headmorph)|*.me2headmorph";
+            this._HeadMorphOpenFileDialog.DefaultExt = "sav";
+            this._HeadMorphOpenFileDialog.Filter = "Mass Effect 2 Head Morphs (*.me2headmorph)|*.me2headmorph";
             // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 442);
-            this.Controls.Add(this.mainTabControl);
-            this.Controls.Add(this.mainToolStrip);
+            this.Controls.Add(this._MainTabControl);
+            this.Controls.Add(this._MainToolStrip);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Editor";
             this.Text = "Gibbed\'s Mass Effect 2 Save Editor";
-            this.mainToolStrip.ResumeLayout(false);
-            this.mainToolStrip.PerformLayout();
-            this.mainTabControl.ResumeLayout(false);
-            this.playerTabPage.ResumeLayout(false);
-            this.playerTabControl.ResumeLayout(false);
-            this.playerBasicTabPage.ResumeLayout(false);
-            this.playerBasicResourcesGroupBox.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.playerProbesNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saveFileBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerMedigelNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerCreditsNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerEezoNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerPlatinumNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerIridiumNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerPalladiumNumericUpDown)).EndInit();
-            this.playerBasicCharacterGroupBox.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.playerRenegadePointsNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerParagonPointsNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerTalentPointsNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerLevelNumericUpDown)).EndInit();
-            this.playerPowersTabPage.ResumeLayout(false);
-            this.playerAppearanceTabPage.ResumeLayout(false);
-            this.henchmentTabPage.ResumeLayout(false);
-            this.plotTabPage.ResumeLayout(false);
-            this.toolboxTabPage.ResumeLayout(false);
-            this.toolboxHenchmenGroupBox.ResumeLayout(false);
-            this.toolboxHeadMorphFunGroupBox.ResumeLayout(false);
-            this.toolboxHeadMorphGroupBox.ResumeLayout(false);
-            this.rawTabPage.ResumeLayout(false);
+            this._MainToolStrip.ResumeLayout(false);
+            this._MainToolStrip.PerformLayout();
+            this._MainTabControl.ResumeLayout(false);
+            this._PlayerTabPage.ResumeLayout(false);
+            this._PlayerTabControl.ResumeLayout(false);
+            this._PlayerBasicTabPage.ResumeLayout(false);
+            this._PlayerBasicResourcesGroupBox.ResumeLayout(false);
+            this._PlayerBasicResourcesTableLayoutPanel.ResumeLayout(false);
+            this._PlayerBasicResourcesTableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerProbesNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._SaveFileBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerMedigelNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerCreditsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerEezoNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerPlatinumNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerIridiumNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerPalladiumNumericUpDown)).EndInit();
+            this._PlayerBasicCharacterGroupBox.ResumeLayout(false);
+            this._PlayerBasicCharacterTableLayoutPanel.ResumeLayout(false);
+            this._PlayerBasicCharacterTableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerRenegadePointsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerParagonPointsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerTalentPointsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PlayerLevelNumericUpDown)).EndInit();
+            this._PlayerPowersTabPage.ResumeLayout(false);
+            this._PlayerAppearanceTabPage.ResumeLayout(false);
+            this._HenchmenTabPage.ResumeLayout(false);
+            this._PlotTabPage.ResumeLayout(false);
+            this._ToolboxTabPage.ResumeLayout(false);
+            this._ToolboxHenchmenGroupBox.ResumeLayout(false);
+            this._ToolboxHeadMorphFunGroupBox.ResumeLayout(false);
+            this._ToolboxHeadMorphGroupBox.ResumeLayout(false);
+            this._RawTabPage.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1069,62 +1069,62 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip mainToolStrip;
-        private System.Windows.Forms.ToolStripDropDownButton newButton;
-        private System.Windows.Forms.ToolStripButton openButton;
-        private System.Windows.Forms.ToolStripButton saveButton;
-        private System.Windows.Forms.TabControl mainTabControl;
-        private System.Windows.Forms.TabPage playerTabPage;
-        private System.Windows.Forms.TabPage rawTabPage;
-        private System.Windows.Forms.TabPage henchmentTabPage;
-        private System.Windows.Forms.PropertyGrid rawPropertyGrid;
-        private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog;
-        private System.Windows.Forms.ToolStripMenuItem newMaleMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newFemaleMenuItem;
-        private System.Windows.Forms.TabPage toolboxTabPage;
-        private System.Windows.Forms.GroupBox toolboxHeadMorphGroupBox;
-        private System.Windows.Forms.GroupBox toolboxHeadMorphFunGroupBox;
-        private System.Windows.Forms.Label toolboxHeadMorphWarningLabel;
-        private System.Windows.Forms.Button toolboxHeadMorphImportButton;
-        private System.Windows.Forms.Button toolboxHeadMorphExportButton;
-        private System.Windows.Forms.Label toolboxHeadMorphFunWarningLabel;
-        private System.Windows.Forms.ComboBox headMorphFunComboBox;
-        private System.Windows.Forms.Button headMorphFunButton;
-        private System.Windows.Forms.SaveFileDialog saveHeadMorphDialog;
-        private System.Windows.Forms.OpenFileDialog openHeadMorphDialog;
-        private System.Windows.Forms.TabPage plotTabPage;
-        private System.Windows.Forms.TabControl plotTabControl;
-        private System.Windows.Forms.BindingSource saveFileBindingSource;
-        private System.Windows.Forms.TabControl playerTabControl;
-        private System.Windows.Forms.TabPage playerBasicTabPage;
-        private System.Windows.Forms.TabPage playerPowersTabPage;
-        private System.Windows.Forms.GroupBox playerBasicCharacterGroupBox;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox playerFirstNameTextBox;
-        private System.Windows.Forms.NumericUpDown playerLevelNumericUpDown;
-        private System.Windows.Forms.CheckBox playerIsFemaleCheckBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox playerBasicResourcesGroupBox;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.NumericUpDown playerPalladiumNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerIridiumNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerPlatinumNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerEezoNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerCreditsNumericUpDown;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TabPage playerAppearanceTabPage;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown playerTalentPointsNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerMedigelNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerProbesNumericUpDown;
-        private System.Windows.Forms.GroupBox toolboxHenchmenGroupBox;
-        private System.Windows.Forms.Button toolboxHenchmenRespec;
-        private System.Windows.Forms.NumericUpDown playerRenegadePointsNumericUpDown;
-        private System.Windows.Forms.NumericUpDown playerParagonPointsNumericUpDown;
-        private System.Windows.Forms.ComboBox playerNotorietyComboBox;
-        private System.Windows.Forms.ComboBox playerOriginComboBox;
-        private System.Windows.Forms.ComboBox playerPlayerClassNameComboBox;
+        private System.Windows.Forms.ToolStrip _MainToolStrip;
+        private System.Windows.Forms.ToolStripDropDownButton _NewToolStripDropDownButton;
+        private System.Windows.Forms.ToolStripButton _OpenToolStripButton;
+        private System.Windows.Forms.ToolStripButton _SaveToolStripButton;
+        private System.Windows.Forms.TabControl _MainTabControl;
+        private System.Windows.Forms.TabPage _PlayerTabPage;
+        private System.Windows.Forms.TabPage _RawTabPage;
+        private System.Windows.Forms.TabPage _HenchmenTabPage;
+        private System.Windows.Forms.PropertyGrid _RawPropertyGrid;
+        private System.Windows.Forms.OpenFileDialog _SaveOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog _SaveSaveFileDialog;
+        private System.Windows.Forms.ToolStripMenuItem _NewMaleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _NewFemaleToolStripMenuItem;
+        private System.Windows.Forms.TabPage _ToolboxTabPage;
+        private System.Windows.Forms.GroupBox _ToolboxHeadMorphGroupBox;
+        private System.Windows.Forms.GroupBox _ToolboxHeadMorphFunGroupBox;
+        private System.Windows.Forms.Label _ToolboxHeadMorphWarningLabel;
+        private System.Windows.Forms.Button _ToolboxHeadMorphImportButton;
+        private System.Windows.Forms.Button _ToolboxHeadMorphExportButton;
+        private System.Windows.Forms.Label _ToolboxHeadMorphFunWarningLabel;
+        private System.Windows.Forms.ComboBox _HeadMorphFunComboBox;
+        private System.Windows.Forms.Button _HeadMorphFunButton;
+        private System.Windows.Forms.SaveFileDialog _HeadMorphSaveFileDialog;
+        private System.Windows.Forms.OpenFileDialog _HeadMorphOpenFileDialog;
+        private System.Windows.Forms.TabPage _PlotTabPage;
+        private System.Windows.Forms.TabControl _PlotTabControl;
+        private System.Windows.Forms.BindingSource _SaveFileBindingSource;
+        private System.Windows.Forms.TabControl _PlayerTabControl;
+        private System.Windows.Forms.TabPage _PlayerBasicTabPage;
+        private System.Windows.Forms.TabPage _PlayerPowersTabPage;
+        private System.Windows.Forms.GroupBox _PlayerBasicCharacterGroupBox;
+        private System.Windows.Forms.TableLayoutPanel _PlayerBasicCharacterTableLayoutPanel;
+        private System.Windows.Forms.TextBox _PlayerFirstNameTextBox;
+        private System.Windows.Forms.NumericUpDown _PlayerLevelNumericUpDown;
+        private System.Windows.Forms.CheckBox _PlayerIsFemaleCheckBox;
+        private System.Windows.Forms.Label _GenderHeadMorphWarningLabel;
+        private System.Windows.Forms.GroupBox _PlayerBasicResourcesGroupBox;
+        private System.Windows.Forms.TableLayoutPanel _PlayerBasicResourcesTableLayoutPanel;
+        private System.Windows.Forms.NumericUpDown _PlayerPalladiumNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerIridiumNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerPlatinumNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerEezoNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerCreditsNumericUpDown;
+        private System.Windows.Forms.Label _PlayerPowersNotImplementedLabel;
+        private System.Windows.Forms.Label _HenchmenNotImplementedLabel;
+        private System.Windows.Forms.TabPage _PlayerAppearanceTabPage;
+        private System.Windows.Forms.Label _PlayerAppearanceNotImplementedLabel;
+        private System.Windows.Forms.NumericUpDown _PlayerTalentPointsNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerMedigelNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerProbesNumericUpDown;
+        private System.Windows.Forms.GroupBox _ToolboxHenchmenGroupBox;
+        private System.Windows.Forms.Button _ToolboxHenchmenRespecButton;
+        private System.Windows.Forms.NumericUpDown _PlayerRenegadePointsNumericUpDown;
+        private System.Windows.Forms.NumericUpDown _PlayerParagonPointsNumericUpDown;
+        private System.Windows.Forms.ComboBox _PlayerNotorietyComboBox;
+        private System.Windows.Forms.ComboBox _PlayerOriginComboBox;
+        private System.Windows.Forms.ComboBox _PlayerPlayerClassNameComboBox;
     }
 }

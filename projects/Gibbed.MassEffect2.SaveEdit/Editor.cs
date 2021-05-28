@@ -37,11 +37,11 @@ namespace Gibbed.MassEffect2.SaveEdit
     {
         private FileFormats.SaveFile SaveFile
         {
-            get { return (FileFormats.SaveFile)this.rawPropertyGrid.SelectedObject; }
+            get { return (FileFormats.SaveFile)this._RawPropertyGrid.SelectedObject; }
             set
             {
-                this.rawPropertyGrid.SelectedObject = value;
-                this.saveFileBindingSource.DataSource = value;
+                this._RawPropertyGrid.SelectedObject = value;
+                this._SaveFileBindingSource.DataSource = value;
             }
         }
 
@@ -103,23 +103,23 @@ namespace Gibbed.MassEffect2.SaveEdit
             var savePath = GetSavePath();
             if (Directory.Exists(savePath) == true)
             {
-                this.openFileDialog.InitialDirectory = savePath;
-                this.saveFileDialog.InitialDirectory = savePath;
+                this._SaveOpenFileDialog.InitialDirectory = savePath;
+                this._SaveSaveFileDialog.InitialDirectory = savePath;
             }
 
             this.AddPlotEditors();
 
-            this.playerPlayerClassNameComboBox.ValueMember = "Type";
-            this.playerPlayerClassNameComboBox.DisplayMember = "Name";
-            this.playerPlayerClassNameComboBox.DataSource = PlayerClass.GetList();
+            this._PlayerPlayerClassNameComboBox.ValueMember = "Type";
+            this._PlayerPlayerClassNameComboBox.DisplayMember = "Name";
+            this._PlayerPlayerClassNameComboBox.DataSource = PlayerClass.GetList();
 
-            this.playerOriginComboBox.ValueMember = "Type";
-            this.playerOriginComboBox.DisplayMember = "Name";
-            this.playerOriginComboBox.DataSource = PlayerOrigin.GetList();
+            this._PlayerOriginComboBox.ValueMember = "Type";
+            this._PlayerOriginComboBox.DisplayMember = "Name";
+            this._PlayerOriginComboBox.DataSource = PlayerOrigin.GetList();
 
-            this.playerNotorietyComboBox.ValueMember = "Type";
-            this.playerNotorietyComboBox.DisplayMember = "Name";
-            this.playerNotorietyComboBox.DataSource = PlayerNotoriety.GetList();
+            this._PlayerNotorietyComboBox.ValueMember = "Type";
+            this._PlayerNotorietyComboBox.DisplayMember = "Name";
+            this._PlayerNotorietyComboBox.DataSource = PlayerNotoriety.GetList();
 
             MemoryStream memory = new MemoryStream(Resources.DefaultMale);
             this.LoadSaveFromStream(memory);
@@ -307,7 +307,7 @@ namespace Gibbed.MassEffect2.SaveEdit
                         var masterTabPage = new TabPage();
                         masterTabPage.Text = category;
                         masterTabPage.UseVisualStyleBackColor = true;
-                        this.plotTabControl.TabPages.Add(masterTabPage);
+                        this._PlotTabControl.TabPages.Add(masterTabPage);
 
                         var masterTabControl = new TabControl();
                         masterTabControl.Dock = DockStyle.Fill;
@@ -428,12 +428,12 @@ namespace Gibbed.MassEffect2.SaveEdit
 
         private void OnOpen(object sender, EventArgs e)
         {
-            if (this.openFileDialog.ShowDialog() != DialogResult.OK)
+            if (this._SaveOpenFileDialog.ShowDialog() != DialogResult.OK)
             {
                 return;
             }
 
-            using (var input = this.openFileDialog.OpenFile())
+            using (var input = this._SaveOpenFileDialog.OpenFile())
             {
                 this.LoadSaveFromStream(input);
             }
@@ -441,12 +441,12 @@ namespace Gibbed.MassEffect2.SaveEdit
 
         private void OnSave(object sender, EventArgs e)
         {
-            if (this.saveFileDialog.ShowDialog() != DialogResult.OK)
+            if (this._SaveSaveFileDialog.ShowDialog() != DialogResult.OK)
             {
                 return;
             }
 
-            using (var output = File.Open(this.saveFileDialog.FileName, FileMode.Create, FileAccess.Write, FileShare.None))
+            using (var output = File.Open(this._SaveSaveFileDialog.FileName, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 this.SaveFile.Save(output);
             }
@@ -467,12 +467,12 @@ namespace Gibbed.MassEffect2.SaveEdit
                 return;
             }
 
-            if (this.saveHeadMorphDialog.ShowDialog() != DialogResult.OK)
+            if (this._HeadMorphSaveFileDialog.ShowDialog() != DialogResult.OK)
             {
                 return;
             }
 
-            using (var output = this.saveHeadMorphDialog.OpenFile())
+            using (var output = this._HeadMorphSaveFileDialog.OpenFile())
             {
                 const Endian endian = Endian.Little;
 
@@ -488,12 +488,12 @@ namespace Gibbed.MassEffect2.SaveEdit
 
         private void OnHeadMorphImport(object sender, EventArgs e)
         {
-            if (this.openHeadMorphDialog.ShowDialog() != DialogResult.OK)
+            if (this._HeadMorphOpenFileDialog.ShowDialog() != DialogResult.OK)
             {
                 return;
             }
 
-            using (var input = this.openHeadMorphDialog.OpenFile())
+            using (var input = this._HeadMorphOpenFileDialog.OpenFile())
             {
                 const Endian endian = Endian.Little;
 
@@ -547,7 +547,7 @@ namespace Gibbed.MassEffect2.SaveEdit
 
         private void OnHeadMorphFun(object sender, EventArgs e)
         {
-            if (this.headMorphFunComboBox.SelectedItem == null)
+            if (this._HeadMorphFunComboBox.SelectedItem == null)
             {
                 return;
             }
@@ -563,7 +563,7 @@ namespace Gibbed.MassEffect2.SaveEdit
                 return;
             }
 
-            string op = this.headMorphFunComboBox.SelectedItem as string;
+            string op = this._HeadMorphFunComboBox.SelectedItem as string;
             switch (op)
             {
                 case "Expand (Big Head Mode!!)":
