@@ -26,7 +26,7 @@ using System.ComponentModel;
 #region Gibbed.MassEffect2.FileFormats.SaveFile
 namespace Gibbed.MassEffect2.FileFormats
 {
-	public partial class SaveFile
+	public partial class SaveFileBase
 	{
 		[Category("5. Other")]
 		[DisplayName("Debug Name")]

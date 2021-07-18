@@ -508,7 +508,7 @@
             // 
             // _SaveFileBindingSource
             // 
-            this._SaveFileBindingSource.DataSource = typeof(Gibbed.MassEffect2.FileFormats.SaveFile);
+            this._SaveFileBindingSource.DataSource = typeof(Gibbed.MassEffect2.FileFormats.SaveFileBase);
             // 
             // _PlayerMedigelNumericUpDown
             // 
