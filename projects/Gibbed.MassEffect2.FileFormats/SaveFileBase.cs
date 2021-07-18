@@ -1,14 +1,16 @@
-﻿using Gibbed.IO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using Gibbed.IO;
 
 namespace Gibbed.MassEffect2.FileFormats
 {
     [TypeConverter(typeof(ExpandableObjectConverter))]
     public abstract partial class SaveFileBase
     {
+        public const int MassEffect2LegendaryVersionSave = 30;
+
         public uint Version; // ME2 1.0 (release) has saves of version 29; ME2 Legendary has version 30 (0x1D)
         public uint Checksum; // CRC32 of save data (from start) to before CRC32 value
 
@@ -103,7 +105,6 @@ namespace Gibbed.MassEffect2.FileFormats
         public static SaveFileBase Load(Stream input)
         {
             const Endian endian = Endian.Little;
-            const int MassEffect2LegendaryVersionSave = 30;
 
             var saveFileVersion = input.ReadValueU32();
 

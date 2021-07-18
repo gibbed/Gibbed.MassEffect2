@@ -20,9 +20,9 @@
  *    distribution.
  */
 
-using Gibbed.IO;
 using System;
 using System.IO;
+using Gibbed.IO;
 
 namespace Gibbed.MassEffect2.FileFormats
 {
