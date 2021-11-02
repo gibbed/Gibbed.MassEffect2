@@ -35,9 +35,9 @@ namespace Gibbed.MassEffect2.SaveEdit
 {
     public partial class Editor : Form
     {
-        private FileFormats.SaveFile SaveFile
+        private FileFormats.SaveFileBase SaveFile
         {
-            get { return (FileFormats.SaveFile)this._RawPropertyGrid.SelectedObject; }
+            get { return (FileFormats.SaveFileBase)this._RawPropertyGrid.SelectedObject; }
             set
             {
                 this._RawPropertyGrid.SelectedObject = value;
@@ -405,7 +405,7 @@ namespace Gibbed.MassEffect2.SaveEdit
 
         private void LoadSaveFromStream(Stream stream)
         {
-            var saveFile = FileFormats.SaveFile.Load(stream);
+            var saveFile = FileFormats.SaveFileBase.Load(stream);
             this.SaveFile = saveFile;
             this.UpdatePlotEditors();
         }

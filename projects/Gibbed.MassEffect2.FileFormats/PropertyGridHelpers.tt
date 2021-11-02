@@ -8,7 +8,7 @@
 	PropertyGridHelper template;
 	
 	template = new PropertyGridHelper();
-	template.Targets.Add(new PropertyGridHelperTarget("SaveFile.cs", "SaveFile"));
+	template.Targets.Add(new PropertyGridHelperTarget("SaveFileBase.cs", "SaveFileBase"));
 	// Save
 	template.Targets.Add(new PropertyGridHelperTarget("Appearance.cs", "Appearance"));
 	template.Targets.Add(new PropertyGridHelperTarget("Henchman.cs", "Henchman"));

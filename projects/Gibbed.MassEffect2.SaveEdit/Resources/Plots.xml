@@ -457,8 +457,11 @@ You can set the End Game State under the Plot section on the Raw tab.
       <plot id="3942">[Henchmen] Wrex recruited</plot>
 
       <plot id="4281">[Player] Romancing Ashley</plot>
+      <plot id="4282">[Player] Ashley romance cancelled</plot>
       <plot id="3960">[Player] Romancing Kaidan</plot>
+      <plot id="3961">[Player] Kaidan romance cancelled</plot>
       <plot id="4169">[Player] Romancing Liara</plot>
+      <plot id="4686">[Player] Liara romance cancelled</plot>
       <plot id="6528">[Player] Romanced someone</plot>
       
       <plot id="4596">[Tali and the Geth] Gave Tali a copy of the data found in UNC: Geth Incursions</plot>
@@ -466,8 +469,9 @@ You can set the End Game State under the Plot section on the Raw tab.
       <plot id="4768">[Citadel: The Fourth Estate] Punched her</plot>
       <plot id="4767">[Citadel: The Fourth Estate] Excused themself (looked good)</plot>
       <plot id="4766">[Citadel: The Fourth Estate] Refused interview (looked bad)</plot>
-      
+
       <plot id="3979">[Citadel] Talked to Harkin</plot>
+      <plot id="3980">[Citadel: Barla Von] Met him</plot>
 
       <plot id="5853">[Citadel: Asari Consort] Completed quest</plot>
       <plot id="4032">[Citadel: Asari Consort] Received Trinket</plot>
@@ -478,15 +482,20 @@ You can set the End Game State under the Plot section on the Raw tab.
       <plot id="4914">[Citadel: The Fan] Charmed him</plot>
       <plot id="4915">[Citadel: The Fan] Got him killed</plot>
       <plot id="4913">[Citadel: The Fan] Intimidated him</plot>
+      
       <plot id="2514">[Feros] Too many colonists killed</plot>
       <plot id="2490">[Feros] Intimidated Ethan Jeong</plot>
       <plot id="2491">[Feros] Convinced Ethan Jeong</plot>
       <plot id="4133">[Feros] Released Shiala</plot>
       <plot id="3798">[Feros] Killed Shiala</plot>
+
       <plot id="2713">[Noveria] Betrayed Gianna Parasini</plot>
       <plot id="2690">[Noveria] Gave evidence to Gianna Parasini</plot>
       <plot id="2687">[Noveria] Gave evidence to Lorik Qui'in</plot>
       <plot id="2587">[Noveria] Rachni Queen released</plot>
+      <plot id="2588">[Noveria] Rachni Queen killed</plot>
+      <plot id="3860">[Noveria] Talked to Han Olar</plot>
+
       <plot id="3828">[Virmire] Rescued Kaidan</plot>
       <plot id="3827">[Virmire] Rescued Ashley</plot>
       <plot id="3029">[Virmire] Wrex killed by Shepard</plot>
@@ -495,17 +504,19 @@ You can set the End Game State under the Plot section on the Raw tab.
       <plot id="4464">[Virmire: Assisting Kirrahe's Team] Geth flyers disabled</plot>
       <plot id="4459">[Virmire: Assisting Kirrahe's Team] Geth flyers reported</plot>
       <plot id="6058">[Virmire] Killed Rana Thanoptis</plot>
-      <plot id="5434">[Citadel] Chose Udina</plot>
-      <plot id="5435">[Citadel] Chose Anderson</plot>
-      <plot id="3001">[Citadel] Saved the Council</plot>
-      <plot id="3002">[Citadel] Abandoned the Council</plot>
 
-      <plot id="4608">"Fought Cerberus" ??? maybe -> [UNC: Hades' Dogs] Found files</plot>
-      <plot id="5885">"Heard of Cerberus" ??? maybe -> [UNC: Cerberus] Obtained quest</plot>
-      
+      <plot id="5434">[Citadel: End] Chose Udina</plot>
+      <plot id="5435">[Citadel: End] Chose Anderson</plot>
+      <plot id="3001">[Citadel: End] Saved the Council</plot>
+      <plot id="3002">[Citadel: End] Abandoned the Council</plot>
+
+      <plot id="4608">[UNC: Hades' Dogs] Found files</plot>
+      <plot id="5885">[UNC: Cerberus] Obtained quest</plot>
+      <plot id="4682">[UNC: Rogue VI] Completed assignment</plot>
+
       <plot id="7164">[Contract and Licenses] Got Elkoss Combine license</plot>
       
-      <plot id="6848">[UNC: Asari Diplomacy] Killed sister</plot>
+      <plot id="6848">[UNC: Asari Diplomacy] Killed Dahlia (Nassana's sister)</plot>
       <plot id="4621">[UNC: Asari Diplomacy] Met Nassana</plot>
       <plot id="5014">[UNC: Hostile Takeover] Accepted money</plot>
       <plot id="5015">[UNC: Hostile Takeover] Persuaded criminal to disband gang</plot>
@@ -517,10 +528,12 @@ You can set the End Game State under the Plot section on the Raw tab.
       <plot id="6922">[Citadel: Scan the Keepers] Accepted quest</plot>
       <plot id="3880">[Citadel: Scan the Keepers] Killed Chorban</plot>
       <plot id="3881">[Citadel: Scan the Keepers] Scared off Chorban</plot>
+
+      <plot id="3899">[Citadel: Rita's Sister] Completed assignment</plot>
+
+      <plot id="4948">[Citadel: Reporter's Request] Gave OSD information to Emily Wong</plot>
       
-      <plot id="4948">[Citadel] RP105a_Expose_Quest_Completed_Gave_Info</plot>
-      
-      <plot id="4820">[Citadel: Homecoming] Returned body</plot>
+      <plot id="4820">[Citadel: Homecoming] Returned Nirali Bhatia's body</plot>
       <plot id="4926">[Citadel: Old, Unhappy, Far-Off Things] Spoke to Mom</plot>
       <plot id="4861">[Citadel: I Remember Me] Talked Talitha down</plot>
       <plot id="4862">[Citadel: I Remember Me] Bait and switch</plot>
@@ -532,16 +545,19 @@ You can set the End Game State under the Plot section on the Raw tab.
       <plot id="6380">[Feros] Outcome_Give_Fail</plot>
       <plot id="6254">[Feros] Outcome_Renegade</plot>
       
-      <plot id="3860">[Noveria] Talked to Han Olar</plot>
-      
       <plot id="4883">[UNC: Hostage] Chairman Burns died</plot>
       <plot id="4885">[UNC: Hostage] Killed biotics</plot>
       <plot id="4886">[UNC: Hostage] Biotics surrendered</plot>
       
       <plot id="5038">[UNC: Dead Scientists] Convinced Corporal Toombs</plot>
       <plot id="5039">[UNC: Dead Scientists] Killed scientist</plot>
-      
-      <plot id="7317">[DLC: Bring Down the Sky] Humans rescued</plot>
+
+      <plot id="4903">[UNC: Major Kyle] Kyle surrendered</plot>
+      <plot id="4904">[UNC: Major Kyle] Fought Kyle</plot>
+
+      <plot id="7291">[DLC: Bring Down the Sky] Completed mission</plot>
+      <plot id="7317">[DLC: Bring Down the Sky] Hostages rescued (Balak alive)</plot>
+      <plot id="7315">[DLC: Bring Down the Sky] Killed Balak</plot>
     </bools>
   </category>
 </categories>

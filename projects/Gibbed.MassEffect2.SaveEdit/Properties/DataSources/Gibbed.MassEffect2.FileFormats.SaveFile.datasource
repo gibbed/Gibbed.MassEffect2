@@ -5,7 +5,7 @@
     Renaming the file extension or editing the content of this file may   
     cause the file to be unrecognizable by the program.
 -->
-<GenericObjectDataSource DisplayName="SaveFile" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+<GenericObjectDataSource DisplayName="SaveFileBase" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
    <Children>
       <GenericObjectDataSource DisplayName="_property_PlayerRecord" Version="1.0">
          <TypeInfo>Gibbed.MassEffect2.FileFormats.Save.Player, Gibbed.MassEffect2.FileFormats, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
@@ -96,10 +96,10 @@
          </TypeUISetting>
       </GenericObjectDataSource>
    </Children>
-   <TypeInfo>Gibbed.MassEffect2.FileFormats.SaveFile, Gibbed.MassEffect2.FileFormats, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>Gibbed.MassEffect2.FileFormats.SaveFileBase, Gibbed.MassEffect2.FileFormats, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
    <TypeUISetting>
       <PropertyUISettings>
-         <PropertyUISetting Name="SaveFile._property_PlayerRecord">
+         <PropertyUISetting Name="SaveFileBase._property_PlayerRecord">
             <ControlSettings>
                <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
                   <BindableControlInfo Name="Details" Type="Microsoft.VSDesigner.Data.DataForm.Windows.DetailView" />
